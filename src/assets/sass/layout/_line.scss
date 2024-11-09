@@ -1,0 +1,12 @@
+.line {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 74px;
+        background: var(--neutral-300);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

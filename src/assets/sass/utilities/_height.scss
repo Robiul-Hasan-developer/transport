@@ -1,0 +1,22 @@
+/* Height Css Class Start */
+@each $property, $value in $spaces {
+    .tw-h-#{$property} {
+      height: $value;
+    }
+}
+
+.tw-h {
+  &-25-px {
+    height: 25px;
+  }
+  &-150-px {
+    height: 150px;
+  }
+}
+
+.tw-h {
+  &-screen {
+    height: 100vh;
+  }
+}
+/* Height Css Class End */

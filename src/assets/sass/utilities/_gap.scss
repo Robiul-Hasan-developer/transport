@@ -1,0 +1,13 @@
+/* Gap Css start */
+@each $property, $value in $spaces {
+    .tw-gap-#{$property} {
+      gap: var(--size-#{$property});
+    }
+  }
+/* Gap Css end */
+
+@media (min-width: 1200px) {
+  .xl-tw-gap-7 {
+      gap: 1.75rem;
+  }
+}

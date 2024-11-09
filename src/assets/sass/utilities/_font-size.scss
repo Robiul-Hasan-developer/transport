@@ -1,0 +1,33 @@
+/* Font Size Class Start */
+.text {
+  &-inherit {
+      font-size: inherit;
+  }
+}
+
+@each $property, $value in $font-sizes {
+  .tw-text-#{$property} {
+    font-size: $value;
+  }
+}  
+/* Font Size Class End */
+
+
+@each $property, $value in $spaces {
+    .tw-text-#{$property} {
+      font-size: $value;
+    }
+}  
+
+.tw-text {
+  &-80-px {
+    font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem); /* min: 32 max:80px */
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl-tw-text-sm {
+    font-size: 0.875rem;
+  }
+}
+/* Font Size Class End */
