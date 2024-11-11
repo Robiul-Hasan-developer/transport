@@ -6,20 +6,6 @@
   // ==========================================
   $(document).ready(function () {
     
-  // ============== Mobile Menu Sidebar & Offcanvas Js Start ========
-  // $('.toggle-mobileMenu').on('click', function () {
-  //   $('.mobile-menu').addClass('active');
-  //   $('.side-overlay').addClass('show');
-  //   $('body').addClass('scroll-hide-sm');
-  // }); 
-
-  // $('.close-button, .side-overlay').on('click', function () {
-  //   $('.mobile-menu').removeClass('active');
-  //   $('.side-overlay').removeClass('show');
-  //   $('body').removeClass('scroll-hide-sm');
-  // }); 
-  // ============== Mobile Menu Sidebar & Offcanvas Js End ========
-  
   // ============== Mobile Nav Menu Dropdown Js Start =======================
   function toggleSubMenu() {
     if ($(window).width() <= 991) {
@@ -131,7 +117,11 @@ $(".bg-img").css('background', function () {
 
 // ============================ Swiper Slider Js Start ===========================
 var menu = ['Air Freight', 'Ocean Freight', 'Land Transport']
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper ('.banner-slider', {
+  loop: true,
+  speed: 1500,
+  slidesPerView: 1,
+  grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -149,98 +139,83 @@ var mySwiper = new Swiper ('.swiper-container', {
 // ============================ Swiper Slider Js End ===========================
 
 
+// ============================ AOS Js Start ===========================
+AOS.init();
+// ============================ AOS Js End ===========================
 
 
+// ============================ Features Item Js Start ===========================
+$('.features-item').on('mouseenter', function () {
+  $('.features-item').removeClass('bg-white common-shadow-two');
+  $(this).addClass('bg-white common-shadow-two');
+});
+// ============================ Features Item Js End ===========================
 
 
-// ================================= Position aware Button Animation Js Start =============================
-// (function() {
-//   const buttons = document.querySelectorAll(".btn-posnawr");
-
-//   buttons.forEach(button => {
-//     ["mouseenter", "mouseout"].forEach(evt => {
-//       button.addEventListener(evt, e => {
-//         let parentOffset = button.getBoundingClientRect(),
-//             relX = e.pageX - parentOffset.left,
-//             relY = e.pageY - parentOffset.top;
-
-//         const animationBg = button.getElementsByTagName(".animation-bg");
-
-//         animationBg[0].style.top = relY + "px";
-//         animationBg[0].style.left = relX + "px";
-//       });
-//     });
-//   });
-// })();
-// ================================= Position aware Button Animation Js End =============================
+// ============================ Animated Radial Progress Bar Js Start ===========================
+$('svg.radial-progress').each(function( index, value ) { 
+  $(this).find($('circle.complete')).removeAttr( 'style' );
+});
+// ============================ Animated Radial Progress Bar Js End ===========================
 
 
-  
-  // ========================= Testimonial Four Slider Js Start ==============
-  // $('.testimonial-four-slider').slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   speed: 1500,
-  //   dots: true,
-  //   pauseOnHover: true,
-  //   arrows: false,
-  //   draggable: true,
-  //   speed: 900,
-  //   infinite: true,
-  //   prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-  //   nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         arrows: false,
-  //       }
-  //     }
-  //   ]
-  // });
-  // ========================= Testimonial Four Slider Js End ===================
-  
-   // ========================= Counter Up Js End ===================
-  //  const counterUp = window.counterUp.default;
+// ========================= Counter Up Js Start ===================
+const counterUp = window.counterUp.default;
 
-  //  const callback = (entries) => {
-  //    entries.forEach((entry) => {
-  //      const el = entry.target;
-  //      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-  //        counterUp(el, {
-  //          duration: 2000,
-  //          delay: 16,
-  //        });
-  //        el.classList.add('is-visible');
-  //      }
-  //    });
-  //  };
- 
-  //  const IO = new IntersectionObserver(callback, { threshold: 1 });
- 
-  //  // Counter
-  //  const counter = document.querySelector('.counter');
-  //  if (counter) {
-  //    IO.observe(counter);
-  //  }
-   // ========================= Counter Up Js End ===================
-
-  // ================== Password Show Hide Js Start ==========
-  $(".toggle-password").on('click', function() {
-    $(this).toggleClass("active");
-    var input = $($(this).attr("id"));
-    if (input.attr("type") == "password") {
-      input.attr("type", "text");
-      $(this).removeClass('ph-bold ph-eye-closed');
-      $(this).addClass('ph-bold ph-eye');
-    } else {
-      input.attr("type", "password");
-        $(this).addClass('ph-bold ph-eye-closed');
+const callback = (entries) => {
+  entries.forEach((entry) => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+      counterUp(el, {
+        duration: 2000,
+        delay: 16,
+      });
+      el.classList.add('is-visible');
     }
   });
+};
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+
+
+// Counter
+const counter = document.querySelector('.counter');
+if (counter) {
+  IO.observe(counter);
+}
+// ========================= Counter Up Js End ===================
+
+
+// ========================= Add Class To transport way item Js Start ===================
+$('.transport-way-item').on('mouseenter', function () {
+  $('.transport-way-item').find('.transport-way-item__icon').removeClass('bg-main-two-600');
+  $(this).find('.transport-way-item__icon').addClass('bg-main-two-600');
+});
+// ========================= Add Class To transport way item Js End ===================
+
+
+// ========================= magnific Popup Js Start =====================
+$('.play-button').magnificPopup({
+  type:'iframe',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
+});
+// ========================= magnific Popup Js End =====================
+
+
+
+  // ================== Password Show Hide Js Start ==========
+  // $(".toggle-password").on('click', function() {
+  //   $(this).toggleClass("active");
+  //   var input = $($(this).attr("id"));
+  //   if (input.attr("type") == "password") {
+  //     input.attr("type", "text");
+  //     $(this).removeClass('ph-bold ph-eye-closed');
+  //     $(this).addClass('ph-bold ph-eye');
+  //   } else {
+  //     input.attr("type", "password");
+  //       $(this).addClass('ph-bold ph-eye-closed');
+  //   }
+  // });
   // ========================= Password Show Hide Js End ===========================
 
   });

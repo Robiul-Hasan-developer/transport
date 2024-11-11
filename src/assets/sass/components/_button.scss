@@ -1,5 +1,4 @@
 /* ========================== Button Css Start =============== */
-
 .button__label {
     position: relative;
     text-align: center;
@@ -72,7 +71,15 @@
                 border-color: transparent;
             }
         }
-    
+    }
+    &-main-two {
+        background-color: var(--main-two-600) !important;
+        color: hsl(var(--white)) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
     }
 }
 
@@ -104,6 +111,21 @@
         .button__flair {
             &::before {
                 background-color: hsl(var(--white));
+            }
+        }
+    }
+    &-three {
+        &:hover, &:active {
+            background-color: var(--main-two-600);
+            &.button--stroke {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+        .button__flair {
+            &::before {
+                background-color: var(--main-600);
             }
         }
     }

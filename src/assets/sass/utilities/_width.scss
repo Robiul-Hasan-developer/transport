@@ -19,6 +19,12 @@
 }
 
 .tw-w {
+  &-75-px {
+    width: 75px;
+  }
+  &-114-px {
+    width: 114px;
+  }
   &-300-px {
     width: 300px;
   }
@@ -27,6 +33,18 @@
   }
   &-w-max {
     width: max-content;
+  }
+}
+
+
+.lg-w-50 {
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+}
+.xl-w-50 {
+  @media (min-width: 1200px) {
+    width: 50%;
   }
 }
 /* width Css Class End */

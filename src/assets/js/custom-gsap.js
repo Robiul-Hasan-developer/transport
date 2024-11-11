@@ -179,7 +179,7 @@ stl.to('.offcanvas-sidebar', {
   delay: .2
 });
 
-stl.from('.animation-item', {
+stl.from('.animate-item', {
   x: 80,
   opacity: 0,
   stagger: .12,
@@ -435,42 +435,147 @@ st2.from(".planeSmall", {
   scale: 1,
 });
 
-let st3 = gsap.timeline({
-  scrollTrigger: {
-      trigger: ".planeSmall",
-      scrub: 2,
-      start: "top 25%",
-      end: "bottom 10%",
-      markers: false 
-  }
-});
-st3.to(".planeSmall", {
-  duration: .8,
-  y: 160,
-  x: 0,
-  scale: 1.6,
-}).to(".planeSmall", {
-  duration: .8,
-  x: 0,
-  scale: 1.6,
-  rotate: -20
-}).to(".planeSmall", {
-  duration: .8,
-  x: 0,
-  scale: 1.6,
-  rotate: -70
-})
+// let st3 = gsap.timeline({
+//   scrollTrigger: {
+//       trigger: ".planeSmall",
+//       scrub: 2,
+//       start: "top 25%",
+//       end: "bottom 10%",
+//       markers: false 
+//   }
+// });
+// st3.to(".planeSmall", {
+//   duration: .8,
+//   y: 160,
+//   x: 0,
+//   scale: 1.6,
+// }).to(".planeSmall", {
+//   duration: .8,
+//   x: 0,
+//   scale: 1.6,
+//   rotate: -20
+// }).to(".planeSmall", {
+//   duration: .8,
+//   x: 0,
+//   scale: 1.6,
+//   rotate: -70
+// })
 // **************************** banner Small Plane js End ****************************
 
 
+// **************************** About Section Plane js Star ****************************
+let atl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".about-plane",
+    start: "top 80%",
+    end: "bottom 20%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+atl.fromTo(".about-plane", 
+  {
+    x: -260,
+  },  
+  { 
+    x: 260,
+    y: -380,
+    rotate: -40,
+    duration: 1.6
+  } 
+);
 
 
+// Truck Head
+let trucktl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".truck-head",
+    start: "top 50%",
+    end: "bottom 10%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+trucktl.fromTo(".truck-head", 
+  {
+    y: -280,
+  },  
+  { 
+    y: 0,
+    duration: 1.6
+  } 
+);
+// **************************** About Section Plane js End ****************************
 
 
+// **************************** Counter Section js Start ****************************
+// blue biman
+let counterBimanTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".blue-biman",
+    start: "top 90%",
+    end: "bottom 15%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+counterBimanTL.fromTo(".blue-biman", 
+  {
+    x: 240,
+    scale: .3
+  },  
+  { 
+    x: 0,
+    scale: 1,
+    duration: 1.6
+  } 
+);
+
+// BG Image
+let counterImgTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".counter-bg-img",
+    start: "top 80%",
+    end: "bottom 10%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+counterImgTL.fromTo(".counter-bg-img", 
+  {
+    x: 600,
+  },  
+  { 
+    x: 0,
+    duration: 1.6
+  } 
+);
+// **************************** Counter Section js End ****************************
 
 
-
-
+// **************************** transport way Section js End ****************************
+let transWayLT = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".plan-down",
+    start: "top 70%",
+    end: "bottom 0%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+transWayLT.fromTo(".plan-down", 
+  {
+    x: -260,
+    scale: .6
+  },  
+  { 
+    x: 620,
+    y: 220,
+    scale: 1.4,
+    duration: 1.6
+  } 
+);
+// **************************** transport way Section js End ****************************
 
 
 

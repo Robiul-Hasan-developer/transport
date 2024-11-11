@@ -3,16 +3,38 @@
 .tw-translate-x-50 {
     transform: var(--translate-x-50);
 }
-.tw-translate-x-full {
-    transform: translateX(100%);
+.tw-translate-x {
+    &-full {
+        transform: translateX(100%);
+    }
+    &-32-px {
+        transform: translateX(32px);
+    }
 }
-.tw--translate-x-full {
-    transform: translateX(-100%);
+
+.tw--translate-x {
+    &-30-px {
+        transform: translateX(-30px);
+    }
+    &-48-px {
+        transform: translateX(-48px);
+    }
+    &-full {
+        transform: translateX(-100%);
+    }
 }
 
 /* Translate Y */
-.tw-translate-y-50 {
-    transform: var(--translate-y-50);
+.tw--translate-y {
+    &-4-px {
+        transform: translateY(-4px);
+    }
+    &-36-px {
+        transform: translateY(-36px);
+    }
+    &-50 {
+        transform: var(--translate-y-50);
+    }
 }
 
 .hover--translate-y {

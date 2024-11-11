@@ -11,3 +11,7 @@
       gap: 1.75rem;
   }
 }
+
+.tw-gap-56-px {
+  gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
+}
