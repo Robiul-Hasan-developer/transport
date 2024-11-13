@@ -116,17 +116,31 @@ $(".bg-img").css('background', function () {
 
 
 // ============================ Swiper Slider Js Start ===========================
-var menu = ['Air Freight', 'Ocean Freight', 'Land Transport']
-var mySwiper = new Swiper ('.banner-slider', {
+var bannerMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
+var bannerSwiper = new Swiper ('.banner-slider', {
   loop: true,
   speed: 1500,
   slidesPerView: 1,
   grabCursor: true,
+  effect: "creative",
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false, 
+  },
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.banner-pagination',
     clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        return '<span class="' + className + '">' + (bannerMenu[index]) + '</span>';
       },
   },
 
@@ -135,7 +149,17 @@ var mySwiper = new Swiper ('.banner-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+});
+
+// Stop
+$('.banner-slider').on('mouseenter', function() {
+  bannerSwiper.autoplay.stop();
+});
+
+// Start
+$('.banner-slider').on('mouseleave', function() {
+  bannerSwiper.autoplay.start();
+});
 // ============================ Swiper Slider Js End ===========================
 
 
@@ -200,6 +224,116 @@ $('.play-button').magnificPopup({
   mainClass: 'mfp-fade',
 });
 // ========================= magnific Popup Js End =====================
+
+
+// ================================= Project slider Start =========================
+var swiper = new Swiper(".project-slider", {
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 1500,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".project-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
+});
+// ================================= Project slider Start =========================
+
+
+// ========================= Add Class To Map item Js Start ===================
+$('.map-item').on('mouseenter', function () {
+  $('.map-item').find('.map-item__card').addClass('invisible opacity-0');
+  $(this).find('.map-item__card').removeClass('invisible opacity-0');
+});
+// ========================= Add Class To Map item Js End ===================
+
+
+
+
+// ================================= Testimoanials slider Start =========================
+var testiSwiper = new Swiper(".testimonials-slider", {
+  grabCursor: true,
+  effect: "creative",
+  speed: 1500,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false, 
+  },
+  loop: true,
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+});
+
+// Stop
+$('.testimonials-slider').on('mouseenter', function() {
+  testiSwiper.autoplay.stop();
+});
+
+// Start
+$('.testimonials-slider').on('mouseleave', function() {
+  testiSwiper.autoplay.start();
+});
+// ================================= Testimoanials slider Start =========================
+
+
+// ================================= brand slider Start =========================
+var brandSlider = new Swiper('.brand-slider', {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  speed: 1500,
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 5,
+  breakpoints: {
+      380: {
+          slidesPerView: 1,
+      },
+      516: {
+          slidesPerView: 2,
+      },
+      768: {
+          slidesPerView: 3,
+      },
+      992: {
+          slidesPerView: 4,
+      },
+      1200: {
+          slidesPerView: 5,
+      },
+  }
+});
+// ================================= brand slider End =========================
+
+
 
 
 

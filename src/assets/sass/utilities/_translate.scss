@@ -1,8 +1,5 @@
 /*================================== Translate Css Start ==================================*/
 /* Translate X */
-.tw-translate-x-50 {
-    transform: var(--translate-x-50);
-}
 .tw-translate-x {
     &-full {
         transform: translateX(100%);
@@ -19,6 +16,9 @@
     &-48-px {
         transform: translateX(-48px);
     }
+    &-50 {
+        transform: var(--translate-x-50);
+    }
     &-full {
         transform: translateX(-100%);
     }
@@ -34,6 +34,11 @@
     }
     &-50 {
         transform: var(--translate-y-50);
+    }
+}
+.tw-translate-y {
+    &-35-px {
+        transform: translateY(35px);
     }
 }
 

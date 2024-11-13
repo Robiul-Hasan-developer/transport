@@ -68,6 +68,16 @@
   }
 }
 
+.pt-160 {
+  padding-block-start: 100px;
+  @media (min-width: 576px) {
+    padding-block-start: 130px;
+  }
+  @media (min-width: 992px) {
+    padding-block-start: 160px;
+  }
+}
+
 .pb-160 {
   padding-block-end: 100px;
   @media (min-width: 576px) {

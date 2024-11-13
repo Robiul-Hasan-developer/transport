@@ -37,6 +37,7 @@
     --body: 0 0% 43%;
     --heading-color: var(--main-two-600);
     --body-color: var(--body);
+    --star-color: rgba(255, 140, 34, 1);
     --translate-x-50: translateX(-50%);
     --translate-y-50: translateY(-50%);
     --size-05: 0.125rem;
@@ -1341,6 +1342,10 @@ input:focus, input:focus-visible {
     color: hsl(var(--body-color));
 }
 
+.text-star {
+    color: var(--star-color);
+}
+
 /* Colors class End */
 /* Hover color class start */
 .hover-text-main-50:hover {
@@ -1534,6 +1539,10 @@ input:focus, input:focus-visible {
 
 /* Hover color class end */
 /* =============================== Container Css Start ===================================== */
+.tw-container-1380-px {
+    max-width: 1380px;
+}
+
 .tw-container-1540-px {
     max-width: 1540px;
 }
@@ -1559,6 +1568,12 @@ input:focus, input:focus-visible {
 @media screen and (min-width: 425px) and (max-width: 575px) {
     .col-xs-6 {
         width: 50%;
+    }
+}
+
+@media (min-width: 425px) {
+    .xs-d-block {
+        display: block !important;
     }
 }
 
@@ -1717,6 +1732,12 @@ input:focus, input:focus-visible {
         font-size: 0.875rem;
     }
 }
+
+@media (min-width: 1200px) {
+    .xl-tw-text-3xl {
+        font-size: 1.25rem;
+    }
+}
 /* Font Size Class End */
 .font-heading {
     font-family: var(--heading-font);
@@ -1841,8 +1862,20 @@ input:focus, input:focus-visible {
     height: 25px;
 }
 
+.tw-h-90-px {
+    height: 90px;
+}
+
 .tw-h-114-px {
     height: 114px;
+}
+
+.tw-h-108-px {
+    height: 108px;
+}
+
+.tw-h-140-px {
+    height: 140px;
 }
 
 .tw-h-150-px {
@@ -1999,8 +2032,12 @@ input:focus, input:focus-visible {
     visibility: hidden;
 }
 
+.group-item {
+    transition: 0.3s linear;
+}
+
 .group-item:hover .group-hover-item-visible {
-    visibility: visible;
+    visibility: visible !important;
 }
 
 .group-item:hover .group-hover-item-opacity-1 {
@@ -2785,6 +2822,14 @@ input:focus, input:focus-visible {
     margin-inline-end: -32px;
 }
 
+.tw--me-45-px {
+    margin-inline-end: -45px;
+}
+
+.tw--mt-45-px {
+    margin-block-start: -45px;
+}
+
 .my-120 {
     margin-block-start: 60px;
     margin-block-end: 60px;
@@ -2873,6 +2918,10 @@ input:focus, input:focus-visible {
     height: 100vh;
 }
 
+.tw-max-h-88-px {
+    max-height: 88px;
+}
+
 .tw-max-h-300-px {
     max-height: 300px;
 }
@@ -2883,8 +2932,20 @@ input:focus, input:focus-visible {
     max-width: 100px;
 }
 
+.max-w-130-px {
+    max-width: 130px;
+}
+
+.max-w-148-px {
+    max-width: 148px;
+}
+
 .max-w-190-px {
     max-width: 190px;
+}
+
+.max-w-175-px {
+    max-width: 175px;
 }
 
 .max-w-200-px {
@@ -2899,8 +2960,26 @@ input:focus, input:focus-visible {
     max-width: 260px;
 }
 
+.max-w-280-px {
+    max-width: 280px;
+}
+
+.max-w-310-px {
+    max-width: 310px;
+}
+
+.max-w-318-px {
+    max-width: 318px;
+}
+
 .max-w-400-px {
     max-width: 400px;
+}
+
+@media (min-width: 992px) {
+    .max-w-468-px {
+        max-width: 468px;
+    }
 }
 
 .max-w-520-px {
@@ -3688,6 +3767,22 @@ input:focus, input:focus-visible {
     }
 }
 
+.pt-160 {
+    padding-block-start: 100px;
+}
+
+@media (min-width: 576px) {
+    .pt-160 {
+        padding-block-start: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pt-160 {
+        padding-block-start: 160px;
+    }
+}
+
 .pb-160 {
     padding-block-end: 100px;
 }
@@ -3807,6 +3902,10 @@ input:focus, input:focus-visible {
 }
 /* ================================= Padding Css End =========================== */
 /* Placeholder Classes Start */
+.tw-placeholder-text-main-two-600::placeholder {
+    color: var(--main-two-600);
+}
+
 .tw-placeholder-text-neutral-100::placeholder {
     color: var(--neutral-100);
 }
@@ -3958,10 +4057,6 @@ input:focus, input:focus-visible {
 /* Active Scale Css End */
 /*================================== Translate Css Start ==================================*/
 /* Translate X */
-.tw-translate-x-50 {
-    transform: var(--translate-x-50);
-}
-
 .tw-translate-x-full {
     transform: translateX(100%);
 }
@@ -3976,6 +4071,10 @@ input:focus, input:focus-visible {
 
 .tw--translate-x-48-px {
     transform: translateX(-48px);
+}
+
+.tw--translate-x-50 {
+    transform: var(--translate-x-50);
 }
 
 .tw--translate-x-full {
@@ -3993,6 +4092,10 @@ input:focus, input:focus-visible {
 
 .tw--translate-y-50 {
     transform: var(--translate-y-50);
+}
+
+.tw-translate-y-35-px {
+    transform: translateY(35px);
 }
 
 .hover--translate-y-05:hover {
@@ -4266,8 +4369,20 @@ input:focus, input:focus-visible {
     width: 75px;
 }
 
+.tw-w-90-px {
+    width: 90px;
+}
+
 .tw-w-114-px {
     width: 114px;
+}
+
+.tw-w-108-px {
+    width: 108px;
+}
+
+.tw-w-140-px {
+    width: 140px;
 }
 
 .tw-w-300-px {
@@ -4583,10 +4698,10 @@ input[type=number] {
     box-shadow: none !important;
     border: 0;
     position: relative;
-    border-radius: 3px;
+    border-radius: 0px;
     width: 18px;
     height: 18px;
-    border: 1px solid hsl(var(--black)/0.4);
+    border: 2px solid hsl(var(--black)/0.4);
     cursor: pointer;
     transition: 0.2s linear;
     margin-block-start: 0;
@@ -4616,7 +4731,7 @@ input[type=number] {
     transform: translate(-50%, -50%) scale(0.2);
     width: 10px;
     height: 10px;
-    background-color: var(--main-600);
+    background-color: var(--main-two-600);
     border-radius: 50%;
     transition: 0.2s linear;
     z-index: 1;
@@ -4625,8 +4740,7 @@ input[type=number] {
 }
 
 .common-check .form-check-input:checked {
-    background-color: hsl(var(--main)) !important;
-    border-color: hsl(var(--main)) !important;
+    background-color: var(--main-two-600) !important;
     box-shadow: none;
 }
 
@@ -5149,6 +5263,17 @@ input[type=number] {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+.clip-path-short::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 35px;
+    inset-inline-end: calc(100% - 1px);
+    inset-block-end: 0;
+    background-color: var(--main-800);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+}
+
 /* ================================= Clip Path Css End =============================== */
 .logo-mask-bg::before {
     content: "";
@@ -5244,6 +5369,32 @@ input[type=number] {
 
     100% {
         transform: rotateZ(24deg);
+    }
+}
+
+.scalable-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    transform: translate(-50%, -50%);
+    background: inherit;
+    border-radius: inherit;
+    animation: scalable-animation 1.5s 0s infinite;
+    z-index: -1;
+}
+
+@keyframes scalable-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
     }
 }
 
@@ -5529,6 +5680,10 @@ input[type=number] {
     z-index: -1;
 }
 
+.half-bg-white.bg-neutral::before {
+    background-color: var(--neutral-25);
+}
+
 @media (min-width: 992px) {
     .transport-way-item-wrapper {
         padding-block-end: 74px;
@@ -5626,4 +5781,133 @@ input[type=number] {
         opacity: 0;
     }
 }
+/* Projects Css Start */
+.half-bg-w-50 {
+    position: relative;
+    z-index: 1;
+}
+
+.half-bg-w-50::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-color: var(--neutral-50);
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    z-index: -1;
+}
+
+.view-w-100 {
+    width: 100vw;
+}
+
+.hover-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.hover-overlay:hover::before {
+    height: 100%;
+}
+
+.hover-overlay::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    background: linear-gradient(180deg, rgba(6, 45, 53, 0) 0%, rgba(6, 45, 53, 0) 64.33%, #030404 100%);
+    transition: 0.2s linear;
+}
+
+/* Projects Css End */
+/* Map Css Start */
+@media (min-width: 992px) {
+    .map {
+        position: absolute;
+        inset-inline-start: 50%;
+        inset-block-start: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.map-item {
+    position: absolute !important;
+    inset-inline-start: 25%;
+    inset-block-start: 22%;
+}
+
+.map-item:nth-child(2) {
+    inset-block-start: 56%;
+    inset-inline-start: 56%;
+}
+
+.map-item:nth-child(3) {
+    inset-inline-start: auto;
+    inset-inline-end: 10%;
+    inset-block-start: 26%;
+}
+
+.map-item:nth-child(4) {
+    inset-block-start: 15%;
+    inset-inline-start: 62%;
+}
+
+.map-item:nth-child(5) {
+    inset-block-start: auto;
+    inset-block-end: 18%;
+    inset-inline-start: 29%;
+}
+
+.map-item:nth-child(6) {
+    inset-inline-start: auto;
+    inset-block-start: auto;
+    inset-inline-end: 16%;
+    inset-block-end: 29%;
+}
+
+/* Map Css End */
+/* ============================ Testimonials brand section css start ============================ */
+.testimonials-box {
+    padding-block-start: clamp(4.5rem, -5.5rem + 10vw, 6.5rem);
+    padding-block-end: clamp(3rem, -5.5rem + 10vw, 4.5rem);
+    padding-inline: clamp(1.5rem, -5.25rem + 9vw, 3.75rem);
+}
+
+.mask-shape {
+    -webkit-mask-image: url(../images/shapes/quate-shape.png);
+    mask-image: url(../images/shapes/quate-shape.png);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 240px;
+    margin: 0 auto;
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: transparent;
+}
+
+.bg-bg-color {
+    background-color: #F5F6F8 !important;
+}
+
+.left-right-line::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--neutral-200);
+    z-index: -1;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+}
+
+/* ============================ Testimonials brand section css End ============================ */
 /*# sourceMappingURL=main.css.map */

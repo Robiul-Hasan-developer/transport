@@ -1,5 +1,10 @@
 /* Placeholder Classes Start */
 .tw-placeholder-text {
+    &-main-two-600 {
+        &::placeholder {
+            color: var(--main-two-600);
+        }        
+    }
     &-neutral-100 {
         &::placeholder {
             color: var(--neutral-100);

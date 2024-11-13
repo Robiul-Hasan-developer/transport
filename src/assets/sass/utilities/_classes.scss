@@ -7,6 +7,12 @@
 }
 
 
+.xs-d-block {
+    @media (min-width: 425px) {
+        display: block !important;
+    }
+}
+
 .xxsm-d-block {
     @media (min-width: 360px) {
         display: block !important;

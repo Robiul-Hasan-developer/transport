@@ -10,6 +10,11 @@
         inset-block-end: 0;
         z-index: -1;
     }
+    &.bg-neutral {
+        &::before {
+            background-color: var(--neutral-25);
+        }
+    }
 }
 
 

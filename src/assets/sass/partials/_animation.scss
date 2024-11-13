@@ -15,6 +15,33 @@
     }
 }
 
+.scalable-animation {
+  &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset-inline-start: 50%;
+      inset-block-start: 50%;
+      transform: translate(-50%, -50%);
+      background: inherit;
+      border-radius: inherit;
+      animation: scalable-animation 1.5s 0s infinite;
+      z-index: -1;
+  }
+}
+
+@keyframes scalable-animation {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+  }
+}
+
 .animate__wobble__two {
   animation: wobble 2.4s ease-in-out infinite;
 }

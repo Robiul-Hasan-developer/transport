@@ -577,6 +577,53 @@ transWayLT.fromTo(".plan-down",
 );
 // **************************** transport way Section js End ****************************
 
+// **************************** Project section js Start ****************************
+let projectLT = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-shape-img",
+    start: "top 70%",
+    end: "bottom 0%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+projectLT.fromTo(".project-shape-img", 
+  {
+    y: -360,
+    scale: .6
+  },  
+  { 
+    y: 0,
+    scale: 1.4,
+    duration: 1.6
+  } 
+);
+// **************************** Project section js End ****************************
+
+
+// **************************** quate section start ==========================
+gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
+  let karentl = gsap.timeline({
+    scrollTrigger: {
+      trigger: element,
+      start: "top 50%",
+      end: "bottom 10%",
+      scrub: 2,
+      markers: false,
+    }
+  });
+
+  karentl.fromTo(
+    element,
+    { y: -280 },
+    { y: 0, duration: 1.6 }
+  );
+});
+
+// **************************** quate section End ==========================
+
+
+
 
 
 

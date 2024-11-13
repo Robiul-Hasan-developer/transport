@@ -3,8 +3,17 @@
     &-100-px {
         max-width: 100px;
     }
+    &-130-px {
+        max-width: 130px;
+    }
+    &-148-px {
+        max-width: 148px;
+    }
     &-190-px {
         max-width: 190px;
+    }
+    &-175-px {
+        max-width: 175px;
     }
     &-200-px {
         max-width: 200px;
@@ -15,8 +24,22 @@
     &-260-px {
         max-width: 260px;
     }
+    &-280-px {
+        max-width: 280px;
+    }
+    &-310-px {
+        max-width: 310px;
+    }
+    &-318-px {
+        max-width: 318px;
+    }
     &-400-px {
         max-width: 400px;
+    }
+    &-468-px {
+        @media (min-width: 992px) {
+            max-width: 468px;
+        }
     }
     &-520-px {
         max-width: 520px;

@@ -43,4 +43,17 @@
 .rectangle-shape-two {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+.clip-path-short {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 35px;
+        inset-inline-end: calc(100% - 1px);
+        inset-block-end: 0;
+        background-color: var(--main-800);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+    }
+}
 /* ================================= Clip Path Css End =============================== */

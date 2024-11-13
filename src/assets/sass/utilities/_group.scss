@@ -30,10 +30,12 @@
 .tw-invisible {
     visibility: hidden;
 }
+
 .group-item  {
+    transition: .3s linear;
     &:hover {
         .group-hover-item-visible {
-            visibility: visible;
+            visibility: visible !important;
         }
         .group-hover-item-opacity-1 {
             opacity: 1 !important;
