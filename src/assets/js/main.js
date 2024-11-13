@@ -210,9 +210,9 @@ if (counter) {
 
 
 // ========================= Add Class To transport way item Js Start ===================
-$('.transport-way-item').on('mouseenter', function () {
-  $('.transport-way-item').find('.transport-way-item__icon').removeClass('bg-main-two-600');
-  $(this).find('.transport-way-item__icon').addClass('bg-main-two-600');
+$('.how-it-work-item').on('mouseenter', function () {
+  $('.how-it-work-item').find('.how-it-work-item__icon').removeClass('bg-main-two-600');
+  $(this).find('.how-it-work-item__icon').addClass('bg-main-two-600');
 });
 // ========================= Add Class To transport way item Js End ===================
 
@@ -260,14 +260,12 @@ var swiper = new Swiper(".project-slider", {
 // ================================= Project slider Start =========================
 
 
-// ========================= Add Class To Map item Js Start ===================
-$('.map-item').on('mouseenter', function () {
-  $('.map-item').find('.map-item__card').addClass('invisible opacity-0');
-  $(this).find('.map-item__card').removeClass('invisible opacity-0');
+// ========================= Add Class To location item Js Start ===================
+$('.location-item').on('mouseenter', function () {
+  $('.location-item').find('.location-item__card').addClass('invisible opacity-0');
+  $(this).find('.location-item__card').removeClass('invisible opacity-0');
 });
-// ========================= Add Class To Map item Js End ===================
-
-
+// ========================= Add Class To location item Js End ===================
 
 
 // ================================= Testimoanials slider Start =========================
@@ -333,6 +331,17 @@ var brandSlider = new Swiper('.brand-slider', {
 });
 // ================================= brand slider End =========================
 
+
+
+// ========================= Blog item hover Js Start ===================
+$('.blog-item').on('mouseenter', function () {
+  $('.blog-item').find('.blog-date').addClass('bg-main-600').removeClass('bg-main-two-600');
+  $('.blog-item').find('.blog-tag').addClass('bg-main-two-600').removeClass('bg-main-600');
+
+  $(this).find('.blog-date').removeClass('bg-main-600').addClass('bg-main-two-600');
+  $(this).find('.blog-tag').removeClass('bg-main-two-600').addClass('bg-main-600');
+});
+// ========================= Blog item hover Js End ===================
 
 
 

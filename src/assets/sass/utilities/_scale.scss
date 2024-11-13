@@ -40,6 +40,11 @@
             transform: scale(1.2);
         }
     }
+    &-30 {
+        &:hover {
+            transform: scale(3);
+        }
+    }
 }
 /* Hover Scale Css End */
 

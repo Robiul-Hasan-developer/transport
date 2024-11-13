@@ -620,6 +620,10 @@ input:focus, input:focus-visible {
     background-color: hsl(var(--white)) !important;
 }
 
+.bg-white-01 {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -1854,12 +1858,16 @@ input:focus, input:focus-visible {
     height: 4.25rem;
 }
 
+.tw-h-25-px {
+    height: 25px;
+}
+
 .tw-h-75-px {
     height: 75px;
 }
 
-.tw-h-25-px {
-    height: 25px;
+.tw-h-85-px {
+    height: 85px;
 }
 
 .tw-h-90-px {
@@ -2932,6 +2940,14 @@ input:focus, input:focus-visible {
     max-width: 100px;
 }
 
+.max-w-100-px {
+    max-width: 100px;
+}
+
+.max-w-82-px {
+    max-width: 82px;
+}
+
 .max-w-130-px {
     max-width: 130px;
 }
@@ -2986,8 +3002,16 @@ input:focus, input:focus-visible {
     max-width: 520px;
 }
 
+.max-w-548-px {
+    max-width: 548px;
+}
+
 .max-w-632-px {
     max-width: 632px;
+}
+
+.max-w-610-px {
+    max-width: 610px;
 }
 
 .max-w-756-px {
@@ -3748,6 +3772,14 @@ input:focus, input:focus-visible {
     padding-top: 76px;
 }
 
+.tw-pt-84-px {
+    padding-top: 84px;
+}
+
+.tw-pb-84-px {
+    padding-bottom: 84px;
+}
+
 .py-160 {
     padding-block-start: 100px;
     padding-block-end: 100px;
@@ -4034,6 +4066,10 @@ input:focus, input:focus-visible {
 
 .hover-scale-2:hover {
     transform: scale(1.2);
+}
+
+.hover-scale-30:hover {
+    transform: scale(3);
 }
 
 /* Hover Scale Css End */
@@ -4367,6 +4403,10 @@ input:focus, input:focus-visible {
 
 .tw-w-75-px {
     width: 75px;
+}
+
+.tw-w-85-px {
+    width: 85px;
 }
 
 .tw-w-90-px {
@@ -5685,7 +5725,7 @@ input[type=number] {
 }
 
 @media (min-width: 992px) {
-    .transport-way-item-wrapper {
+    .how-it-work-item-wrapper {
         padding-block-end: 74px;
         border-bottom: 1px dashed var(--neutral-800);
     }
@@ -5712,11 +5752,11 @@ input[type=number] {
         inset-block-start: calc(100% + 64px);
     }
 
-    .transport-way-item {
+    .how-it-work-item {
         position: relative;
     }
 
-    .transport-way-item::after {
+    .how-it-work-item::after {
         position: absolute;
         content: counter(number);
         counter-increment: number;
@@ -5825,7 +5865,7 @@ input[type=number] {
 /* Projects Css End */
 /* Map Css Start */
 @media (min-width: 992px) {
-    .map {
+    .location {
         position: absolute;
         inset-inline-start: 50%;
         inset-block-start: 50%;
@@ -5833,35 +5873,35 @@ input[type=number] {
     }
 }
 
-.map-item {
+.location-item {
     position: absolute !important;
     inset-inline-start: 25%;
     inset-block-start: 22%;
 }
 
-.map-item:nth-child(2) {
+.location-item:nth-child(2) {
     inset-block-start: 56%;
     inset-inline-start: 56%;
 }
 
-.map-item:nth-child(3) {
+.location-item:nth-child(3) {
     inset-inline-start: auto;
     inset-inline-end: 10%;
     inset-block-start: 26%;
 }
 
-.map-item:nth-child(4) {
+.location-item:nth-child(4) {
     inset-block-start: 15%;
     inset-inline-start: 62%;
 }
 
-.map-item:nth-child(5) {
+.location-item:nth-child(5) {
     inset-block-start: auto;
     inset-block-end: 18%;
     inset-inline-start: 29%;
 }
 
-.map-item:nth-child(6) {
+.location-item:nth-child(6) {
     inset-inline-start: auto;
     inset-block-start: auto;
     inset-inline-end: 16%;
@@ -5910,4 +5950,35 @@ input[type=number] {
 }
 
 /* ============================ Testimonials brand section css End ============================ */
+/* Map Css Start */
+.map iframe {
+    filter: grayscale(1);
+    margin-bottom: -8px;
+}
+
+/* Map Css End */
+/* Footer Css Start */
+.hover-arrow:hover {
+    padding-inline-start: 1.5rem;
+}
+
+.hover-arrow:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover-arrow::before {
+    position: absolute;
+    content: "\e128";
+    font-family: "Phosphor";
+    font-weight: 900;
+    inset-inline-start: 0px;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    color: inherit;
+}
+
+/* Footer Css End */
 /*# sourceMappingURL=main.css.map */
