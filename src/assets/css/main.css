@@ -4892,6 +4892,7 @@ input[type=number] {
     background-color: transparent;
     color: #fff;
     position: relative;
+    transition: 0.3s linear;
 }
 
 @media (max-width: 767px) {
@@ -4943,14 +4944,14 @@ input[type=number] {
 }
 
 .swiper-pagination-bullet-active::before, .swiper-pagination-bullet-active::after {
-    transition-delay: 0.15s;
+    transition-delay: 0.2s;
     visibility: visible;
     opacity: 1;
     transform: scale(1);
 }
 
 .swiper-pagination-bullet-active::before {
-    transition-delay: 0.3s;
+    transition-delay: 0.35s;
 }
 
 .swiper-notification {
@@ -5044,7 +5045,7 @@ input[type=number] {
 }
 /* Header Menu and Submenu Css Start */
 .nav-menu__item.activePage > a {
-    color: var(--main-600);
+    color: var(--main-600) !important;
 }
 
 .nav-menu__item.activePage > a::before {

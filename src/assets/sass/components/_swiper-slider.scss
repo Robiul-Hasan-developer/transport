@@ -20,6 +20,7 @@
         background-color: transparent;
         color: #fff;
         position: relative;
+        transition: .3s linear;
         @media (max-width: 767px) {
             padding: 24px;
         }
@@ -58,13 +59,13 @@
         &-active {
             background: #ffffff0a;
             &::before, &::after {
-                transition-delay: .15s;
+                transition-delay: .2s;
                 visibility: visible;
                 opacity: 1;
                 transform: scale(1);
             }
             &::before {
-                transition-delay: .3s;
+                transition-delay: .35s;
             }
         }
     }

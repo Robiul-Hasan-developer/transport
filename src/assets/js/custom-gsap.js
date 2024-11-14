@@ -6,18 +6,9 @@ var tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger);
 
 
-// **************************** Nav Menu js Start ****************************
-// let mm = gsap.matchMedia(); 
+// **************************** Smooth Scroll js Start ****************************
 
-// mm.add("(min-width: 992px)", () => {
-//   gsap.from('.nav-menu__item', {
-//     opacity: 0,
-//     duration: .4,
-//     y: -20,
-//     stagger: .12,
-//   });
-// });
-// **************************** Nav Menu js End ****************************
+// **************************** Smooth Scroll js End ****************************
 
 
 

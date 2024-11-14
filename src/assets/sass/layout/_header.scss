@@ -41,7 +41,7 @@
     &__item {
         &.activePage {
             > a {
-                color: var(--main-600);
+                color: var(--main-600) !important;
                 &::before {
                     color: var(--main-600);
                 }
