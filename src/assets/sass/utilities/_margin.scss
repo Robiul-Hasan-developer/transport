@@ -52,6 +52,9 @@
   &-me-auto {
     margin-inline-end: auto;
   }
+  &-mb-100-px {
+    margin-block-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.25rem);;
+  }
   &--me-32-px {
     margin-inline-end: -32px;
   }
@@ -60,6 +63,9 @@
   }
   &--mt-45-px {
     margin-block-start: -45px;
+  }
+  &--ms-16-px {
+    margin-inline-start: -16px;
   }
 }
 

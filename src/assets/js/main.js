@@ -115,7 +115,7 @@ $(".bg-img").css('background', function () {
 // ========================== Add Attribute For Bg Image Js End =====================
 
 
-// ============================ Swiper Slider Js Start ===========================
+// ============================ Banner Slider Js Start ===========================
 var bannerMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerSwiper = new Swiper ('.banner-slider', {
   loop: true,
@@ -160,7 +160,55 @@ $('.banner-slider').on('mouseenter', function() {
 $('.banner-slider').on('mouseleave', function() {
   bannerSwiper.autoplay.start();
 });
-// ============================ Swiper Slider Js End ===========================
+// ============================ Banner Slider Js End ===========================
+
+
+// ============================ Banner Slider Js Start ===========================
+var bannerTwoMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
+var bannerTwoSwiper = new Swiper ('.banner-two-slider', {
+  loop: true,
+  speed: 2500,
+  slidesPerView: 1,
+  grabCursor: true,
+  effect: "creative",
+   creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false, 
+  },
+  pagination: {
+    el: '.banner-two-pagination',
+    clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (bannerMenu[index]) + '</span>';
+      },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.banner-two-swiper-button-next',
+    prevEl: '.banner-two-swiper-button-prev',
+  },
+});
+
+// Stop
+$('.banner-two-slider').on('mouseenter', function() {
+  bannerTwoSwiper.autoplay.stop();
+});
+
+// Start
+$('.banner-two-slider').on('mouseleave', function() {
+  bannerTwoSwiper.autoplay.start();
+});
+// ============================ Banner Slider Js End ===========================
 
 
 // ============================ AOS Js Start ===========================
@@ -312,10 +360,7 @@ var brandSlider = new Swiper('.brand-slider', {
   loop: true,
   slidesPerView: 5,
   breakpoints: {
-      380: {
-          slidesPerView: 1,
-      },
-      516: {
+      300: {
           slidesPerView: 2,
       },
       768: {
@@ -332,6 +377,40 @@ var brandSlider = new Swiper('.brand-slider', {
 // ================================= brand slider End =========================
 
 
+// ================================= Brand Two slider Start =========================
+var brandTwoSlider = new Swiper('.brand-two-slider', {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  autoplay: false,
+  speed: 1500,
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 7,
+  breakpoints: {
+      300: {
+          slidesPerView: 2,
+      },
+      575: {
+          slidesPerView: 3,
+      },
+      768: {
+          slidesPerView: 4,
+      },
+      992: {
+          slidesPerView: 5,
+      },
+      1200: {
+          slidesPerView: 6,
+      },
+      1400: {
+          slidesPerView: 7,
+      },
+  }
+});
+// ================================= Brand Two slider End =========================
+
 
 // ========================= Blog item hover Js Start ===================
 $('.blog-item').on('mouseenter', function () {
@@ -344,6 +423,12 @@ $('.blog-item').on('mouseenter', function () {
 // ========================= Blog item hover Js End ===================
 
 
+// ========================= Transport Way Js Start ===================
+$('.transport-way-item').on('mouseenter', function () {
+  $('.transport-way-item').find('.transport-way-item__icon').removeClass('bg-main-two-600');
+  $(this).find('.transport-way-item__icon').addClass('bg-main-two-600');
+});
+// ========================= Transport Way Js End ===================
 
 
   // ================== Password Show Hide Js Start ==========

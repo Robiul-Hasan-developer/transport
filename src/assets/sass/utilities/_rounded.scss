@@ -26,5 +26,15 @@
       border-radius: 2rem; /* 24px */
    }
 
+   &-bl-0 {
+      border-bottom-left-radius: 0 !important;
+   }
+   &-bl-2xl {
+      border-bottom-left-radius: 1rem;
+   }
+   &-br-2xl {
+      border-bottom-right-radius: 1rem;
+   }
+   
 }
 /* Border Radius Css End */

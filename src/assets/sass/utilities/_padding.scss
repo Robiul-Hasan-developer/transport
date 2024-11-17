@@ -57,7 +57,18 @@
   &-pb-84-px {
     padding-bottom: 84px;
   }
-  
+  &-px-54-px {
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+  }
+  &-ps-150-px {
+    padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
+  }
+  &-pt-332-px {
+    padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+  }
+  &-pb-132-px {
+    padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
+  }
 }
 
 

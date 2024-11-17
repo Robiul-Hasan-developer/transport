@@ -21,7 +21,10 @@
 
 .tw-text {
   &-80-px {
-    font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem); /* min: 32 max:80px */
+    font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem); /* min: 32px max:80px */
+  }
+  &-150-px {
+    font-size: clamp(2.5rem, -3.8351rem + 17.6282vw, 9.375rem); /* min: 60px max:150px */
   }
 }
 

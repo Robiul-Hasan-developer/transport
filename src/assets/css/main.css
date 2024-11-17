@@ -1728,7 +1728,12 @@ input:focus, input:focus-visible {
 
 .tw-text-80-px {
     font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem);
-  /* min: 32 max:80px */
+  /* min: 32px max:80px */
+}
+
+.tw-text-150-px {
+    font-size: clamp(2.5rem, -3.8351rem + 17.6282vw, 9.375rem);
+  /* min: 60px max:150px */
 }
 
 @media (min-width: 1200px) {
@@ -1874,6 +1879,10 @@ input:focus, input:focus-visible {
     height: 90px;
 }
 
+.tw-h-95-px {
+    height: 95px;
+}
+
 .tw-h-114-px {
     height: 114px;
 }
@@ -1884,6 +1893,10 @@ input:focus, input:focus-visible {
 
 .tw-h-140-px {
     height: 140px;
+}
+
+.tw-h-144-px {
+    height: 144px;
 }
 
 .tw-h-150-px {
@@ -2009,6 +2022,10 @@ input:focus, input:focus-visible {
 
 .tw-gap-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
+}
+
+.tw-gap-64-px {
+    gap: clamp(1.5rem, -4.48rem + 7.98vw, 4rem);
 }
 
 /* ======================== Group Css Start =============================== */
@@ -2826,6 +2843,10 @@ input:focus, input:focus-visible {
     margin-inline-end: auto;
 }
 
+.tw-mb-100-px {
+    margin-block-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.25rem);
+}
+
 .tw--me-32-px {
     margin-inline-end: -32px;
 }
@@ -2836,6 +2857,10 @@ input:focus, input:focus-visible {
 
 .tw--mt-45-px {
     margin-block-start: -45px;
+}
+
+.tw--ms-16-px {
+    margin-inline-start: -16px;
 }
 
 .my-120 {
@@ -3780,6 +3805,22 @@ input:focus, input:focus-visible {
     padding-bottom: 84px;
 }
 
+.tw-px-54-px {
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+}
+
+.tw-ps-150-px {
+    padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
+}
+
+.tw-pt-332-px {
+    padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+}
+
+.tw-pb-132-px {
+    padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
+}
+
 .py-160 {
     padding-block-start: 100px;
     padding-block-end: 100px;
@@ -4028,6 +4069,18 @@ input:focus, input:focus-visible {
   /* 24px */
 }
 
+.tw-rounded-bl-0 {
+    border-bottom-left-radius: 0 !important;
+}
+
+.tw-rounded-bl-2xl {
+    border-bottom-left-radius: 1rem;
+}
+
+.tw-rounded-br-2xl {
+    border-bottom-right-radius: 1rem;
+}
+
 /* Border Radius Css End */
 /* Rotate Css Start */
 .hover-rotate-360:hover {
@@ -4066,6 +4119,10 @@ input:focus, input:focus-visible {
 
 .hover-scale-2:hover {
     transform: scale(1.2);
+}
+
+.hover-scale-20:hover {
+    transform: scale(2);
 }
 
 .hover-scale-30:hover {
@@ -4413,6 +4470,10 @@ input:focus, input:focus-visible {
     width: 90px;
 }
 
+.tw-w-95-px {
+    width: 95px;
+}
+
 .tw-w-114-px {
     width: 114px;
 }
@@ -4463,6 +4524,11 @@ input:focus, input:focus-visible {
 }
 
 /* Z index css End */
+.text-stroke-white {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
 /* =========================== Accordion Css start ============================= */
 .common-accordion .accordion-item:not(:last-child) {
     margin-block-end: 20px;
@@ -4872,7 +4938,8 @@ input[type=number] {
     margin: 0;
 }
 
-.swiper-pagination {
+/* Pagination Style one */
+.pagination-style-one .swiper-pagination {
     position: absolute;
     text-align: start;
     inset-inline-start: 0;
@@ -4880,7 +4947,7 @@ input[type=number] {
     display: flex;
 }
 
-.swiper-pagination-bullet {
+.pagination-style-one .swiper-pagination-bullet {
     padding: 24px 32px;
     padding-inline-end: 60px;
     border-radius: 0;
@@ -4896,13 +4963,13 @@ input[type=number] {
 }
 
 @media (max-width: 767px) {
-    .swiper-pagination-bullet {
+    .pagination-style-one .swiper-pagination-bullet {
         padding: 24px;
     }
 }
 
 @media (max-width: 575px) {
-    .swiper-pagination-bullet {
+    .pagination-style-one .swiper-pagination-bullet {
         padding: 20px 16px;
         font-size: 14px;
         display: -webkit-box;
@@ -4913,7 +4980,7 @@ input[type=number] {
     }
 }
 
-.swiper-pagination-bullet::before {
+.pagination-style-one .swiper-pagination-bullet::before {
     width: 15px;
     height: 15px;
     inset-block-start: 10px;
@@ -4921,7 +4988,7 @@ input[type=number] {
     border-radius: 50%;
 }
 
-.swiper-pagination-bullet::after {
+.pagination-style-one .swiper-pagination-bullet::after {
     width: 26px;
     height: 30px;
     inset-block-start: 4px;
@@ -4929,7 +4996,7 @@ input[type=number] {
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
 }
 
-.swiper-pagination-bullet::before, .swiper-pagination-bullet::after {
+.pagination-style-one .swiper-pagination-bullet::before, .pagination-style-one .swiper-pagination-bullet::after {
     position: absolute;
     content: "";
     background-color: var(--main-600);
@@ -4939,21 +5006,85 @@ input[type=number] {
     transform: scale(0);
 }
 
-.swiper-pagination-bullet-active {
+.pagination-style-one .swiper-pagination-bullet-active {
     background: #ffffff0a;
 }
 
-.swiper-pagination-bullet-active::before, .swiper-pagination-bullet-active::after {
+.pagination-style-one .swiper-pagination-bullet-active::before, .pagination-style-one .swiper-pagination-bullet-active::after {
     transition-delay: 0.2s;
     visibility: visible;
     opacity: 1;
     transform: scale(1);
 }
 
-.swiper-pagination-bullet-active::before {
+.pagination-style-one .swiper-pagination-bullet-active::before {
     transition-delay: 0.35s;
 }
 
+/* Pagination Style one */
+/* Pagination Style Two */
+.pagination-style-two {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-style-two .swiper-pagination {
+    position: absolute;
+    text-align: start;
+    inset-inline-start: 0;
+    bottom: 0 !important;
+    display: flex;
+}
+
+.pagination-style-two .swiper-pagination-bullet {
+    padding: 24px 32px;
+    padding-inline-end: 60px;
+    border-radius: 0;
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+    opacity: 1;
+    max-width: 178px;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    position: relative;
+    transition: 0.3s linear;
+    position: relative;
+    text-align: start;
+    padding-inline-start: 48px !important;
+    padding-inline-end: 24px !important;
+}
+
+.pagination-style-two .swiper-pagination-bullet::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    inset-inline-start: 22px;
+    border-radius: 50%;
+    inset-block-start: 50%;
+    transform: var(--translate-y-50);
+    background: rgba(255, 255, 255, 0.36);
+}
+
+.pagination-style-two .swiper-pagination-bullet-active {
+    background: var(--main-600);
+}
+
+.pagination-style-two .swiper-pagination-bullet-active::before, .pagination-style-two .swiper-pagination-bullet-active::after {
+    transition-delay: 0.2s;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pagination-style-two .swiper-pagination-bullet-active::before {
+    transition-delay: 0.35s;
+}
+
+/* Pagination Style two */
 .swiper-notification {
     display: none;
 }
@@ -5116,7 +5247,7 @@ input[type=number] {
 }
 
 .nav-submenu__item.activePage .nav-submenu__link {
-    color: var(--main-600);
+    color: var(--main-600) !important;
 }
 
 .nav-submenu__item:hover a {
@@ -5126,6 +5257,16 @@ input[type=number] {
 /* Submenu End */
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */
+/* ============================= Header Two css start ==================================== */
+.header-two {
+    color: #fff;
+}
+
+.header-two .nav-menu__link {
+    color: #fff;
+}
+
+/* ============================= Header Two css end==================================== */
 /* Mobile Menu Sidebar Start */
 .mobile-menu.active {
     transform: translateX(0%);
@@ -5349,19 +5490,50 @@ input[type=number] {
     width: 1px;
     height: 74px;
     background: var(--neutral-300);
+    inset-inline-start: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line-two {
+    position: relative;
+}
+
+.line-two::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 91px;
+    background: rgba(86, 86, 87, 0.53);
+    inset-inline-start: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
 /* blur Css start */
-.bg-dark-blur {
+.bg-blur-one {
     background-color: #222a2c4a;
     backdrop-filter: blur(10px);
 }
 
-.bg-white-blur {
+.bg-blur-two {
     background-color: rgba(255, 255, 255, 0.44);
     backdrop-filter: blur(40px);
+}
+
+.bg-blur-three {
+    background: rgba(0, 0, 0, 0.23);
+    backdrop-filter: blur(35px);
+}
+
+.bg-blur-four {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(35px);
+}
+
+.bg-blur-five {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(18px);
 }
 
 /* blur Css End */
@@ -5394,6 +5566,24 @@ input[type=number] {
 }
 
 /* Custom Cursor Css End */
+/* gradient css start */
+.bg-main-100-gradient-one {
+    background: linear-gradient(107.49deg, rgba(223, 17, 25, 0.12) 38.02%, rgba(251, 226, 227, 0.12) 89.08%);
+}
+
+.bg-main-100-gradient-two {
+    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0) 86.81%);
+}
+
+.bg-main-100-gradient-three {
+    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0) 86.81%);
+}
+
+.bg-main-100-gradient-four {
+    background: linear-gradient(145.27deg, rgba(223, 17, 25, 0.14) 15.55%, rgba(223, 17, 25, 0.0308) 86.81%);
+}
+
+/* gradient css end */
 /* ======================== Animation Css Start ==================================== */
 .curve-animation {
     animation: 8s curveAnimation linear infinite;
@@ -5982,4 +6172,16 @@ input[type=number] {
 }
 
 /* Footer Css End */
+/* ======================== Header Middle Css Start ========================== */
+/* ======================== Header Middle Css End ========================== */
+/* =============================== Banner Two css Start ============================ */
+/* =============================== Banner Two css End ============================ */
+/* =========================== About Two Css Start =============================== */
+@media (min-width: 425px) {
+    .about-two-thumbs {
+        padding-inline-end: 120px;
+        padding-block-end: 152px;
+    }
+}
+/* =========================== About Two Css end =============================== */
 /*# sourceMappingURL=main.css.map */
