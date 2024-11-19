@@ -52,14 +52,25 @@
   &-me-auto {
     margin-inline-end: auto;
   }
-  &-mb-100-px {
-    margin-block-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.25rem);;
+  &-mb {
+    &-100-px {
+      margin-block-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.25rem);;
+    }
+    &-160-px {
+      margin-block-end: clamp(4rem, -0.4752rem + 8.9744vw, 10rem);;
+    }
+    &-180-px {
+      margin-block-end: clamp(4.5rem, -0.4752rem + 8.9744vw, 11.25rem);;
+    }
   }
   &--me-32-px {
     margin-inline-end: -32px;
   }
   &--me-45-px {
     margin-inline-end: -45px;
+  }
+  &-me-23-percent {
+    margin-inline-end: 23%;
   }
   &--mt-45-px {
     margin-block-start: -45px;

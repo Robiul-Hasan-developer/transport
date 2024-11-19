@@ -592,7 +592,7 @@ projectLT.fromTo(".project-shape-img",
 // **************************** Project section js End ****************************
 
 
-// **************************** quate section start ==========================
+// **************************** quote section start ==========================
 gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
   let karentl = gsap.timeline({
     scrollTrigger: {
@@ -610,8 +610,31 @@ gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
     { y: 0, duration: 1.6 }
   );
 });
+// **************************** quote section End ==========================
 
-// **************************** quate section End ==========================
+// **************************** quote Two section start ==========================
+
+let planLocation = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".plan-location",
+    start: "top 70%",
+    end: "bottom 0%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+planLocation.fromTo(".plan-location", 
+  {
+    y: -360,
+    scale: .6
+  },  
+  { 
+    y: 0,
+    scale: 1.4,
+    duration: 1.6
+  } 
+);
+// **************************** quote Two section End ==========================
 
 
 

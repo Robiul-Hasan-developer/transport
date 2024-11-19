@@ -43,6 +43,14 @@
 
 
 .tw {
+  &-p {
+    &-60-px {
+      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+    }
+    &-100-px {
+      padding: clamp(1.75rem, -12.1677rem + 32.9177vw, 6.25rem);
+    }
+  }
   &-pe {
     &-130-px {
       padding-inline-end: 130px;
@@ -54,54 +62,63 @@
   &-pt-84-px {
     padding-top: 84px;
   }
-  &-pb-84-px {
-    padding-bottom: 84px;
+  &-pb {
+    &-84-px {
+      padding-bottom: 84px;
+    }
+    &-132-px {
+      padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
+    }
   }
   &-px-54-px {
     padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
   }
-  &-ps-150-px {
-    padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
+  &-ps {
+    &-150-px {
+      padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
+    }
+    &-32-percent {
+      @media (min-width: 1399px) {
+        padding-inline-start: 32% !important;
+      }
+    }
   }
   &-pt-332-px {
     padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
   }
-  &-pb-132-px {
-    padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
-  }
 }
 
 
-.py-160 {
-  padding-block-start: 100px;
-  padding-block-end: 100px;
+.py-140 {
+  padding-block-start: 80px;
+  padding-block-end: 80px;
   @media (min-width: 576px) {
-    padding-block-start: 130px;
-    padding-block-end: 130px;
+    padding-block-start: 110px;
+    padding-block-end: 110px;
   }
   @media (min-width: 992px) {
-    padding-block-start: 160px;
-    padding-block-end: 160px;
+    padding-block-start: 140px;
+    padding-block-end: 140px;
   }
 }
 
-.pt-160 {
-  padding-block-start: 100px;
+.pt-140 {
+  padding-block-start: 80px;
   @media (min-width: 576px) {
-    padding-block-start: 130px;
+    padding-block-start: 110px;
   }
   @media (min-width: 992px) {
-    padding-block-start: 160px;
+    padding-block-start: 140px;
   }
 }
 
-.pb-160 {
-  padding-block-end: 100px;
+.pb-140 {
+  padding-block-end: 80px;
   @media (min-width: 576px) {
-    padding-block-end: 130px;
+    padding-block-end: 110px;
   }
   @media (min-width: 992px) {
-    padding-block-end: 160px;
+    padding-block-end: 140px;
   }
 }
 

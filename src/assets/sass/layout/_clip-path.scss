@@ -56,4 +56,15 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
     }
 }
+
+.rectangle-shape-three {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 100%;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    background-color: var(--main-600);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
 /* ================================= Clip Path Css End =============================== */

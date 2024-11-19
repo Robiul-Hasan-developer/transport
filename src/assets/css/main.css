@@ -1339,7 +1339,7 @@ input:focus, input:focus-visible {
 }
 
 .text-heading {
-    color: hsl(var(--heading-color));
+    color: hsl(var(--heading-color)) !important;
 }
 
 .text-body {
@@ -2847,12 +2847,24 @@ input:focus, input:focus-visible {
     margin-block-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.25rem);
 }
 
+.tw-mb-160-px {
+    margin-block-end: clamp(4rem, -0.4752rem + 8.9744vw, 10rem);
+}
+
+.tw-mb-180-px {
+    margin-block-end: clamp(4.5rem, -0.4752rem + 8.9744vw, 11.25rem);
+}
+
 .tw--me-32-px {
     margin-inline-end: -32px;
 }
 
 .tw--me-45-px {
     margin-inline-end: -45px;
+}
+
+.tw-me-23-percent {
+    margin-inline-end: 23%;
 }
 
 .tw--mt-45-px {
@@ -3003,6 +3015,10 @@ input:focus, input:focus-visible {
 
 .max-w-280-px {
     max-width: 280px;
+}
+
+.max-w-290-px {
+    max-width: 290px;
 }
 
 .max-w-310-px {
@@ -3789,6 +3805,14 @@ input:focus, input:focus-visible {
     padding-block-end: var(--size-17);
 }
 
+.tw-p-60-px {
+    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+}
+
+.tw-p-100-px {
+    padding: clamp(1.75rem, -12.1677rem + 32.9177vw, 6.25rem);
+}
+
 .tw-pe-130-px {
     padding-inline-end: 130px;
 }
@@ -3805,6 +3829,10 @@ input:focus, input:focus-visible {
     padding-bottom: 84px;
 }
 
+.tw-pb-132-px {
+    padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
+}
+
 .tw-px-54-px {
     padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
 }
@@ -3813,62 +3841,64 @@ input:focus, input:focus-visible {
     padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
 }
 
+@media (min-width: 1399px) {
+    .tw-ps-32-percent {
+        padding-inline-start: 32% !important;
+    }
+}
+
 .tw-pt-332-px {
     padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
 }
 
-.tw-pb-132-px {
-    padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
-}
-
-.py-160 {
-    padding-block-start: 100px;
-    padding-block-end: 100px;
+.py-140 {
+    padding-block-start: 80px;
+    padding-block-end: 80px;
 }
 
 @media (min-width: 576px) {
-    .py-160 {
-        padding-block-start: 130px;
-        padding-block-end: 130px;
+    .py-140 {
+        padding-block-start: 110px;
+        padding-block-end: 110px;
     }
 }
 
 @media (min-width: 992px) {
-    .py-160 {
-        padding-block-start: 160px;
-        padding-block-end: 160px;
+    .py-140 {
+        padding-block-start: 140px;
+        padding-block-end: 140px;
     }
 }
 
-.pt-160 {
-    padding-block-start: 100px;
+.pt-140 {
+    padding-block-start: 80px;
 }
 
 @media (min-width: 576px) {
-    .pt-160 {
-        padding-block-start: 130px;
+    .pt-140 {
+        padding-block-start: 110px;
     }
 }
 
 @media (min-width: 992px) {
-    .pt-160 {
-        padding-block-start: 160px;
+    .pt-140 {
+        padding-block-start: 140px;
     }
 }
 
-.pb-160 {
-    padding-block-end: 100px;
+.pb-140 {
+    padding-block-end: 80px;
 }
 
 @media (min-width: 576px) {
-    .pb-160 {
-        padding-block-end: 130px;
+    .pb-140 {
+        padding-block-end: 110px;
     }
 }
 
 @media (min-width: 992px) {
-    .pb-160 {
-        padding-block-end: 160px;
+    .pb-140 {
+        padding-block-end: 140px;
     }
 }
 
@@ -4071,6 +4101,10 @@ input:focus, input:focus-visible {
 
 .tw-rounded-bl-0 {
     border-bottom-left-radius: 0 !important;
+}
+
+.tw-rounded-br-0 {
+    border-bottom-right-radius: 0 !important;
 }
 
 .tw-rounded-bl-2xl {
@@ -4341,7 +4375,7 @@ input:focus, input:focus-visible {
 }
 
 .hover-underline-none:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Text Decoration End */
@@ -4673,6 +4707,19 @@ input:focus, input:focus-visible {
 
 .btn-main-two.button--stroke::after {
     border-color: transparent;
+}
+
+.btn-neutral-100 {
+    background-color: var(--neutral-100) !important;
+    color: hsl(var(--main-two-600)) !important;
+}
+
+.btn-neutral-100.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-neutral-100:hover {
+    color: #fff !important;
 }
 
 .hover-style-one:hover, .hover-style-one:active {
@@ -5454,6 +5501,17 @@ input[type=number] {
     inset-block-end: 0;
     background-color: var(--main-800);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.rectangle-shape-three {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 100%;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    background-color: var(--main-600);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /* ================================= Clip Path Css End =============================== */

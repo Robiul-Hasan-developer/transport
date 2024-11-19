@@ -13,7 +13,7 @@
       color: hsl(var(--white));
     }
     &-heading {
-      color: hsl(var(--heading-color));
+      color: hsl(var(--heading-color)) !important;
     }
     &-body {
       color: hsl(var(--body-color));
