@@ -14,8 +14,10 @@
   }
 }
 
-.min-w-max {
-  min-width: max-content;
+.min-w {
+  &-max {
+    min-width: max-content;
+  }
 }
 
 .tw-w {
@@ -52,9 +54,21 @@
 }
 
 
-.lg-w-50 {
-  @media (min-width: 992px) {
-    width: 50%;
+.lg-w {
+  &-50 {
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+  &-40 {
+    @media (min-width: 992px) {
+      width: 40%;
+    }
+  }
+  &-60 {
+    @media (min-width: 992px) {
+      width: 60%;
+    }
   }
 }
 .xl-w-50 {

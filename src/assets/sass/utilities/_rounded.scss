@@ -23,9 +23,12 @@
       border-radius: 1.5rem; /* 24px */
    }
    &-32-px {
-      border-radius: 2rem; /* 24px */
+      border-radius: 2rem; /* 32px */
    }
 
+   &-tl-0 {
+      border-top-left-radius: 0 !important;
+   }
    &-bl-0 {
       border-bottom-left-radius: 0 !important;
    }

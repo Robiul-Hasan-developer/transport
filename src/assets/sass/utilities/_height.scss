@@ -39,11 +39,19 @@
   &-280-px {
     height: 280px;
   }
+  
+  &-400-px {
+    height: 400px;
+  }
 }
 
 .tw-h {
   &-screen {
     height: 100vh;
   }
+}
+
+.tw-h-100--44-px {
+  height: calc(100% - 45px) !important;
 }
 /* Height Css Class End */

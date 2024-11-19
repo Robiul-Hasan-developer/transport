@@ -16,6 +16,11 @@
   gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
 }
 
-.tw-gap-64-px {
-  gap: clamp(1.5rem, -4.48rem + 7.98vw, 4rem);
+.tw-gap {
+  &-64-px {
+    gap: clamp(1.5rem, -4.48rem + 7.98vw, 4rem);
+  }
+  &-74-px {
+    gap: clamp(1.5rem, -4.48rem + 7.98vw, 4.625rem);
+  }
 }

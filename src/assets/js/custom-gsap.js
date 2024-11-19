@@ -613,7 +613,6 @@ gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
 // **************************** quote section End ==========================
 
 // **************************** quote Two section start ==========================
-
 let planLocation = gsap.timeline({
   scrollTrigger: {
     trigger: ".plan-location",
@@ -635,6 +634,28 @@ planLocation.fromTo(".plan-location",
   } 
 );
 // **************************** quote Two section End ==========================
+
+
+// **************************** ship big section start ==========================
+let shipBig = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".ship-big",
+    start: "top 92%",
+    end: "bottom 60%",
+    scrub: 2,  
+    markers: false,
+  }
+}); 
+shipBig.fromTo(".ship-big", 
+  {
+    y: -200,
+  },  
+  { 
+    y: 0,
+    duration: 1.6
+  } 
+);
+// **************************** ship big section End ==========================
 
 
 

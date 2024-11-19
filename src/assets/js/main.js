@@ -431,6 +431,43 @@ $('.transport-way-item').on('mouseenter', function () {
 // ========================= Transport Way Js End ===================
 
 
+// ================================= Project slider Start =========================
+var swiper = new Swiper(".team-slider", {
+  slidesPerView: 5,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 1500,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  autoplay: false,
+  pagination: {
+    el: ".team-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1400: {
+      slidesPerView: 5,
+    },
+  },
+});
+// ================================= Project slider Start =========================
+
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {
   //   $(this).toggleClass("active");

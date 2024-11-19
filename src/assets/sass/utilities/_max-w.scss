@@ -33,9 +33,6 @@
     &-280-px {
         max-width: 280px;
     }
-    &-290-px {
-        max-width: 290px;
-    }
     &-310-px {
         max-width: 310px;
     }
@@ -44,6 +41,9 @@
     }
     &-400-px {
         max-width: 400px;
+    }
+    &-444-px {
+        max-width: 444px;
     }
     &-468-px {
         @media (min-width: 992px) {
@@ -67,6 +67,9 @@
     }
     &-810-px {
         max-width: 810px;
+    }
+    &-1024-px {
+        max-width: 1024px;
     }
 }
 /* Max width Css Class End */

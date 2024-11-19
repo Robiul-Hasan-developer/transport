@@ -31,6 +31,10 @@
     visibility: hidden;
 }
 
+.clip-w-0 {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
 .group-item  {
     transition: .3s linear;
     &:hover {
@@ -42,6 +46,9 @@
         }
         .group-hover-item-mt-0 {
             margin-top: 0;
+        }
+        .group-hover-clip-w-full {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
 }

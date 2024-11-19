@@ -46,8 +46,13 @@
 }
 
 .tw {
-  &-ms-auto {
-    margin-inline-start: auto;
+  &-ms {
+    &-auto {
+      margin-inline-start: auto;
+    }
+    &-106-px {
+      margin-inline-start: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.625rem);;
+    }
   }
   &-me-auto {
     margin-inline-end: auto;
@@ -66,17 +71,30 @@
   &--me-32-px {
     margin-inline-end: -32px;
   }
-  &--me-45-px {
-    margin-inline-end: -45px;
+  &--me {
+    &-45-px {
+      margin-inline-end: -45px;
+    }
   }
-  &-me-23-percent {
-    margin-inline-end: 23%;
+  &-me {
+    &-23-percent {
+      margin-inline-end: 23%;
+    }
+    &-96-px {
+      margin-inline-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6rem);;
+    }
   }
   &--mt-45-px {
     margin-block-start: -45px;
   }
   &--ms-16-px {
     margin-inline-start: -16px;
+  }
+}
+
+.sm-tw-me-96-px {
+  @media (min-width: 576px) {
+    margin-inline-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6rem);;
   }
 }
 
