@@ -5352,7 +5352,7 @@ input[type=number] {
     width: 100%;
     z-index: 99;
     backdrop-filter: blur(24px);
-    animation: slideDown 0.35s ease-out;
+    animation: slideDown 0.6s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -5360,6 +5360,24 @@ input[type=number] {
     .header.fixed-header {
         inset-block-start: -1px;
     }
+}
+
+.absolute-headers.fixed-header {
+    position: fixed !important;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+.absolute-headers.fixed-header .top-header-two {
+    display: none;
+}
+
+.absolute-headers.fixed-header .header-middle {
+    display: none;
+}
+
+.absolute-headers.fixed-header .header-two__nav {
+    background-color: var(--main-two-600) !important;
 }
 
 @keyframes slideDown {

@@ -11,13 +11,30 @@
         width: 100%;
         z-index: 99;
         backdrop-filter: blur(24px);
-        animation: slideDown 0.35s ease-out;    
+        animation: slideDown 0.6s ease-out;    
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
         @include md-screen {
             inset-block-start: -1px;
         }
     }
 }
+.absolute-headers {
+    &.fixed-header {
+        position: fixed !important;
+        box-shadow: none;
+        backdrop-filter: none;
+        .top-header-two {
+            display: none;
+        }
+        .header-middle {
+            display: none;
+        }
+        .header-two__nav {
+            background-color: var(--main-two-600) !important;
+        }
+    }
+}
+
 @keyframes slideDown {
     from {
       transform: translateY(-100%);

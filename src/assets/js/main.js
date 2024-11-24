@@ -536,7 +536,7 @@ var swiper = new Swiper(".testimonials-two-slider", {
 
     // ========================= Header Sticky Js Start ==============
     $(window).on('scroll', function() {
-      if ($(window).scrollTop() >= 260) {
+      if ($(window).scrollTop() >= 460) {
         $('.header').addClass('fixed-header');
       }
       else {
