@@ -83,12 +83,23 @@
     &-96-px {
       margin-inline-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6rem);;
     }
+    &-32-px {
+      margin-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);;
+    }
   }
   &--mt-45-px {
     margin-block-start: -45px;
   }
   &--ms-16-px {
     margin-inline-start: -16px;
+  }
+  &--ms {
+    &-54-px {
+      margin-inline-start: -54px;
+    }
+    &-38-px {
+      margin-inline-start: -38px;
+    }
   }
 }
 

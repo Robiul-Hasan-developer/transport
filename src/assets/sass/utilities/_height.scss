@@ -54,4 +54,11 @@
 .tw-h-100--44-px {
   height: calc(100% - 45px) !important;
 }
+
+
+.tw-min-h {
+  &-300-px {
+    min-height: 300px;
+  }
+}
 /* Height Css Class End */

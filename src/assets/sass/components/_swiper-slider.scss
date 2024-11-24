@@ -133,8 +133,25 @@
 }
 /* Pagination Style two */
 
-
-
 .swiper-notification {
     display: none;
 }
+
+.scale-bg {
+    transition: 30s ease-out;
+}
+.swiper-slide.swiper-slide-active .scale-bg{
+    transform: scale(1.4);
+}
+
+.swiper-slide-next .testimonials-two__content {
+    border-color: var(--main-600) !important;
+}
+
+
+
+// .marquee {
+//     width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+//     overflow: hidden;
+//     border:1px solid #ccc;
+//   }

@@ -122,20 +122,14 @@ var bannerSwiper = new Swiper ('.banner-slider', {
   speed: 2500,
   slidesPerView: 1,
   grabCursor: true,
-  effect: "creative",
-   creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-    },
-  },
+  loop: true,
+  effect: 'fade',
+  effect: 'fade',
   autoplay: {
     delay: 1500,
     disableOnInteraction: false, 
   },
+  autoplay: false,
   pagination: {
     el: '.banner-pagination',
     clickable: true,
@@ -170,18 +164,10 @@ var bannerTwoSwiper = new Swiper ('.banner-two-slider', {
   speed: 2500,
   slidesPerView: 1,
   grabCursor: true,
-  effect: "creative",
-   creativeEffect: {
-    prev: {
-      shadow: true,
-      translate: ["-20%", 0, -1],
-    },
-    next: {
-      translate: ["100%", 0, 0],
-    },
-  },
+	effect: 'fade',
+  loop: true,
   autoplay: {
-    delay: 1500,
+    delay: 3500,
     disableOnInteraction: false, 
   },
   pagination: {
@@ -468,6 +454,58 @@ var swiper = new Swiper(".team-slider", {
 });
 // ================================= Project slider Start =========================
 
+
+// ================================= Project slider Start =========================
+var swiper = new Swiper(".testimonials-two-slider", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 1500,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  autoplay: false,
+  pagination: {
+    el: ".project-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+// ================================= Project slider Start =========================
+
+// ================================= Marquee slider Start =========================
+  if ($(".marquee").length) {
+    $('.marquee').marquee({
+        speed: 100,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $('html').attr('dir') === 'rtl' ? 'right' : 'left',
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible:true,
+    });
+  }
+// ================================= Marquee slider End =========================
+
+
+
   // ================== Password Show Hide Js Start ==========
   // $(".toggle-password").on('click', function() {
   //   $(this).toggleClass("active");
@@ -487,6 +525,8 @@ var swiper = new Swiper(".team-slider", {
   // ==========================================
   //      End Document Ready function
   // ==========================================
+
+
 
   // ========================= Preloader Js Start =====================
     $(window).on("load", function(){

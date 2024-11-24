@@ -658,6 +658,30 @@ shipBig.fromTo(".ship-big",
 // **************************** ship big section End ==========================
 
 
+// **************************** left to right start ==========================
+
+// BG Image
+let leftToRightTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".truck-light",
+    start: "top 80%",
+    end: "bottom 10%",
+    scrub: 2,  
+    markers: false,
+  }
+});
+leftToRightTL.fromTo(".truck-light", 
+  {
+    x: -260,
+  },  
+  { 
+    x: 0,
+    duration: 1.6
+  } 
+);
+// **************************** left to right End ==========================
+
+
 
 
 

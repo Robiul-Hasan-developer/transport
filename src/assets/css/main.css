@@ -2,12 +2,13 @@
 /* Convert to Rem End */
 /* ======================== Functions Css End ======================= */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
     --heading-font: "Satoshi", sans-serif;
     --body-font: "Inter", sans-serif;
+    --pacifico-font: "Pacifico", cursive;
   /* Font Size Variable Start */
     --heading-one: clamp(2rem, 0.5666rem + 3.6408vw, 3.75rem);
     --heading-two: clamp(1.75rem, 0.7133rem + 1.8846vw, 3rem);
@@ -1591,6 +1592,10 @@ input:focus, input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-loose {
+    line-height: 2;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
@@ -1733,7 +1738,12 @@ input:focus, input:focus-visible {
 
 .tw-text-150-px {
     font-size: clamp(2.5rem, -3.8351rem + 17.6282vw, 9.375rem);
-  /* min: 60px max:150px */
+  /* min: 40px max:150px */
+}
+
+.tw-text-110-px {
+    font-size: clamp(2.5rem, -3.8351rem + 17.6282vw, 6.875rem);
+  /* min: 40px max:110px */
 }
 
 @media (min-width: 1200px) {
@@ -1756,11 +1766,20 @@ input:focus, input:focus-visible {
     font-family: var(--body-font);
 }
 
+.font-pacifico {
+    font-family: var(--pacifico-font);
+}
+
 /* grid css start */
 .grid-cols-2 {
     grid-template-columns: 1fr 1fr;
 }
 
+@media (min-width: 425px) {
+    .xs-grid-cols-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 /* grid css end */
 /* Height Css Class Start */
 .tw-h-05 {
@@ -1917,6 +1936,10 @@ input:focus, input:focus-visible {
 
 .tw-h-100--44-px {
     height: calc(100% - 45px) !important;
+}
+
+.tw-min-h-300-px {
+    min-height: 300px;
 }
 
 /* Height Css Class End */
@@ -2101,6 +2124,10 @@ input:focus, input:focus-visible {
 
 .tw-start-50 {
     inset-inline-start: 50%;
+}
+
+.tw-start-40 {
+    inset-inline-start: 40%;
 }
 
 .tw-start-auto {
@@ -2899,12 +2926,24 @@ input:focus, input:focus-visible {
     margin-inline-end: clamp(2.75rem, -0.4752rem + 8.9744vw, 6rem);
 }
 
+.tw-me-32-px {
+    margin-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);
+}
+
 .tw--mt-45-px {
     margin-block-start: -45px;
 }
 
 .tw--ms-16-px {
     margin-inline-start: -16px;
+}
+
+.tw--ms-54-px {
+    margin-inline-start: -54px;
+}
+
+.tw--ms-38-px {
+    margin-inline-start: -38px;
 }
 
 @media (min-width: 576px) {
@@ -3093,6 +3132,10 @@ input:focus, input:focus-visible {
     max-width: 610px;
 }
 
+.max-w-660-px {
+    max-width: 660px;
+}
+
 .max-w-756-px {
     max-width: 756px;
 }
@@ -3248,103 +3291,103 @@ input:focus, input:focus-visible {
 }
 
 .tw-px-05 {
-    padding-inline: var(--size-05);
+    padding-inline: var(--size-05) !important;
 }
 
 .tw-px-1 {
-    padding-inline: var(--size-1);
+    padding-inline: var(--size-1) !important;
 }
 
 .tw-px-105 {
-    padding-inline: var(--size-105);
+    padding-inline: var(--size-105) !important;
 }
 
 .tw-px-2 {
-    padding-inline: var(--size-2);
+    padding-inline: var(--size-2) !important;
 }
 
 .tw-px-205 {
-    padding-inline: var(--size-205);
+    padding-inline: var(--size-205) !important;
 }
 
 .tw-px-3 {
-    padding-inline: var(--size-3);
+    padding-inline: var(--size-3) !important;
 }
 
 .tw-px-305 {
-    padding-inline: var(--size-305);
+    padding-inline: var(--size-305) !important;
 }
 
 .tw-px-4 {
-    padding-inline: var(--size-4);
+    padding-inline: var(--size-4) !important;
 }
 
 .tw-px-405 {
-    padding-inline: var(--size-405);
+    padding-inline: var(--size-405) !important;
 }
 
 .tw-px-5 {
-    padding-inline: var(--size-5);
+    padding-inline: var(--size-5) !important;
 }
 
 .tw-px-505 {
-    padding-inline: var(--size-505);
+    padding-inline: var(--size-505) !important;
 }
 
 .tw-px-6 {
-    padding-inline: var(--size-6);
+    padding-inline: var(--size-6) !important;
 }
 
 .tw-px-605 {
-    padding-inline: var(--size-605);
+    padding-inline: var(--size-605) !important;
 }
 
 .tw-px-7 {
-    padding-inline: var(--size-7);
+    padding-inline: var(--size-7) !important;
 }
 
 .tw-px-705 {
-    padding-inline: var(--size-705);
+    padding-inline: var(--size-705) !important;
 }
 
 .tw-px-8 {
-    padding-inline: var(--size-8);
+    padding-inline: var(--size-8) !important;
 }
 
 .tw-px-9 {
-    padding-inline: var(--size-9);
+    padding-inline: var(--size-9) !important;
 }
 
 .tw-px-10 {
-    padding-inline: var(--size-10);
+    padding-inline: var(--size-10) !important;
 }
 
 .tw-px-11 {
-    padding-inline: var(--size-11);
+    padding-inline: var(--size-11) !important;
 }
 
 .tw-px-12 {
-    padding-inline: var(--size-12);
+    padding-inline: var(--size-12) !important;
 }
 
 .tw-px-13 {
-    padding-inline: var(--size-13);
+    padding-inline: var(--size-13) !important;
 }
 
 .tw-px-14 {
-    padding-inline: var(--size-14);
+    padding-inline: var(--size-14) !important;
 }
 
 .tw-px-15 {
-    padding-inline: var(--size-15);
+    padding-inline: var(--size-15) !important;
 }
 
 .tw-px-16 {
-    padding-inline: var(--size-16);
+    padding-inline: var(--size-16) !important;
 }
 
 .tw-px-17 {
-    padding-inline: var(--size-17);
+    padding-inline: var(--size-17) !important;
 }
 
 .tw-py-05 {
@@ -3859,6 +3902,10 @@ input:focus, input:focus-visible {
     padding-inline-end: 130px;
 }
 
+.tw-pe-32-px {
+    padding-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);
+}
+
 .tw-pt-76-px {
     padding-top: 76px;
 }
@@ -3876,7 +3923,11 @@ input:focus, input:focus-visible {
 }
 
 .tw-px-54-px {
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
+}
+
+.tw-px-24-px {
+    padding-inline: clamp(0.75rem, -6.1013rem + 9.4763vw, 1.5rem);
 }
 
 .tw-ps-150-px {
@@ -3891,6 +3942,12 @@ input:focus, input:focus-visible {
 
 .tw-pt-332-px {
     padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+}
+
+@media (min-width: 992px) {
+    .tw-pt-206-px {
+        padding-block-start: 206px !important;
+    }
 }
 
 .py-140 {
@@ -4117,7 +4174,7 @@ input:focus, input:focus-visible {
 }
 
 .tw-rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem !important;
   /* 8px */
 }
 
@@ -4393,6 +4450,10 @@ input:focus, input:focus-visible {
     box-shadow: 0 6px 30px 0 #00000012;
 }
 
+.common-shadow-six {
+    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -4587,7 +4648,13 @@ input:focus, input:focus-visible {
 }
 
 .tw-w-200-px {
-    width: 200px;
+    width: 120px;
+}
+
+@media (min-width: 1200px) {
+    .tw-w-200-px {
+        width: 200px;
+    }
 }
 
 .tw-w-w-max {
@@ -4637,17 +4704,18 @@ input:focus, input:focus-visible {
     -webkit-text-stroke: 1px #fff;
 }
 
+.text-stroke-neutral-900 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--neutral-900);
+}
+
 /* =========================== Accordion Css start ============================= */
 .common-accordion .accordion-item:not(:last-child) {
-    margin-block-end: 20px;
+    margin-block-end: 26px;
 }
 
-.common-accordion:first-of-type .accordion-button.collapsed {
-    border-radius: 5px;
-}
-
-.common-accordion:last-of-type .accordion-button.collapsed {
-    border-radius: 5px;
+.common-accordion .accordion-button {
+    padding-inline-end: 48px;
 }
 
 .common-accordion .accordion-button::after {
@@ -4659,7 +4727,6 @@ input:focus, input:focus-visible {
 }
 
 .common-accordion .accordion-button:not(.collapsed) {
-    background-color: transparent !important;
     box-shadow: none;
     color: var(--main-600);
 }
@@ -4669,29 +4736,33 @@ input:focus, input:focus-visible {
     color: var(--main-600);
 }
 
+.common-accordion .accordion-button[aria-expanded=true] {
+    background: var(--main-600);
+    color: #fff !important;
+}
+
 .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
     font-family: "Phosphor";
-    font-weight: 900;
-    content: "\f106";
-    color: var(--main-600);
-    display: inline-block;
+    font-weight: 600;
+    content: "\e3d4";
+    color: hsl(var(--white));
+    background-color: hsl(var(--white)/0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    inset-inline-end: 30px;
-    height: unset;
+    border-radius: 4px;
+    inset-inline-end: 10px;
+    height: 32px;
+    width: 38px;
     text-align: center;
 }
 
-@media screen and (max-width: 575px) {
-    .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
-        inset-inline-end: 20px;
-    }
-}
-
 .common-accordion .accordion-button[aria-expanded=false]::after {
-    content: "\f107";
-    color: hsl(var(--heading-color));
+    content: "\e32a";
+    color: var(--main-two-600);
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -4754,6 +4825,7 @@ input:focus, input:focus-visible {
     color: hsl(var(--white));
     line-height: 1;
     padding: 18px 32px;
+    padding: 22px 32px;
     position: relative;
     overflow: hidden;
     border-radius: 6px;
@@ -5208,6 +5280,18 @@ input[type=number] {
 /* Pagination Style two */
 .swiper-notification {
     display: none;
+}
+
+.scale-bg {
+    transition: 30s ease-out;
+}
+
+.swiper-slide.swiper-slide-active .scale-bg {
+    transform: scale(1.4);
+}
+
+.swiper-slide-next .testimonials-two__content {
+    border-color: var(--main-600) !important;
 }
 
 /* ================================= preload Css Start =========================== */
@@ -5727,6 +5811,21 @@ input[type=number] {
 }
 
 /* gradient css end */
+.half-bg-h-32 {
+    position: relative;
+}
+
+.half-bg-h-32::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 32%;
+    background-color: var(--neutral-50);
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    z-index: -1;
+}
+
 /* ======================== Animation Css Start ==================================== */
 .curve-animation {
     animation: 8s curveAnimation linear infinite;

@@ -7,7 +7,7 @@
 
 @each $property, $value in $spaces {
   .tw-px-#{$property} {
-    padding-inline: var(--size-#{$property});
+    padding-inline: var(--size-#{$property}) !important;
   }
 }
 
@@ -55,6 +55,9 @@
     &-130-px {
       padding-inline-end: 130px;
     }
+    &-32-px {
+      padding-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);;
+    }
   }
   &-pt-76-px {
     padding-top: 76px;
@@ -71,7 +74,10 @@
     }
   }
   &-px-54-px {
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem);
+    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
+  }
+  &-px-24-px {
+    padding-inline: clamp(0.75rem, -6.1013rem + 9.4763vw, 1.5rem);
   }
   &-ps {
     &-150-px {
@@ -83,8 +89,15 @@
       }
     }
   }
-  &-pt-332-px {
-    padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+  &-pt {
+    &-332-px {
+      padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+    }
+    &-206-px {
+      @media (min-width: 992px) {
+        padding-block-start: 206px !important;
+      }
+    }
   }
 }
 
