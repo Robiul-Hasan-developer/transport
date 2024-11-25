@@ -49,13 +49,16 @@
     &-80-px {
       margin-top: 80px;
     }
+    &-70-px {
+      margin-top: 70px;
+    }
   }
   &-ms {
     &-auto {
       margin-inline-start: auto;
     }
     &-106-px {
-      margin-inline-start: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.625rem);;
+      margin-inline-start: clamp(1.5rem, -0.4752rem + 8.9744vw, 6.625rem);;
     }
   }
   &-me-auto {

@@ -2065,6 +2065,10 @@ input:focus, input:focus-visible {
     }
 }
 
+.tw-gap-40-px {
+    gap: clamp(1rem, -4.48rem + 7.98vw, 2.5rem);
+}
+
 .tw-gap-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
 }
@@ -2904,12 +2908,16 @@ input:focus, input:focus-visible {
     margin-top: 80px;
 }
 
+.tw-mt-70-px {
+    margin-top: 70px;
+}
+
 .tw-ms-auto {
     margin-inline-start: auto;
 }
 
 .tw-ms-106-px {
-    margin-inline-start: clamp(2.75rem, -0.4752rem + 8.9744vw, 6.625rem);
+    margin-inline-start: clamp(1.5rem, -0.4752rem + 8.9744vw, 6.625rem);
 }
 
 .tw-me-auto {
@@ -4496,6 +4504,10 @@ input:focus, input:focus-visible {
     box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
 }
 
+.common-shadow-seven {
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.09);
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -4753,6 +4765,10 @@ input:focus, input:focus-visible {
 .text-stroke-neutral-900 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--neutral-900);
+}
+
+.tw-tracking-wider {
+    letter-spacing: 0.05em;
 }
 
 /* =========================== Accordion Css start ============================= */

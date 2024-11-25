@@ -12,11 +12,13 @@
   }
 }
 
-.tw-gap-56-px {
-  gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
-}
-
 .tw-gap {
+  &-40-px {
+    gap: clamp(1rem, -4.48rem + 7.98vw, 2.5rem);
+  }
+  &-56-px {
+    gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
+  }
   &-64-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 4rem);
   }
