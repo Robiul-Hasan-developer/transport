@@ -17,7 +17,6 @@
     transform: translateY(15px);
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    background-color: var(--gray-100);
     background-color: #fff;
     mix-blend-mode: difference;
     @include md-screen {

@@ -9,6 +9,10 @@
     }
 }
 
+.tw--translate-middle {
+    transform: var(--translate-x-50) var(--translate-y-50);
+}
+
 .tw--translate-x {
     &-30-px {
         transform: translateX(-30px);

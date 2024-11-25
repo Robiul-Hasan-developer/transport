@@ -65,7 +65,13 @@
   &-pt-84-px {
     padding-top: 84px;
   }
+  &-pt-80-px {
+    padding-top: 80px;
+  }
   &-pb {
+    &-80-px {
+      padding-bottom: 80px;
+    }
     &-84-px {
       padding-bottom: 84px;
     }
@@ -75,6 +81,9 @@
   }
   &-px-54-px {
     padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
+  }
+  &-p-54-px {
+    padding: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
   }
   &-px-24-px {
     padding-inline: clamp(0.75rem, -6.1013rem + 9.4763vw, 1.5rem);

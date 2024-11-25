@@ -20,6 +20,12 @@
 }  
 
 .tw-text {
+  &-44-px {
+    font-size: clamp(1.75rem, -1.1434rem + 6.5574vw, 2.5rem); /* min: 28px max: 40px */
+  }
+  &-56-px {
+    font-size: clamp(2rem, -1.1434rem + 6.5574vw, 3.5rem); /* min: 32px max:3.5px */
+  }
   &-80-px {
     font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem); /* min: 32px max:80px */
   }
