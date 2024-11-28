@@ -44,16 +44,27 @@
 
 .tw {
   &-p {
+    &-36-px {
+      padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
+    }
     &-60-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+    }
+    &-48-px {
+      padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
     }
     &-100-px {
       padding: clamp(1.75rem, -12.1677rem + 32.9177vw, 6.25rem);
     }
   }
   &-pe {
+    &-100-px {
+      padding-inline-end: clamp(0.75rem, -2.625rem + 7.5vw, 6.1875rem);
+    }
     &-130-px {
-      padding-inline-end: 130px;
+      @media (min-width: 1200px) {
+        padding-inline-end: 130px;
+      }
     }
     &-32-px {
       padding-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);;
@@ -79,18 +90,29 @@
       padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
     }
   }
-  &-px-54-px {
-    padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
+  &-px {
+    &-54-px {
+      padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
+    }
+    &-24-px {
+      padding-inline: clamp(0.75rem, -6.1013rem + 9.4763vw, 1.5rem);
+    }
+    &-36-px {
+      padding-inline: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
+    }
+    &-120-px {
+      padding-inline: clamp(2rem, -6.1013rem + 9.4763vw, 7.5rem);
+    }
   }
   &-p-54-px {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 3.375rem) !important;
   }
-  &-px-24-px {
-    padding-inline: clamp(0.75rem, -6.1013rem + 9.4763vw, 1.5rem);
-  }
   &-ps {
     &-150-px {
       padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 9.375rem);
+    }
+    &-84-px {
+      padding-inline-start: clamp(1.5rem, -22.0464rem + 31.4214vw, 5.25rem);
     }
     &-32-percent {
       @media (min-width: 1399px) {

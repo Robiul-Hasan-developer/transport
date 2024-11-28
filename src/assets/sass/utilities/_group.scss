@@ -20,6 +20,11 @@
                 background-color: var(--main-two-600) !important;
             }
         }
+        .group-hover-border {
+            &-main-600 {
+                border-color: var(--main-600) !important;
+            }
+        }
     }
     &-hover-text-transition {
         transition: inherit;

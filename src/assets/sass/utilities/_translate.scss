@@ -54,6 +54,11 @@
     &-45-px {
         transform: translateY(45px);
     }
+    &-76-px {
+        @media (min-width: 1200px) {
+            transform: translateY(76px);
+        }
+    }
 }
 
 .hover--translate-y {

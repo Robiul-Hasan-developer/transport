@@ -425,32 +425,6 @@ st2.from(".planeSmall", {
   x: 0,
   scale: 1,
 });
-
-// let st3 = gsap.timeline({
-//   scrollTrigger: {
-//       trigger: ".planeSmall",
-//       scrub: 2,
-//       start: "top 25%",
-//       end: "bottom 10%",
-//       markers: false 
-//   }
-// });
-// st3.to(".planeSmall", {
-//   duration: .8,
-//   y: 160,
-//   x: 0,
-//   scale: 1.6,
-// }).to(".planeSmall", {
-//   duration: .8,
-//   x: 0,
-//   scale: 1.6,
-//   rotate: -20
-// }).to(".planeSmall", {
-//   duration: .8,
-//   x: 0,
-//   scale: 1.6,
-//   rotate: -70
-// })
 // **************************** banner Small Plane js End ****************************
 
 
@@ -659,7 +633,6 @@ shipBig.fromTo(".ship-big",
 
 
 // **************************** left to right start ==========================
-
 // BG Image
 let leftToRightTL = gsap.timeline({
   scrollTrigger: {
@@ -680,6 +653,98 @@ leftToRightTL.fromTo(".truck-light",
   } 
 );
 // **************************** left to right End ==========================
+
+// **************************** left to right start ==========================
+// BG Image
+let leftToRightTwoTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".only-track",
+    start: "top 98%",
+    end: "bottom 20%",
+    scrub: 3,  
+    markers: false,
+  }
+});
+leftToRightTwoTL.fromTo(".only-track", 
+  {
+    x: -480,
+  },  
+  { 
+    x: 0,
+    duration: 1.6
+  } 
+);
+// **************************** left to right End ==========================
+
+
+// **************************** banner Small Plane js Start ****************************
+let bannerThreePlane = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".banner-three-plane",
+    scrub: 2,
+    start: "top 25%",
+    end: "bottom 10%",
+    markers: false 
+  }
+});
+bannerThreePlane.from(".banner-three-plane", {
+  duration: .8,
+  x: 80,
+  scale: .6,
+})
+// **************************** banner Small Plane js End ****************************
+
+
+// **************************** banner Small Plane js Start ****************************
+let bannerThreePlaneTwo = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".quote-three-plane",
+    scrub: 2,
+    start: "top 80%",
+    end: "bottom 10%",
+    markers: false 
+  }
+});
+bannerThreePlaneTwo.from(".quote-three-plane", {
+  duration: .8,
+  x: 80,
+  scale: .2,
+})
+// **************************** banner Small Plane js End ****************************
+
+// **************************** banner Small Plane js Start ****************************
+let bannerThreePlaneThree = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contact-us-three-plane",
+    scrub: 2,
+    start: "top 80%",
+    end: "bottom 10%",
+    markers: false 
+  }
+});
+bannerThreePlaneThree.from(".contact-us-three-plane", {
+  duration: .8,
+  x: 80,
+  scale: .2,
+})
+// **************************** banner Small Plane js End ****************************
+
+// **************************** banner Small Plane js Start ****************************
+let supportSmallPlane = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".support-small-plane",
+    scrub: 2,
+    start: "top 80%",
+    end: "bottom 10%",
+    markers: false 
+  }
+});
+supportSmallPlane.from(".support-small-plane", {
+  duration: .8,
+  x: 80,
+  scale: .2,
+})
+// **************************** banner Small Plane js End ****************************
 
 
 

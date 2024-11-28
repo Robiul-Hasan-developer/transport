@@ -49,6 +49,9 @@
   &-screen {
     height: 100vh;
   }
+  &-60-percent {
+    height: 62%;
+  }
 }
 
 .tw-h-100--44-px {
@@ -59,6 +62,9 @@
 .tw-min-h {
   &-300-px {
     min-height: 300px;
+  }
+  &-500-px {
+    min-height: 500px;
   }
 }
 /* Height Css Class End */

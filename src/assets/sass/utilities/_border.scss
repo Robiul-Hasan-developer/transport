@@ -32,3 +32,9 @@
   .tw-border-dashed {
     border-style: dashed !important;
   }
+
+  .tw-border {
+    &-8 {
+      border-width: 8px !important; 
+    }
+  }

@@ -20,5 +20,16 @@
   &-seven {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.09);
   }
+  &-eight {
+    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.hover-common-shadow {
+  &-eight {
+    &:hover {
+      box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.08);
+    }
+  }
 }
 /* Box shadow End */

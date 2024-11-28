@@ -68,5 +68,10 @@
             transition: .2s linear;
         }
     }
+    &-3 {
+        &::placeholder {
+            transition: .3s linear;
+        }
+    }
 }
 /* Placeholder Classes End */

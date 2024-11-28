@@ -336,7 +336,7 @@ $('.testimonials-slider').on('mouseleave', function() {
 
 
 // ================================= brand slider Start =========================
-var brandSlider = new Swiper('.brand-slider', {
+var brandSlider = new Swiper('.brand-three-slider', {
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
@@ -412,7 +412,10 @@ $('.blog-item').on('mouseenter', function () {
 // ========================= Transport Way Js Start ===================
 $('.transport-way-item').on('mouseenter', function () {
   $('.transport-way-item').find('.transport-way-item__icon').removeClass('bg-main-two-600');
+  $('.transport-way-item').find('.transport-way-item__content').removeClass('border-main-two-600').addClass('border-neutral-50 ');
+
   $(this).find('.transport-way-item__icon').addClass('bg-main-two-600');
+  $(this).find('.transport-way-item__content').removeClass('border-neutral-50').addClass('border-main-two-600');
 });
 // ========================= Transport Way Js End ===================
 

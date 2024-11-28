@@ -45,6 +45,30 @@
             border: 0;
             inset-block-start: calc(100% + 64px);
         }
+        &.style-two {
+            &:hover {
+                &::after {
+                    background-color: var(--main-600);
+                    color: #fff;
+                }
+            }
+            &::after {
+                content: counter(number);
+                counter-increment: number;
+                width: 40px;
+                height: 40px;
+                background-color: hsl(var(--white));
+                color: var(--main-two-600);
+                font-size: 14px;
+                font-weight: 600;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .3s linear;
+                inset-block-start: calc(100% + 54px);
+            }
+        }
     }
     
     .how-it-work-item {
@@ -63,4 +87,36 @@
         }
     }
 }
+
+
+.rocket {
+    animation: rocketAnimation 10s  linear infinite;
+}
+@keyframes rocketAnimation
+{
+	0%   {
+        left: -24px;
+        opacity: 0;
+        transform: scale(.2);
+    }
+    5% {
+        opacity: .5;
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+	90%   {
+        opacity: 1;
+    }
+	91%   {
+        opacity: .5;
+        transform: scale(1);
+    }
+	100% {
+        left: 100%;
+        opacity: 0;
+        transform: scale(.2);
+    }
+} 
 /* transport Way Css End */

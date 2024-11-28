@@ -23,8 +23,8 @@
         position: fixed !important;
         box-shadow: none;
         backdrop-filter: none;
-        .top-header-two {
-            display: none;
+        .top-header-two, .top-header-three {
+            display: none !important;
         }
         .header-middle {
             display: none;
@@ -142,5 +142,18 @@
     }
 }
 /* Submenu End */
+
+.links-white {
+    color: #fff;
+    .nav-menu__link {
+        color: #fff;
+    }
+}
+
+.md-bg-main-two-600 {
+    @media (max-width: 991px) {
+        background-color: var(--main-two-600);
+    }
+}
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */

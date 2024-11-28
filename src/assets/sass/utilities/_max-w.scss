@@ -15,6 +15,9 @@
     &-148-px {
         max-width: 148px;
     }
+    &-158-px {
+        max-width: 158px;
+    }
     &-190-px {
         max-width: 190px;
     }
@@ -30,6 +33,9 @@
     &-260-px {
         max-width: 260px;
     }
+    &-240-px {
+        max-width: 240px;
+    }
     &-280-px {
         max-width: 280px;
     }
@@ -44,6 +50,9 @@
     }
     &-400-px {
         max-width: 400px;
+    }
+    &-430-px {
+        max-width: 430px;
     }
     &-444-px {
         max-width: 444px;
@@ -74,8 +83,16 @@
     &-810-px {
         max-width: 810px;
     }
+    &-840-px {
+        @media (min-width: 1200px) {
+            max-width: 840px;
+        }
+    }
     &-1024-px {
         max-width: 1024px;
+    }
+    &-64-percent {
+        max-width: 64%;
     }
 }
 /* Max width Css Class End */

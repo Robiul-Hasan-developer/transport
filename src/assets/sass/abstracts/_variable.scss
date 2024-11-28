@@ -1,6 +1,5 @@
 /* Font Family*/
-// @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
 
 $colors: (
   "main": (
@@ -103,6 +102,7 @@ $font-sizes: (
   --heading-font: 'Satoshi', sans-serif;
   --body-font: "Inter", sans-serif;
   --pacifico-font: "Pacifico", cursive;
+  --carter-font: "Carter One", system-ui;;
   
   /* Font Size Variable Start */
   --heading-one: clamp(2rem, 0.5666rem + 3.6408vw, 3.75rem); // Min:32px - Max:60px
