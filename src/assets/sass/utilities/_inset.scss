@@ -9,6 +9,9 @@
     &-40 {
         inset-inline-start: 40%;
     }
+    &-48 {
+        inset-inline-start: 48%;
+    }
     &-auto {
         inset-inline-start: auto;
     }
@@ -22,6 +25,9 @@
     }
     &-auto {
         inset-inline-end: auto;
+    }
+    &-full {
+        inset-inline-end: 100%;
     }
 }
 

@@ -248,9 +248,9 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         gsap.from(entry.target.querySelectorAll("span"), {
           y: 60,
-          duration: 0.6,
+          duration: 0.5,
           opacity: 0,
-          stagger: 0.06,
+          stagger: 0.05,
           ease: "back.out(1.7)"
         });
         observer.unobserve(entry.target); 
@@ -291,9 +291,9 @@ const observerTwo = new IntersectionObserver(
       if (entry.isIntersecting) {
         gsap.from(entry.target.querySelectorAll("span"), {
           x: 60,
-          duration: 0.6,
+          duration: 0.5,
           opacity: 0,
-          stagger: 0.06,
+          stagger: 0.05,
           ease: "back.out(1.7)"
         });
         observerTwo.unobserve(entry.target); 
@@ -407,349 +407,377 @@ buttonElements.forEach((buttonElement) => {
 
 
 // **************************** banner Small Plane js Start ****************************
-let st2 = gsap.timeline({
-  scrollTrigger: {
-      trigger: ".planeSmall",
-      scrub: 2,
-      start: "top 25%",
-      end: "bottom 10%",
-      markers: false 
-  }
-});
-st2.from(".planeSmall", {
-  duration: .8,
-  x: -80,
-  scale: .6,
-}).to(".planeSmall", {
-  duration: .8,
-  x: 0,
-  scale: 1,
-});
+if (document.querySelector(".planeSmall")) {
+  let st2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".planeSmall",
+        scrub: 2,
+        start: "top 25%",
+        end: "bottom 10%",
+        markers: false 
+    }
+  });
+  st2.from(".planeSmall", {
+    duration: .8,
+    x: -80,
+    scale: .6,
+  }).to(".planeSmall", {
+    duration: .8,
+    x: 0,
+    scale: 1,
+  });
+}
+
 // **************************** banner Small Plane js End ****************************
 
 
 // **************************** About Section Plane js Star ****************************
-let atl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".about-plane",
-    start: "top 80%",
-    end: "bottom 20%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-atl.fromTo(".about-plane", 
-  {
-    x: -260,
-  },  
-  { 
-    x: 260,
-    y: -380,
-    rotate: -40,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".about-plane")) {
+  let atl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about-plane",
+      start: "top 80%",
+      end: "bottom 20%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  atl.fromTo(".about-plane", 
+    {
+      x: -260,
+    },  
+    { 
+      x: 260,
+      y: -380,
+      rotate: -40,
+      duration: 1.6
+    } 
+  );
+}
 
 
 // Truck Head
-let trucktl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".truck-head",
-    start: "top 50%",
-    end: "bottom 10%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-trucktl.fromTo(".truck-head", 
-  {
-    y: -280,
-  },  
-  { 
-    y: 0,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".truck-head")) { 
+  let trucktl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".truck-head",
+      start: "top 50%",
+      end: "bottom 10%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  trucktl.fromTo(".truck-head", 
+    {
+      y: -280,
+    },  
+    { 
+      y: 0,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** About Section Plane js End ****************************
 
 
 // **************************** Counter Section js Start ****************************
 // blue biman
-let counterBimanTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".blue-biman",
-    start: "top 90%",
-    end: "bottom 15%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-counterBimanTL.fromTo(".blue-biman", 
-  {
-    x: 240,
-    scale: .3
-  },  
-  { 
-    x: 0,
-    scale: 1,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".planeSmall")) { 
+  let counterBimanTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".blue-biman",
+      start: "top 90%",
+      end: "bottom 15%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  counterBimanTL.fromTo(".blue-biman", 
+    {
+      x: 240,
+      scale: .3
+    },  
+    { 
+      x: 0,
+      scale: 1,
+      duration: 1.6
+    } 
+  );
+}
 
 // BG Image
-let counterImgTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".counter-bg-img",
-    start: "top 80%",
-    end: "bottom 10%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-counterImgTL.fromTo(".counter-bg-img", 
-  {
-    x: 600,
-  },  
-  { 
-    x: 0,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".counter-bg-img")) { 
+  let counterImgTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".counter-bg-img",
+      start: "top 80%",
+      end: "bottom 10%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  counterImgTL.fromTo(".counter-bg-img", 
+    {
+      x: 600,
+    },  
+    { 
+      x: 0,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** Counter Section js End ****************************
 
 
 // **************************** transport way Section js End ****************************
-let transWayLT = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".plan-down",
-    start: "top 70%",
-    end: "bottom 0%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-transWayLT.fromTo(".plan-down", 
-  {
-    x: -260,
-    scale: .6
-  },  
-  { 
-    x: 620,
-    y: 220,
-    scale: 1.4,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".plan-down")) { 
+  let transWayLT = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".plan-down",
+      start: "top 70%",
+      end: "bottom 0%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  transWayLT.fromTo(".plan-down", 
+    {
+      x: -260,
+      scale: .6
+    },  
+    { 
+      x: 120,
+      y: 220,
+      scale: 1.4,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** transport way Section js End ****************************
 
 // **************************** Project section js Start ****************************
-let projectLT = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".project-shape-img",
-    start: "top 70%",
-    end: "bottom 0%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-projectLT.fromTo(".project-shape-img", 
-  {
-    y: -360,
-    scale: .6
-  },  
-  { 
-    y: 0,
-    scale: 1.4,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".project-shape-img")) { 
+  let projectLT = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".project-shape-img",
+      start: "top 70%",
+      end: "bottom 0%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  projectLT.fromTo(".project-shape-img", 
+    {
+      y: -360,
+      scale: .6
+    },  
+    { 
+      y: 0,
+      scale: 1.4,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** Project section js End ****************************
 
 
 // **************************** quote section start ==========================
-gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
-  let karentl = gsap.timeline({
-    scrollTrigger: {
-      trigger: element,
-      start: "top 50%",
-      end: "bottom 10%",
-      scrub: 2,
-      markers: false,
-    }
+if (document.querySelector(".updown-animation, .moon-shape")) { 
+  gsap.utils.toArray(".updown-animation, .moon-shape").forEach((element) => {
+    let karentl = gsap.timeline({
+      scrollTrigger: {
+        trigger: element,
+        start: "top 50%",
+        end: "bottom 10%",
+        scrub: 2,
+        markers: false,
+      }
+    });
+  
+    karentl.fromTo(
+      element,
+      { y: -280 },
+      { y: 0, duration: 1.6 }
+    );
   });
-
-  karentl.fromTo(
-    element,
-    { y: -280 },
-    { y: 0, duration: 1.6 }
-  );
-});
+}
 // **************************** quote section End ==========================
 
 // **************************** quote Two section start ==========================
-let planLocation = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".plan-location",
-    start: "top 70%",
-    end: "bottom 0%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-planLocation.fromTo(".plan-location", 
-  {
-    y: -360,
-    scale: .6
-  },  
-  { 
-    y: 0,
-    scale: 1.4,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".plan-location")) { 
+  let planLocation = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".plan-location",
+      start: "top 70%",
+      end: "bottom 0%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  planLocation.fromTo(".plan-location", 
+    {
+      y: -360,
+      scale: .6
+    },  
+    { 
+      y: 0,
+      scale: 1.4,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** quote Two section End ==========================
 
 
 // **************************** ship big section start ==========================
-let shipBig = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".ship-big",
-    start: "top 92%",
-    end: "bottom 60%",
-    scrub: 2,  
-    markers: false,
-  }
-}); 
-shipBig.fromTo(".ship-big", 
-  {
-    y: -200,
-  },  
-  { 
-    y: 0,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".ship-big")) { 
+  let shipBig = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".ship-big",
+      start: "top 92%",
+      end: "bottom 60%",
+      scrub: 2,  
+      markers: false,
+    }
+  }); 
+  shipBig.fromTo(".ship-big", 
+    {
+      y: -200,
+    },  
+    { 
+      y: 0,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** ship big section End ==========================
 
 
 // **************************** left to right start ==========================
 // BG Image
-let leftToRightTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".truck-light",
-    start: "top 80%",
-    end: "bottom 10%",
-    scrub: 2,  
-    markers: false,
-  }
-});
-leftToRightTL.fromTo(".truck-light", 
-  {
-    x: -260,
-  },  
-  { 
-    x: 0,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".truck-light")) { 
+  let leftToRightTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".truck-light",
+      start: "top 80%",
+      end: "bottom 10%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  leftToRightTL.fromTo(".truck-light", 
+    {
+      x: -260,
+    },  
+    { 
+      x: 0,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** left to right End ==========================
 
 // **************************** left to right start ==========================
 // BG Image
-let leftToRightTwoTL = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".only-track",
-    start: "top 98%",
-    end: "bottom 20%",
-    scrub: 3,  
-    markers: false,
-  }
-});
-leftToRightTwoTL.fromTo(".only-track", 
-  {
-    x: -480,
-  },  
-  { 
-    x: 0,
-    duration: 1.6
-  } 
-);
+if (document.querySelector(".only-track")) { 
+  let leftToRightTwoTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".only-track",
+      start: "top 98%",
+      end: "bottom 20%",
+      scrub: 3,  
+      markers: false,
+    }
+  });
+  leftToRightTwoTL.fromTo(".only-track", 
+    {
+      x: -480,
+    },  
+    { 
+      x: 0,
+      duration: 1.6
+    } 
+  );
+}
 // **************************** left to right End ==========================
 
 
 // **************************** banner Small Plane js Start ****************************
-let bannerThreePlane = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".banner-three-plane",
-    scrub: 2,
-    start: "top 25%",
-    end: "bottom 10%",
-    markers: false 
-  }
-});
-bannerThreePlane.from(".banner-three-plane", {
-  duration: .8,
-  x: 80,
-  scale: .6,
-})
+if (document.querySelector(".banner-three-plane")) { 
+  let bannerThreePlane = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".banner-three-plane",
+      scrub: 2,
+      start: "top 25%",
+      end: "bottom 10%",
+      markers: false 
+    }
+  });
+  bannerThreePlane.from(".banner-three-plane", {
+    duration: .8,
+    x: 80,
+    scale: .6,
+  })
+}
 // **************************** banner Small Plane js End ****************************
 
 
 // **************************** banner Small Plane js Start ****************************
-let bannerThreePlaneTwo = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".quote-three-plane",
-    scrub: 2,
-    start: "top 80%",
-    end: "bottom 10%",
-    markers: false 
-  }
-});
-bannerThreePlaneTwo.from(".quote-three-plane", {
-  duration: .8,
-  x: 80,
-  scale: .2,
-})
+if (document.querySelector(".quote-three-plane")) { 
+  let bannerThreePlaneTwo = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".quote-three-plane",
+      scrub: 2,
+      start: "top 80%",
+      end: "bottom 10%",
+      markers: false 
+    }
+  });
+  bannerThreePlaneTwo.from(".quote-three-plane", {
+    duration: .8,
+    x: 80,
+    scale: .2,
+  })
+}
 // **************************** banner Small Plane js End ****************************
 
 // **************************** banner Small Plane js Start ****************************
-let bannerThreePlaneThree = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".contact-us-three-plane",
-    scrub: 2,
-    start: "top 80%",
-    end: "bottom 10%",
-    markers: false 
-  }
-});
-bannerThreePlaneThree.from(".contact-us-three-plane", {
-  duration: .8,
-  x: 80,
-  scale: .2,
-})
+if (document.querySelector(".contact-us-three-plane")) { 
+  let bannerThreePlaneThree = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".contact-us-three-plane",
+      scrub: 2,
+      start: "top 80%",
+      end: "bottom 10%",
+      markers: false 
+    }
+  });
+  bannerThreePlaneThree.from(".contact-us-three-plane", {
+    duration: .8,
+    x: 80,
+    scale: .2,
+  })
+}
 // **************************** banner Small Plane js End ****************************
 
 // **************************** banner Small Plane js Start ****************************
-let supportSmallPlane = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".support-small-plane",
-    scrub: 2,
-    start: "top 80%",
-    end: "bottom 10%",
-    markers: false 
-  }
-});
-supportSmallPlane.from(".support-small-plane", {
-  duration: .8,
-  x: 80,
-  scale: .2,
-})
+if (document.querySelector(".support-small-plane")) { 
+  let supportSmallPlane = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".support-small-plane",
+      scrub: 2,
+      start: "top 80%",
+      end: "bottom 10%",
+      markers: false 
+    }
+  });
+  supportSmallPlane.from(".support-small-plane", {
+    duration: .8,
+    x: 80,
+    scale: .2,
+  })
+}
 // **************************** banner Small Plane js End ****************************
-
-
-
-
-
 
 /* **************************************************************************** 
                           Custom GSAP js start 

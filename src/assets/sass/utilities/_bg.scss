@@ -24,10 +24,15 @@
   }
 }
 
-.bg-white-01 {
-  background-color: rgba(255, 255, 255, 0.04);
-}
-.bg-white-1 {
-  background-color: rgba(255, 255, 255, 0.1);
+.bg {
+  &-green {
+    background-color: var(--green);
+  }
+  &-white-01 {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+  &-white-1 {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 /* hover bg class end */

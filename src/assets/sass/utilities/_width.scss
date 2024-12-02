@@ -21,6 +21,9 @@
 }
 
 .tw-w {
+  &-70-px {
+    width: 70px;
+  }
   &-75-px {
     width: 75px;
   }
@@ -60,23 +63,33 @@
 .lg-w {
   &-50 {
     @media (min-width: 992px) {
-      width: 50%;
+      width: 50% !important;
     }
   }
   &-40 {
     @media (min-width: 992px) {
-      width: 40%;
+      width: 40% !important;
+    }
+  }
+  &-45 {
+    @media (min-width: 992px) {
+      width: 45% !important;
+    }
+  }
+  &-55 {
+    @media (min-width: 992px) {
+      width: 55% !important;
     }
   }
   &-60 {
     @media (min-width: 992px) {
-      width: 60%;
+      width: 60% !important;
     }
   }
 }
 .xl-w-50 {
   @media (min-width: 1200px) {
-    width: 50%;
+    width: 50% !important;
   }
 }
 /* width Css Class End */

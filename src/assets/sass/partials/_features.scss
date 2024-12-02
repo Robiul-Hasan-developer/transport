@@ -1,4 +1,7 @@
 /* Features Css Start  */
+.p-80-px {
+    padding: clamp(1.5rem, -10.8339rem + 16.4589vw, 5rem);
+}
 .p-90-px {
     padding: clamp(1.5rem, -10.8339rem + 16.4589vw, 5.625rem);
 }

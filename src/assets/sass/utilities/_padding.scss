@@ -13,7 +13,7 @@
 
 @each $property, $value in $spaces {
   .tw-py-#{$property} {
-    padding-block: var(--size-#{$property});
+    padding-block: var(--size-#{$property}) !important; 
   }
 }
 
@@ -70,14 +70,27 @@
       padding-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);;
     }
   }
-  &-pt-76-px {
-    padding-top: 76px;
-  }
-  &-pt-84-px {
-    padding-top: 84px;
-  }
-  &-pt-80-px {
-    padding-top: 80px;
+  &-pt {
+    &-76-px {
+      padding-top: 76px;
+    }
+    &-80-px {
+      padding-top: 80px;
+    }
+    &-84-px {
+      padding-top: 84px;
+    }
+    &-332-px {
+      padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+    }
+    &-206-px {
+      @media (min-width: 992px) {
+        padding-block-start: 206px !important;
+      }
+    }
+    &-266-px {
+      padding-block-start: 266px !important;
+    }
   }
   &-pb {
     &-80-px {
@@ -117,16 +130,6 @@
     &-32-percent {
       @media (min-width: 1399px) {
         padding-inline-start: 32% !important;
-      }
-    }
-  }
-  &-pt {
-    &-332-px {
-      padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
-    }
-    &-206-px {
-      @media (min-width: 992px) {
-        padding-block-start: 206px !important;
       }
     }
   }

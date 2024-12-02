@@ -15,7 +15,12 @@
     background-repeat: no-repeat;
     max-height: 240px;
     margin: 0 auto;
-  }
+    &.style-two {
+        -webkit-mask-image: url(../images/shapes/quate-shape-two.png);
+        mask-image: url(../images/shapes/quate-shape-two.png);
+        max-height: 486px;
+    }
+}
 
 .swiper-3d .swiper-slide-shadow {
     background: transparent;

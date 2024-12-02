@@ -119,17 +119,15 @@ $(".bg-img").css('background', function () {
 var bannerMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerSwiper = new Swiper ('.banner-slider', {
   loop: true,
-  speed: 2500,
+  speed: 500,
   slidesPerView: 1,
   grabCursor: true,
   loop: true,
-  effect: 'fade',
   effect: 'fade',
   autoplay: {
     delay: 1500,
     disableOnInteraction: false, 
   },
-  autoplay: false,
   pagination: {
     el: '.banner-pagination',
     clickable: true,
@@ -161,7 +159,7 @@ $('.banner-slider').on('mouseleave', function() {
 var bannerTwoMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerTwoSwiper = new Swiper ('.banner-two-slider', {
   loop: true,
-  speed: 2500,
+  speed: 500,
   slidesPerView: 1,
   grabCursor: true,
 	effect: 'fade',
@@ -261,7 +259,7 @@ $('.play-button').magnificPopup({
 
 
 // ================================= Project slider Start =========================
-var swiper = new Swiper(".project-slider", {
+var projectSlider = new Swiper(".project-slider", {
   slidesPerView: 4,
   loop: true,
   spaceBetween: 30,
@@ -336,7 +334,7 @@ $('.testimonials-slider').on('mouseleave', function() {
 
 
 // ================================= brand slider Start =========================
-var brandSlider = new Swiper('.brand-three-slider', {
+var brandSliderOne = new Swiper('.brand-slider', {
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
@@ -362,6 +360,32 @@ var brandSlider = new Swiper('.brand-three-slider', {
 });
 // ================================= brand slider End =========================
 
+// ================================= brand slider Start =========================
+var brandSlider = new Swiper('.brand-three-slider', {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  speed: 1500,
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 5,
+  breakpoints: {
+      300: {
+          slidesPerView: 2,
+      },
+      768: {
+          slidesPerView: 3,
+      },
+      992: {
+          slidesPerView: 4,
+      },
+      1200: {
+          slidesPerView: 5,
+      },
+  }
+});
+// ================================= brand slider End =========================
 
 // ================================= Brand Two slider Start =========================
 var brandTwoSlider = new Swiper('.brand-two-slider', {
@@ -397,7 +421,6 @@ var brandTwoSlider = new Swiper('.brand-two-slider', {
 });
 // ================================= Brand Two slider End =========================
 
-
 // ========================= Blog item hover Js Start ===================
 $('.blog-item').on('mouseenter', function () {
   $('.blog-item').find('.blog-date').addClass('bg-main-600').removeClass('bg-main-two-600');
@@ -421,7 +444,7 @@ $('.transport-way-item').on('mouseenter', function () {
 
 
 // ================================= Project slider Start =========================
-var swiper = new Swiper(".team-slider", {
+var teamSlider = new Swiper(".team-slider", {
   slidesPerView: 5,
   loop: true,
   spaceBetween: 30,
@@ -459,7 +482,7 @@ var swiper = new Swiper(".team-slider", {
 
 
 // ================================= Project slider Start =========================
-var swiper = new Swiper(".testimonials-two-slider", {
+var testimonialsTwoSlider = new Swiper(".testimonials-two-slider", {
   slidesPerView: 3,
   loop: true,
   spaceBetween: 30,
@@ -475,6 +498,11 @@ var swiper = new Swiper(".testimonials-two-slider", {
   pagination: {
     el: ".project-pagination",
     clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.testimonials-two-button-next',
+    prevEl: '.testimonials-two-button-prev',
   },
   breakpoints: {
     300: {
@@ -550,32 +578,149 @@ var swiper = new Swiper(".testimonials-two-slider", {
   // Start observing all progress containers
   progressContainers.forEach(progressContainer => {
       observer.observe(progressContainer);
-  });
+});
 // ================================ Floating Progress js End =================================
 
     
-
-  // ================== Password Show Hide Js Start ==========
-  // $(".toggle-password").on('click', function() {
-  //   $(this).toggleClass("active");
-  //   var input = $($(this).attr("id"));
-  //   if (input.attr("type") == "password") {
-  //     input.attr("type", "text");
-  //     $(this).removeClass('ph-bold ph-eye-closed');
-  //     $(this).addClass('ph-bold ph-eye');
-  //   } else {
-  //     input.attr("type", "password");
-  //       $(this).addClass('ph-bold ph-eye-closed');
-  //   }
-  // });
-  // ========================= Password Show Hide Js End ===========================
-
+// ================================ Testimonials three slider js start =================================
+  var testimonialsThreeThumbsSlider = new Swiper(".testimonials-three-thumbs-slider", {
+    slidesPerView: 1,
+    loop: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    grabCursor: true,
+    speed: 2500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false, 
+    },
+    autoplay: false,
   });
+  
+  var testimonialsThreeContentSlider = new Swiper(".testimonials-three-content-slider", {
+    slidesPerView: 1,
+    loop: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-20%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+    grabCursor: true,
+    speed: 2500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false, 
+    },
+    autoplay: false,
+    navigation: {
+      nextEl: ".testimonials-three-btn-next",
+      prevEl: ".testimonials-three-btn-prev",
+    },
+    thumbs: {
+      swiper: testimonialsThreeThumbsSlider,
+    },
+  });
+// ================================ Testimonials three slider js End =================================
+
+
+// ========================= Counter Three section Js Start ===================
+$('.counter-three-item').on('mouseenter', function () {
+  $('.counter-three-item').removeClass('bg-main-600');
+  $('.counter-three-item').find('.hover-text').removeClass('text-white');
+
+  $(this).addClass('bg-main-600');
+  $(this).find('.hover-text').addClass('text-white');
+});
+// ========================= Counter Three section Js End ===================
+
+// ========================= Service Three Js End ===================
+var serviceThreeSlider = new Swiper(".service-three-slider", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 1500,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".project-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.service-three-button-next',
+    prevEl: '.service-three-button-prev',
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+// ========================= Service Three Js End ===================
+
+// ========================= Blog Three Js End ===================
+var blogThreeSlider = new Swiper(".blog-three-slider", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  speed: 1500,
+  loop: true,
+  centerMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".project-pagination",
+    clickable: true,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.blog-three-button-next',
+    prevEl: '.blog-three-button-prev',
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+// ========================= Blog Three Js End ===================
+
+
+});
   // ==========================================
   //      End Document Ready function
   // ==========================================
-
-
 
   // ========================= Preloader Js Start =====================
     $(window).on("load", function(){

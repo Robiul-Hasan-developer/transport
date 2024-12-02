@@ -101,6 +101,9 @@
     &--88-px {
       margin-bottom: -88px;
     }
+    &--175-px {
+      margin-bottom: -175px;
+    }
   }
   &--me-32-px {
     margin-inline-end: -32px;
@@ -121,8 +124,13 @@
       margin-inline-end: clamp(0.75rem, -2.625rem + 4.5vw, 1.875rem);
     }
   }
-  &--mt-45-px {
-    margin-block-start: -45px;
+  &--mt {
+    &-45-px {
+      margin-block-start: -45px;
+    }
+    &-54-px {
+      margin-block-start: -54px;
+    }
   }
   &--ms {
     &-16-px {
@@ -133,6 +141,9 @@
     }
     &-38-px {
       margin-inline-start: -38px;
+    }
+    &-30-px {
+      margin-inline-start: -30px;
     }
   }
 }

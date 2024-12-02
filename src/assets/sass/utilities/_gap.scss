@@ -7,12 +7,18 @@
 /* Gap Css end */
 
 @media (min-width: 1200px) {
-  .xl-tw-gap-7 {
-      gap: 1.75rem;
+  .xl-tw-gap-10 {
+      gap: 2.5rem;
+  }
+  .xl-tw-gap-9 {
+      gap: 2.25rem;
   }
 }
 
 .tw-gap {
+  &-36-px {
+    gap: clamp(0.75rem, -4.48rem + 7.98vw, 2.25rem);
+  }
   &-40-px {
     gap: clamp(1rem, -4.48rem + 7.98vw, 2.5rem);
   }
