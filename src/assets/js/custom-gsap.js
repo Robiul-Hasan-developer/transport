@@ -3,14 +3,7 @@
 ****************************************************************************  */
 
 var tl = gsap.timeline(); 
-gsap.registerPlugin(ScrollTrigger);
-
-
-// **************************** Smooth Scroll js Start ****************************
-
-// **************************** Smooth Scroll js End ****************************
-
-
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 // =================================== Custom Cursor Js Start =====================================
 var body = document.body;
@@ -90,7 +83,6 @@ cursorBigs.forEach(cursorBig => {
   });
 });
 // =================================== Custom Cursor Js End =====================================
-
 
 
 // **************************** Mobile Menu js Start ****************************
@@ -221,92 +213,34 @@ sideOverlay.addEventListener('click', function () {
 });
 // **************************** offcanvas sidebar js End ****************************
 
-
-
 // =================================== Custom Split text Js Start =====================================
-// Split One
-function breakTheText() {
-  const titles = document.querySelectorAll(".splitTextStyleOne");
-
-  titles.forEach((title) => {
-    const titleText = title.textContent;
-    const splittedText = titleText.split("");
-
-    let clutter = "";
-    splittedText.forEach((element) => {
-      clutter += element === " " ? `<span>&nbsp;</span>` : `<span>${element}</span>`;
+if ($(".splitTextStyleOne").length > 0) {
+  let character = gsap.utils.toArray(".splitTextStyleOne");
+  character.forEach((character) => {
+    let split_char = new SplitText(character, {
+      type: "chars, words",
+      lineThreshold: 0.5,
     });
-    title.innerHTML = clutter;
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: character,
+        start: "top 90%",
+        end: "bottom 60%",
+        scrub: false,
+        markers: false,
+        toggleActions: "play none none none",
+      },
+    });
+    tl2.from(split_char.chars, {
+      autoAlpha: 0,
+      y: 40,
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.05,
+      ease: "back.out(1.7)"
+    });
   });
 }
-// Initialize text split
-breakTheText();
-// Intersection Observer to trigger animation
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        gsap.from(entry.target.querySelectorAll("span"), {
-          y: 60,
-          duration: 0.5,
-          opacity: 0,
-          stagger: 0.05,
-          ease: "back.out(1.7)"
-        });
-        observer.unobserve(entry.target); 
-      }
-    });
-  },
-  { threshold: 0.1 } 
-);
-// Observe each title section
-document.querySelectorAll(".splitTextStyleOne").forEach((title) => {
-  observer.observe(title);
-});
-
-
-// Split Two
-function breakTheTextTwo() {
-  const titles = document.querySelectorAll(".splitTextStyleTwo");
-
-  titles.forEach((title) => {
-    const titleText = title.textContent;
-    const splittedText = titleText.split("");
-
-    let clutter = "";
-    splittedText.forEach((element) => {
-      clutter += element === " " ? `<span>&nbsp;</span>` : `<span>${element}</span>`;
-    });
-    title.innerHTML = clutter;
-  });
-}
-
-// Initialize text split
-breakTheTextTwo();
-
-// Intersection Observer to trigger animation
-const observerTwo = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        gsap.from(entry.target.querySelectorAll("span"), {
-          x: 60,
-          duration: 0.5,
-          opacity: 0,
-          stagger: 0.05,
-          ease: "back.out(1.7)"
-        });
-        observerTwo.unobserve(entry.target); 
-      }
-    });
-  },
-  { threshold: 0.1 } 
-);
-
-// Observe each title section
-document.querySelectorAll(".splitTextStyleTwo").forEach((title) => {
-  observerTwo.observe(title);
-});
 // =================================== Custom Split text Js End =====================================
 
 

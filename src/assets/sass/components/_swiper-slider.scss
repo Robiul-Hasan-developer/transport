@@ -133,6 +133,12 @@
 }
 /* Pagination Style two */
 
+.banner-slider .swiper-slide {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+}
+
 .swiper-notification {
     display: none;
 }

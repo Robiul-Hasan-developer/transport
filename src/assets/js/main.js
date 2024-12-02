@@ -119,13 +119,13 @@ $(".bg-img").css('background', function () {
 var bannerMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerSwiper = new Swiper ('.banner-slider', {
   loop: true,
-  speed: 500,
+  speed: 800,
   slidesPerView: 1,
   grabCursor: true,
   loop: true,
   effect: 'fade',
   autoplay: {
-    delay: 1500,
+    delay: 4500,
     disableOnInteraction: false, 
   },
   pagination: {
@@ -159,7 +159,7 @@ $('.banner-slider').on('mouseleave', function() {
 var bannerTwoMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerTwoSwiper = new Swiper ('.banner-two-slider', {
   loop: true,
-  speed: 500,
+  speed: 800,
   slidesPerView: 1,
   grabCursor: true,
 	effect: 'fade',

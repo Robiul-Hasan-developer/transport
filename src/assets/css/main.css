@@ -2094,8 +2094,8 @@ input:focus, input:focus-visible {
 
 /* Gap Css end */
 @media (min-width: 1200px) {
-    .xl-tw-gap-10 {
-        gap: 2.5rem;
+    .xl-tw-gap-12 {
+        gap: 3rem;
     }
 
     .xl-tw-gap-9 {
@@ -3312,12 +3312,12 @@ input:focus, input:focus-visible {
     max-width: 660px;
 }
 
-.max-w-756-px {
-    max-width: 756px;
+.max-w-856-px {
+    max-width: 856px;
 }
 
-.max-w-810-px {
-    max-width: 810px;
+.max-w-840-px {
+    max-width: 840px;
 }
 
 @media (min-width: 1200px) {
@@ -4131,7 +4131,7 @@ input:focus, input:focus-visible {
 }
 
 .tw-pt-332-px {
-    padding-block-start: clamp(12.5rem, -12.1677rem + 32.9177vw, 20.75rem);
+    padding-block-start: clamp(17rem, -12.1677rem + 32.9177vw, 20.75rem);
 }
 
 @media (min-width: 992px) {
@@ -5584,6 +5584,12 @@ input[type=number] {
 }
 
 /* Pagination Style two */
+.banner-slider .swiper-slide {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+}
+
 .swiper-notification {
     display: none;
 }
