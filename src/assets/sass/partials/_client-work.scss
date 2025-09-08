@@ -1,3 +1,15 @@
 /* ================================ Client Work css start ============================== */
+.triangle-shape-before {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 12px;
+        background-color: var(--main-600);
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+        inset-block-start: calc(100% - 1px);
+        inset-inline-start: 25%;
+    }
+}
 
 /* ================================ Client Work css end ============================== */
