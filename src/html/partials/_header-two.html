@@ -1,36 +1,44 @@
 <!-- ============================= Header Two start ==================================== -->
 <header class="links-white">
     <div class="tw-container-1540-px mx-auto tw-px-4">
-        <div class="header-two__nav d-flex justify-content-between tw-px-54-px bg-blur-four tw-rounded-bl-2xl tw-rounded-br-2xl py-lg-0 tw-py-2">
-            
+        <div
+            class="header-two__nav d-flex justify-content-between tw-px-54-px bg-blur-four tw-rounded-bl-2xl tw-rounded-br-2xl py-lg-0 tw-py-2">
+
             <!-- Menu Start  -->
             <div class="header-menu d-lg-block d-none">
                 @@include('../partials/_nav-menu.html', {
-                    "class" : "xl-tw-gap-12 tw-gap-8"
+                "class" : "xl-tw-gap-12 tw-gap-8"
                 })
             </div>
             <!-- Menu End  -->
 
             <div class="d-flex">
+                @@include('../partials/_login-register.html', {
+                "wrapperClass": 'align-self-center tw-pe-6',
+                "textColor": 'text-white',
+                "textColor": 'text-white'
+                })
 
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="javascript:void(0)" class="position-relative cursor-small">
                         <img src="assets/images/icons/cart-icon.svg" alt="">
-                        <span class="min-w-max tw-h-405 tw-p-1 bg-main-600 text-white d-flex justify-content-center align-items-center rounded-pill position-absolute bottom-100 tw-start-50">0</span>
+                        <span
+                            class="min-w-max tw-h-405 tw-p-1 bg-main-600 text-white d-flex justify-content-center align-items-center rounded-pill position-absolute bottom-100 tw-start-50">0</span>
                     </a>
                 </div>
-          
+
                 <!-- Bar icon -->
-                <button type="button" class="offcanvas-bar-icon cursor-small hover--translate-y-1 active--translate-y-05 tw-duration-150  border-start border-neutral-1100 tw-ps-8 tw-ms-8">
+                <button type="button"
+                    class="offcanvas-bar-icon cursor-small hover--translate-y-1 active--translate-y-05 tw-duration-150  border-start border-neutral-1100 tw-ps-8 tw-ms-8">
                     <img src="assets/images/icons/bars-two.svg" alt="">
                 </button>
                 <!-- Bar icon End -->
             </div>
 
-            <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9"> 
+            <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9">
                 <i class="ph ph-list"></i>
-             </button>
-            
+            </button>
+
         </div>
     </div>
 </header>

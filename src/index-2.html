@@ -491,8 +491,9 @@
         <!-- ============================= Header Two start ==================================== -->
 <header class="links-white">
     <div class="tw-container-1540-px mx-auto tw-px-4">
-        <div class="header-two__nav d-flex justify-content-between tw-px-54-px bg-blur-four tw-rounded-bl-2xl tw-rounded-br-2xl py-lg-0 tw-py-2">
-            
+        <div
+            class="header-two__nav d-flex justify-content-between tw-px-54-px bg-blur-four tw-rounded-bl-2xl tw-rounded-br-2xl py-lg-0 tw-py-2">
+
             <!-- Menu Start  -->
             <div class="header-menu d-lg-block d-none">
                 <!-- Nav menu Start -->
@@ -572,25 +573,157 @@
             <!-- Menu End  -->
 
             <div class="d-flex">
+                <!-- ======================== Login register form start ================================ -->
+<div class="account-wrapper position-relative align-self-center tw-pe-6">
+    <div class="d-flex align-items-center tw-gap-4">
+        <button type="button" class="hover-underline text-white register-button">Register</button>
+        <button type="button" class="hover-underline text-white login-button">Login</button>
+    </div>
+
+    <!-- Login Form Start -->
+    <div class="bg-neutral-100 tw-p-5 before-triangle-up position-absolute end-0 top-100 tw-mt-2 account-form-box">
+        <div class="d-flex align-items-start justify-content-between tw-gap-4">
+            <div class="d-flex align-items-end tw-gap-4">
+                <div class="bg-main-600 text-white tw-p-2 triangle-shape-before position-relative">
+                    <h6 class="text-white tw-text-sm text-uppercase">Logistick</h6>
+                </div>
+                <h6 class="tw-text-sm mb-1">Login</h6>
+            </div>
+            <button type="button"
+                class="account-form__button tw-text-lg text-heading hover-text-main-600 hover-scale-108">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+
+        <form action="#" class="tw-mt-4 d-flex flex-column tw-gap-3">
+            <div class="">
+                <input type="email"
+                    class="cursor-small tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                    placeholder="Email Address" required>
+            </div>
+            <div class="position-relative">
+                <input type="text"
+                    class="cursor-small tw-ps-4 tw-pe-10 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                    id="createPassword" placeholder="Password" required>
+                <span
+                    class="toggle-password position-absolute top-50 tw-end-0 tw-me-4 tw-text-xl text-heading tw--translate-y-50 ph-bold ph-eye-slash"
+                    id="#createPassword"></span>
+            </div>
+            <div class="">
+                <a href="#" class="text-primary hover-underline tw-text-sm">Forgot / Reset Password</a>
+            </div>
+            <div class="d-flex align-items-center tw-gap-2 tw-my-2">
+                <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                    <input class="form-check-input" type="checkbox" id="remember">
+                    <div class="form-check-label fw-medium">
+                        <label class=" text-black" for="remember">Remember me</label>
+                    </div>
+                </div>
+                <span class="text-primary d-flex" title="More info">
+                    <i class="ph-fill ph-info"></i>
+                </span>
+            </div>
+            <div class="">
+                <button type="submit"
+                    class="cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-2 tw-px-4 tw-py-4 w-100"
+                    data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label d-flex align-items-center tw-gap-3"> <i
+                            class="ph-fill ph-lock-key d-flex"></i> Login</span>
+                </button>
+            </div>
+            <div class="d-flex align-items-center tw-gap-1">
+                <span class="text-black tw-text-sm">Not Registered? </span>
+                <a href="javascript:void(0)" class="text-primary hover-underline tw-text-sm register-button">Register
+                    Now</a>
+            </div>
+        </form>
+    </div>
+    <!-- Login Form End -->
+
+    <!-- RegisterForm Start -->
+    <div
+        class="bg-neutral-100 tw-p-5 before-triangle-up position-absolute end-0 top-100 tw-mt-2 account-form-box register-form">
+        <div class="d-flex align-items-start justify-content-between tw-gap-4">
+            <div class="d-flex align-items-end tw-gap-4">
+                <div class="bg-main-600 text-white tw-p-2 triangle-shape-before position-relative">
+                    <h6 class="text-white tw-text-sm text-uppercase">Logistick</h6>
+                </div>
+                <h6 class="tw-text-sm mb-1">Register</h6>
+            </div>
+            <button type="button"
+                class="account-form__button tw-text-lg text-heading hover-text-main-600 hover-scale-108">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+
+        <form action="#" class="tw-mt-4 d-flex flex-column tw-gap-3">
+            <div class="">
+                <input type="text"
+                    class="cursor-small tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                    placeholder="Username" required>
+            </div>
+            <div class="">
+                <input type="email"
+                    class="cursor-small tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                    placeholder="Email Address" required>
+            </div>
+            <div class="position-relative">
+                <input type="text"
+                    class="cursor-small tw-ps-4 tw-pe-10 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                    id="createPassword" placeholder="Password" required>
+                <span
+                    class="toggle-password position-absolute top-50 tw-end-0 tw-me-4 tw-text-xl text-heading tw--translate-y-50 ph-bold ph-eye-slash"
+                    id="#createPassword"></span>
+            </div>
+            <div class="d-flex align-items-center tw-gap-2 tw-my-2">
+                <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                    <input class="form-check-input" type="checkbox" id="condition">
+                    <div class="form-check-label fw-medium">
+                        <label class=" text-black" for="condition">I agree with terms & conditions</label>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="submit"
+                    class="cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-2 tw-px-4 tw-py-4 w-100"
+                    data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label d-flex align-items-center tw-gap-3"> <i
+                            class="ph-fill ph-lock-key d-flex"></i> Register</span>
+                </button>
+            </div>
+            <div class="d-flex align-items-center tw-gap-1">
+                <span class="text-black tw-text-sm">Have an account? </span>
+                <a href="javascript:void(0)" class="login-button text-primary hover-underline tw-text-sm">Login
+                    Now</a>
+            </div>
+        </form>
+    </div>
+    <!-- RegisterForm End -->
+</div>
+<!-- ======================== Login register form end ================================ -->
 
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="javascript:void(0)" class="position-relative cursor-small">
                         <img src="assets/images/icons/cart-icon.svg" alt="">
-                        <span class="min-w-max tw-h-405 tw-p-1 bg-main-600 text-white d-flex justify-content-center align-items-center rounded-pill position-absolute bottom-100 tw-start-50">0</span>
+                        <span
+                            class="min-w-max tw-h-405 tw-p-1 bg-main-600 text-white d-flex justify-content-center align-items-center rounded-pill position-absolute bottom-100 tw-start-50">0</span>
                     </a>
                 </div>
-          
+
                 <!-- Bar icon -->
-                <button type="button" class="offcanvas-bar-icon cursor-small hover--translate-y-1 active--translate-y-05 tw-duration-150  border-start border-neutral-1100 tw-ps-8 tw-ms-8">
+                <button type="button"
+                    class="offcanvas-bar-icon cursor-small hover--translate-y-1 active--translate-y-05 tw-duration-150  border-start border-neutral-1100 tw-ps-8 tw-ms-8">
                     <img src="assets/images/icons/bars-two.svg" alt="">
                 </button>
                 <!-- Bar icon End -->
             </div>
 
-            <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9"> 
+            <button type="button" class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9">
                 <i class="ph ph-list"></i>
-             </button>
-            
+            </button>
+
         </div>
     </div>
 </header>

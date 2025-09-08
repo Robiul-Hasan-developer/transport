@@ -419,10 +419,10 @@
                 <div class="d-flex align-items-center xl-tw-gap-7 tw-gap-6 flex-shrink-0">
 
                     <!-- ======================== Login register form start ================================ -->
-<div class="account-wrapper position-relative">
+<div class="account-wrapper position-relative ">
     <div class="d-flex align-items-center tw-gap-4">
-        <button type="button" class="hover-underline register-button">Register</button>
-        <button type="button" class="hover-underline login-button">Login</button>
+        <button type="button" class="hover-underline text-black register-button">Register</button>
+        <button type="button" class="hover-underline text-black login-button">Login</button>
     </div>
 
     <!-- Login Form Start -->
@@ -479,14 +479,16 @@
             </div>
             <div class="d-flex align-items-center tw-gap-1">
                 <span class="text-black tw-text-sm">Not Registered? </span>
-                <a href="#" class="text-primary hover-underline tw-text-sm">Register Now</a>
+                <a href="javascript:void(0)" class="text-primary hover-underline tw-text-sm register-button">Register
+                    Now</a>
             </div>
         </form>
     </div>
     <!-- Login Form End -->
 
     <!-- RegisterForm Start -->
-    <div class="bg-neutral-100 tw-p-5 before-triangle-up position-absolute end-0 top-100 tw-mt-2 account-form-box">
+    <div
+        class="bg-neutral-100 tw-p-5 before-triangle-up position-absolute end-0 top-100 tw-mt-2 account-form-box register-form">
         <div class="d-flex align-items-start justify-content-between tw-gap-4">
             <div class="d-flex align-items-end tw-gap-4">
                 <div class="bg-main-600 text-white tw-p-2 triangle-shape-before position-relative">
@@ -519,19 +521,13 @@
                     class="toggle-password position-absolute top-50 tw-end-0 tw-me-4 tw-text-xl text-heading tw--translate-y-50 ph-bold ph-eye-slash"
                     id="#createPassword"></span>
             </div>
-            <div class="">
-                <a href="#" class="text-primary hover-underline tw-text-sm">Forgot / Reset Password</a>
-            </div>
             <div class="d-flex align-items-center tw-gap-2 tw-my-2">
                 <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
-                    <input class="form-check-input" type="checkbox" id="remember">
+                    <input class="form-check-input" type="checkbox" id="condition">
                     <div class="form-check-label fw-medium">
-                        <label class=" text-black" for="remember">Remember me</label>
+                        <label class=" text-black" for="condition">I agree with terms & conditions</label>
                     </div>
                 </div>
-                <span class="text-primary d-flex" title="More info">
-                    <i class="ph-fill ph-info"></i>
-                </span>
             </div>
             <div class="">
                 <button type="submit"
@@ -539,12 +535,13 @@
                     data-block="button">
                     <span class="button__flair"></span>
                     <span class="button__label d-flex align-items-center tw-gap-3"> <i
-                            class="ph-fill ph-lock-key d-flex"></i> Login</span>
+                            class="ph-fill ph-lock-key d-flex"></i> Register</span>
                 </button>
             </div>
             <div class="d-flex align-items-center tw-gap-1">
-                <span class="text-black tw-text-sm">Not Registered? </span>
-                <a href="#" class="text-primary hover-underline tw-text-sm">Register Now</a>
+                <span class="text-black tw-text-sm">Have an account? </span>
+                <a href="javascript:void(0)" class="login-button text-primary hover-underline tw-text-sm">Login
+                    Now</a>
             </div>
         </form>
     </div>

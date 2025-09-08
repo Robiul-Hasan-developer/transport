@@ -30,12 +30,18 @@
     &::before {
         position: absolute;
         content: "";
-        width: 10px;
-        height: 8px;
+        width: 12px;
+        height: 10px;
         background-color: var(--neutral-100);
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         inset-block-end: calc(100% - 1px);
         inset-inline-end: 24px;
+    }
+}
+
+.register-form {
+    &::before {
+        inset-inline-end: 80px;
     }
 }
 
