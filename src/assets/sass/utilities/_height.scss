@@ -9,6 +9,21 @@
   &-25-px {
     height: 25px;
   }
+  &-26-px {
+    height: 26px;
+  }
+  &-30-px {
+    height: 30px;
+  }
+  &-45-px {
+    height: 45px;
+  }
+  &-50-px {
+    height: 50px;
+  }
+  &-60-px {
+    height: 60px;
+  }
   &-70-px {
     height: 70px;
   }
@@ -42,9 +57,23 @@
   &-280-px {
     height: 280px;
   }
-  
   &-400-px {
     height: 400px;
+  }
+  &-670-px {
+    height: 670px;
+  }
+  &-950-px {
+    height: 950px;
+    @media #{$md,$xs} {
+      height: 580px;
+    }
+  }
+  &-1120-px {
+    height: 1120px;
+    @media #{$md,$xs} {
+      height: 980px;
+    }
   }
 }
 

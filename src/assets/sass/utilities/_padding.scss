@@ -57,6 +57,20 @@
       padding: clamp(1.75rem, -12.1677rem + 32.9177vw, 6.25rem);
     }
   }
+  &-p {
+    &-20-px {
+      padding: 20px;
+    }
+    &-40-px {
+      padding: 40px;
+    }
+    &-40-35-px {
+      padding: 40px 35px;
+    }
+    &-40-50-px {
+      padding: 40px 55px;
+    }
+  }
   &-pe {
     &-100-px {
       padding-inline-end: clamp(0.75rem, -2.625rem + 7.5vw, 6.1875rem);
@@ -80,6 +94,9 @@
     &-84-px {
       padding-top: 84px;
     }
+    &-200-px {
+      padding-top: 200px;
+    }
     &-332-px {
       padding-block-start: clamp(17rem, -12.1677rem + 32.9177vw, 20.75rem);
     }
@@ -98,6 +115,9 @@
     }
     &-84-px {
       padding-bottom: 84px;
+    }
+    &-165-px {
+      padding-bottom: 165px;
     }
     &-132-px {
       padding-block-end: clamp(6.25rem, -12.1677rem + 32.9177vw, 8.25rem);
@@ -229,4 +249,5 @@
       padding-block-end: 60px;
     }
 }
+
 /* ================================= Padding Css End =========================== */

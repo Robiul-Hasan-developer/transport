@@ -33,14 +33,19 @@
     &-4-px {
         transform: translateY(-4px);
     }
- 
     &-36-px {
         transform: translateY(-36px);
     }
     &-50 {
         transform: var(--translate-y-50);
     }
+    &-150 {
+        transform: translateY(-150px);
+    }
 }
+
+
+
 .tw-translate-y {
     &-35-px {
         transform: translateY(35px);
@@ -58,6 +63,9 @@
         @media (min-width: 1200px) {
             transform: translateY(76px);
         }
+    }
+    &-150-px {
+        transform: translateY(150px);
     }
 }
 

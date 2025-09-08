@@ -1,5 +1,6 @@
 /* Font Family*/
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 $colors: (
   "main": (
@@ -38,6 +39,30 @@ $colors: (
     "800": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) - var(--main-three-l) * 0.2)),
     "900": hsl(var(--main-three-h), var(--main-three-s), calc(var(--main-three-l) - var(--main-three-l) * 0.3))
   ),
+  "main-six": (
+    "50": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.9)),
+    "100": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.8)),
+    "200": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.7)),
+    "300": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.6)),
+    "400": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.5)),
+    "500": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) + (100% - var(--main-six-l)) * 0.4)),
+    "600": hsl(var(--main-six-h), var(--main-six-s), var(--main-six-l)), // main-six theme color
+    "700": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) - var(--main-six-l) * 0.1)),
+    "800": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) - var(--main-six-l) * 0.2)),
+    "900": hsl(var(--main-six-h), var(--main-six-s), calc(var(--main-six-l) - var(--main-six-l) * 0.3))
+  ),
+  "main-six-2": (
+    "50": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.9)),
+    "100": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.8)),
+    "200": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.7)),
+    "300": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.6)),
+    "400": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.5)),
+    "500": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) + (100% - var(--main-six-2-l)) * 0.4)),
+    "600": hsl(var(--main-six-2-h), var(--main-six-s), var(--main-six-2-l)), // main-six theme color
+    "700": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) - var(--main-six-2-l) * 0.1)),
+    "800": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) - var(--main-six-2-l) * 0.2)),
+    "900": hsl(var(--main-six-2-h), var(--main-six-s), calc(var(--main-six-2-l) - var(--main-six-2-l) * 0.3))
+  ),
   
   "neutral": (
     "25": #f9fafa,
@@ -75,6 +100,7 @@ $spaces: (
   "7": #{rem(28px)},
   "705": #{rem(30px)},
   "8": #{rem(32px)},
+  "808": #{rem(34px)},
   "9": #{rem(36px)},
   "10": #{rem(40px)},
   "11": #{rem(44px)},
@@ -84,6 +110,14 @@ $spaces: (
   "15": #{rem(60px)},
   "16": #{rem(64px)},
   "17": #{rem(68px)},
+  "18": #{rem(72px)},
+  "19": #{rem(76px)},
+  "20": #{rem(80px)},
+  "21": #{rem(84px)},
+  "22": #{rem(88px)},
+  "23": #{rem(92px)},
+  "24": #{rem(96px)},
+  "25": #{rem(100px)},
 );
 
 $font-sizes: (
@@ -103,6 +137,7 @@ $font-sizes: (
   --body-font: "Inter", sans-serif;
   --pacifico-font: "Pacifico", cursive;
   --carter-font: "Carter One", system-ui;;
+  --manrope-font: "Manrope", sans-serif;;
   
   /* Font Size Variable Start */
   --heading-one: clamp(2rem, 0.5666rem + 3.6408vw, 3.75rem); // Min:32px - Max:60px
@@ -125,11 +160,25 @@ $font-sizes: (
   --main-two-l: 10%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
 
-  /* Main Two */
+  /* Main three */
   --main-three-h: 46;
   --main-three-s: 85%;
   --main-three-l: 50%;
   --main-three: var(--main-three-h) var(--main-three-s) var(--main-three-l);
+
+
+  /* Main six */
+  --main-six-h: 210;
+  --main-six-s: 94%;
+  --main-six-l: 53%;
+  --main-six: var(--main-six-h) var(--main-six-s) var(--main-six-l);
+
+
+  /* Main six color 2 */
+  --main-six-2-h: 9;
+  --main-six-2-s: 84%;
+  --main-six-2-l: 62%;
+  --main-six-2: var(--main-six-2-h) var(--main-six-2-s) var(--main-six-2-l);
 
    /* White Color */
   --white: 0 0% 100%;

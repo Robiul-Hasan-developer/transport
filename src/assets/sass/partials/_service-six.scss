@@ -1,0 +1,51 @@
+.service-six {
+    &-area {
+        background-color: #172965;
+        padding: 120px 0 43px;
+        & .section-six-subtitle {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+        }
+    }
+    &-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        transition: .4s ease-in;
+        &:hover {
+            background: var(--main-six-600);
+            border: 1px solid var(--main-six-600);
+            & .service-six-btn span {
+                background-color: hsl(var(--white)) !important;
+                & img {
+                  filter: inherit;  
+                }
+            }
+        }
+    }
+    &-thumb {
+        transform: translateY(-50px);
+    }
+    &-btn {
+        inset-block-end: -45px;
+        inset-inline-end: 95px;
+        @include md-screen {
+            inset-inline-end: 30px;
+        }
+        & span {
+            transition: .4s;
+            & img {
+                filter: brightness(0) invert(1);
+                transition: .4s;
+            }
+        }
+    }
+    &-paragraph {
+        font-weight: 300;
+        line-height: 167%;
+    }
+    &-bg-shape {
+        inset-block-start: 130px;
+        inset-inline-start: 35px;
+    }
+}
+
+
+

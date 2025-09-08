@@ -46,3 +46,67 @@
 }
 
 /* ================================= Range Slider Css End =========================== */
+
+
+
+
+.tw-shop {
+     &-sidebar-price-range-head {
+       & .ui-slider-horizontal {
+          height: 5px;
+          background-color: rgba(23, 137, 248, 0.22);
+          border-radius: 20px;
+          position: relative;
+          margin-top: 12px;
+          & .ui-slider-range {
+                background-color: var(--main-six-600);
+                height: 5px;
+                position: absolute;
+                top: 0;
+          }
+          & .ui-slider-handle {
+               height: 24px;
+               width: 24px;
+               border-radius: 100%;
+               background-color: var(--main-six-600);
+               display: inline-block;
+               position: relative;
+               top: -11px;
+               outline: 0;
+               position: relative;
+               z-index: 1;
+               &::before {
+                         content: "";
+                         position: absolute;
+                         width: 70%;
+                         height: 70%;
+                         top: 50%;
+                         left: 50%;
+                         border: 2px solid hsl(var(--white));
+                         transform: translate(-50%, -50%);
+                         border-radius: 50%;
+               }
+               &:focus {
+                         border: none;
+               }
+               &:first-child {
+                         display: none;
+               }
+          }
+       }
+     }
+     &-price-filter {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       & input {
+          width: 100px;
+          height: 40px;
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          color: var(--tw-text-p);
+          font-size: 16px;
+       }
+     }
+   }

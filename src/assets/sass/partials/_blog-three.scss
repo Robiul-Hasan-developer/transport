@@ -7,4 +7,47 @@
         }
     }
 }
+
+
+.blog-six {
+    &-meta {
+        & span {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 1px;
+                top: 50%;
+                left: 0;
+                background-color: var(--main-six-600);
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.faq-six {
+    &-area {
+        background: #f1f6fe;
+    }
+    &-accordion {
+        & .accordion-item {
+            border: transparent !important;
+        }
+        & .common-accordion .accordion-button[aria-expanded="true"] {
+            background: transparent;
+            color: var(--main-two-600) !important;
+        }
+        & .accordion-button[aria-expanded="true"]::after {
+            color: hsl(var(--black));
+        }
+    }
+    &-bg-shape {
+        inset-block-end: 200px;
+        inset-inline-start: 24%;
+        @include msm-screen {
+            display: none;
+        }
+    }
+}
 /* =================== Blog Css end =========================== */

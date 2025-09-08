@@ -8,8 +8,13 @@
         transition-duration: 150ms;
     }
 }
-
+.tw-transition-common {
+    transition: .3s;
+}
 .tw-delay-200 {
     transition-delay: 200ms;
+}
+.tw-transition-ease-in {
+    transition: all 0.3s ease-in;
 }
 /* transition Css Class End */

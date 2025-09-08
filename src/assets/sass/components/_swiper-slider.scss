@@ -153,3 +153,350 @@
 .swiper-slide-next .testimonials-two__content {
     border-color: var(--main-600) !important;
 }
+
+
+
+
+/* Banner Style Four */
+.banner-four-arrow-box {
+    & button {
+        width: 60px;
+        height: 60px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        border-radius: 50%;
+        transition: all 0.3s ease 0s;
+        color: var(--main-600) !important;
+        background-color: hsl(var(--white));
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        @media #{$x3l,$xxl,$xl,$lg,$xs} {
+            left: auto;
+            right: 60px;
+        }
+        @media #{$md} {
+            left: auto;
+            right: 20px;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    & button.banner-slider-next {
+        margin-top: 70px;
+    }
+    & button {
+        transition: .4s;
+        &:hover {
+            background: var(--main-600);
+                color: hsl(var(--white)) !important;
+        }
+    }
+}
+
+/* Feature Style Four */
+.feature-four-arrow-box {
+    @media #{$xs} {
+        justify-content: left !important;
+        margin-bottom: 30px;
+    }
+    & button {
+        width: 60px;
+        height: 60px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        border-radius: 50%;
+        transition: all 0.3s ease 0s;
+        color: var(--main-600);
+        background-color: hsl(var(--white)) !important;
+        box-shadow: 0px 8px 20px rgba(7, 36, 95, 0.15);
+        z-index: 5;
+    }
+    & button {
+        transition: .4s;
+        &:hover {
+            background: var(--main-600) !important;
+            color: hsl(var(--white)) !important;
+        }
+    }
+}
+
+.service-four-dots {
+    & .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        border-radius: 50%;
+        opacity: 1;
+        margin: 0px 6px !important;
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+    & .swiper-pagination-bullet-active {
+        background-color: var(--main-600);
+    }
+    &.dots-color {
+        & .swiper-pagination-bullet {
+            background-color:  var(--main-600);
+            &-active {
+                background-color: transparent;
+                border-color: var(--main-600);
+                transform: scale(1.4);
+            }
+        }
+    }
+}
+
+
+
+.banner-five {
+    &-arrow-box {
+        & button {
+            width: 60px;
+            height: 60px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: all 0.3s ease 0s;
+            color: var(--main-600) !important;
+            background-color: hsl(var(--white));
+            position: absolute;
+            left: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 5;
+        }
+        & button.banner-five-next {
+            left: auto;
+            right: 3%;
+        }
+        & button {
+            transition: .4s;
+            &:hover {
+                background: var(--main-600);
+                    color: hsl(var(--white)) !important;
+            }
+        }
+    }
+
+    &-dots {
+        z-index: 3;
+        text-align: right;
+        bottom: 50px !important;
+        left: auto !important;
+        right: 130px !important;
+        @media #{$x4l} {
+            right: 50px !important;
+        }
+        @media #{$x3l} {
+            right: 5px !important;
+            bottom: 80px !important;
+        }
+        @media #{$xxl,$xl,$lg,$md,$xs} {
+            bottom: 18% !important;
+            right: 30px !important;
+        }
+
+        & .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            border-radius: 50%;
+            opacity: 1;
+            margin: 0px 6px !important;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+        & .swiper-pagination-bullet-active {
+            background-color: hsl(var(--white));
+        }
+        &.dots-color {
+            & .swiper-pagination-bullet {
+                background-color:  hsl(var(--white));
+                &-active {
+                    background-color: transparent;
+                    border-color: hsl(var(--white));
+                    transform: scale(1.4);
+                }
+            }
+        }
+    }
+    &-area {
+		&:hover {
+			& .banner-five-arrow-box {
+				& button {
+					visibility: visible;
+					opacity: 1;
+					&.banner-five-prev {
+						left: 5%;
+					}
+					&.banner-five-next {
+						right: 5%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.banner-six {
+    &-arrow-box {
+        & button {
+            width: 108px;
+            height: 54px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: all 0.3s ease 0s;
+            background-color: transparent;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 5;
+        }
+        & button.banner-six-next {
+            left: auto;
+            right: 0%;
+        }
+    }
+    &-area {
+		&:hover {
+			& .banner-six-arrow-box {
+				& button {
+					visibility: visible;
+					opacity: 1;
+					&.banner-six-prev {
+						left: 2%;
+					}
+					&.banner-six-next {
+						right: 2%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.project-six {
+    &-arrow-box {
+        & button {
+            width: 59px;
+            height: 73px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transition: all 0.3s ease 0s;
+            color: var(--main-six-600) !important;
+            background-color: #E3F1FE;
+            position: absolute;
+            left: -35%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+        }
+        & button.project-six-next {
+            left: auto;
+            right: -35%;
+        }
+        & button {
+            transition: .4s;
+            &:hover {
+                background: var(--main-six-600);
+                    color: hsl(var(--white)) !important;
+            }
+        }
+    }
+}
+
+
+.testimonial-six-dots {
+    margin-inline-start: 70px;
+    & .swiper-pagination-bullet {
+        width: 60px;
+        height: 60px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border-radius: 50%;
+        opacity: 1;
+        margin: 0px 6px !important;
+        transition: 0.3s;
+        border: 2px solid hsl(var(--white));
+        @include md-screen {
+            border: 2px solid hsl(197.3, 88.2%, 10%);
+        }
+        &::before {
+            content: "01";
+            position: absolute;
+            color: hsl(var(--white));
+            font-size: 18px;
+            font-weight: 500;
+            @include md-screen {
+                color: hsl(197.3, 88.2%, 10%);
+            }
+        }
+        &:nth-child(2) {
+            &::before {
+                content: "02";
+            }
+        }
+        &:nth-child(3) {
+            &::before {
+                content: "03";
+            }
+        }
+        &:nth-child(4) {
+            &::before {
+                content: "04";
+            }
+        }
+        &:nth-child(5) {
+            &::before {
+                content: "05";
+            }
+        }
+        &:nth-child(6) {
+            &::before {
+                content: "06";
+            }
+        }
+    }
+    &.dots-color {
+        & .swiper-pagination-bullet {
+            &-active {
+                border: 2px solid var(--main-six-2-600);
+                &::before {
+                    color: var(--main-six-2-600);
+                }
+            }
+        }
+    }
+}

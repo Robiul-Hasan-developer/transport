@@ -29,5 +29,8 @@
     &-18 {
         line-height: 1.8;
     }
+    &-body {
+        line-height: var(--bs-body-line-height);
+    }
 }
 /* ================================= Classes Css End =========================== */

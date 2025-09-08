@@ -20,11 +20,17 @@
 }  
 
 .tw-text {
+  &-22-px {
+    font-size: clamp(1.375rem, -0.5071rem + 5.4434vw, 2.5rem); /* min: 22px max: 40px */
+  }
   &-44-px {
     font-size: clamp(1.75rem, -1.1434rem + 6.5574vw, 2.5rem); /* min: 28px max: 40px */
   }
   &-56-px {
     font-size: clamp(2rem, -1.1434rem + 6.5574vw, 3.5rem); /* min: 32px max:3.5px */
+  }
+  &-60-px {
+    font-size: clamp(2rem, 1.65rem + 1.75vw, 3.75rem); /* min: 32px max:3.5px */
   }
   &-80-px {
     font-size: clamp(2rem, -1.1434rem + 6.5574vw, 5rem); /* min: 32px max:80px */

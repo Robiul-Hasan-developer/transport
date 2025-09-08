@@ -14,3 +14,22 @@
     }
 }
 /* Counter three section css End  */
+
+.counter-six-area {
+    & h2 {
+        @include xl-screen {
+            font-size: 66px;
+        }
+        @include xl-screen {
+            font-size: 66px;
+        }
+        @include md-screen {
+            font-size: 46px;
+        }
+    }
+}
+.counter-six-wrapper {
+    @include lg-screen {
+        margin-bottom: 30px;
+    }
+}

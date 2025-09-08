@@ -1,0 +1,81 @@
+.footer-six {
+    &-area {
+        background: #06154B;
+    }
+    &-top-shape {
+        transform: translateY(-100px);
+    }
+    &-col {
+        &-1 {
+            max-width: 344px;
+            width: 100%;
+        }
+        &-2 {
+            margin-inline-start: -35px;
+            @include lg-screen {
+                margin-inline-start: 0;
+            }
+        }
+        &-3 {
+            margin-inline-start: -30px;
+            @include lg-screen {
+                margin-inline-start: 0;
+            }
+        }
+        &-4 {
+            margin-inline-start: 70px;
+            @include lg-screen {
+                margin-inline-start: 0;
+            }
+        }
+    }
+    &-mricro {
+        position: absolute;
+        inset-block-end: 79px;
+        inset-inline-end: 0;
+        animation: micro 10s linear infinite;
+    }
+    &-input {
+        border-radius: 2rem;
+        &-btn {
+           border-radius: 50%;
+            &::after {
+                    display: none;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright-six {
+    &-area {
+        background: #06154B;
+    }
+}
+
+@keyframes micro {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}

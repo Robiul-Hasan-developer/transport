@@ -155,6 +155,23 @@ $('.banner-slider').on('mouseleave', function() {
 // ============================ Banner Slider Js End ===========================
 
 
+
+// =========================  Search Bar 9 Js Start ==============
+$(".open-search").on("click", function () {
+  $(".search_popup").addClass("search-opened");
+  $(".search-popup-overlay").addClass("search-popup-overlay-open");
+});
+$(".search_close_btn").on("click", function () {
+  $(".search_popup").removeClass("search-opened");
+  $(".search-popup-overlay").removeClass("search-popup-overlay-open");
+});
+$(".search-popup-overlay").on("click", function () {
+  $(".search_popup").removeClass("search-opened");
+  $(this).removeClass("search-popup-overlay-open");
+});
+// =========================  Search Bar 9 Js End ==============
+
+
 // ============================ Banner Slider Js Start ===========================
 var bannerTwoMenu = ['Air Freight', 'Ocean Freight', 'Land Transport']
 var bannerTwoSwiper = new Swiper ('.banner-two-slider', {
@@ -715,6 +732,415 @@ var blogThreeSlider = new Swiper(".blog-three-slider", {
   },
 });
 // ========================= Blog Three Js End ===================
+
+
+
+// ========================= Banner Four Js Start ===================
+const bannerFourSlider = new Swiper('.banner-four-active', {
+  // Optional parameters
+  speed:1500,
+  loop: true,
+  slidesPerView: 1,
+  autoplay: true,
+  effect:'fade',
+  breakpoints: {
+    '1600': {
+      slidesPerView:1,
+    },
+    '1400': {
+      slidesPerView:1,
+    },
+    '1200': {
+      slidesPerView:1,
+    },
+    '992': {
+      slidesPerView: 1,
+    },
+    '768': {
+      slidesPerView: 1,
+    },
+    '576': {
+      slidesPerView: 1,
+    },
+    '0': {
+      slidesPerView: 1,
+    },
+
+    a11y: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.banner-slider-next',
+    prevEl: '.banner-slider-prev',
+  },
+});
+// ========================= Banner Four Js End ===================
+
+
+// ========================= Feature Four Js Start ===================
+var featureFourSlider = new Swiper(".feature-four-active", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  speed: 1500,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.feature-slider-next',
+    prevEl: '.feature-slider-prev',
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});
+// ========================= Feature Four Js End ===================
+
+
+// ========================= Service Four Js Start ===================
+var serviceFourSlider = new Swiper(".service-four-active", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  speed: 1500,
+  dots: false,
+  loop: true,
+  centeredSlides: true,
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  // pagination dots
+  pagination: {
+    el: ".service-four-dots",
+    clickable: true,
+  },
+});
+// ========================= Service Four Js End ===================
+
+
+
+// ========================= Portfolio Three Js End ===================
+var portfolioFourSlider = new Swiper(".portfolio-four-active", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  speed: 1500,
+  loop: true,
+  centeredSlides: true,
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".portfolio-four-next",
+    prevEl: ".portfolio-four-prev",
+  },
+});
+// ========================= Portfolio Three Js End ===================
+
+
+
+// ========================= Brand Three Js Start ===================
+var slider = new Swiper('.brand-four-active', {
+  slidesPerView: 5,
+  spaceBetween: 40,
+  loop: true,
+  autoplay:true,
+  centeredSlides: true,
+  breakpoints: {
+    '1400': {
+      slidesPerView: 5,
+    },
+    '1200': {
+      slidesPerView: 5,
+    },
+    '992': {
+      slidesPerView: 4,
+    },
+    '768': {
+      slidesPerView: 3,
+    },
+    '576': {
+      slidesPerView: 2,
+    },
+    '0': {
+      slidesPerView: 2,
+    },
+  },
+});
+// ========================= Brand Three Js End ===================
+
+
+// ========================= Banner Five Js Start ===================
+const bannerFiveSlider = new Swiper('.banner-five-active', {
+  // Optional parameters
+  speed:1500,
+  loop: true,
+  slidesPerView: 1,
+  autoplay: true,
+  effect:'fade',
+  breakpoints: {
+    '1600': {
+      slidesPerView:1,
+    },
+    '1400': {
+      slidesPerView:1,
+    },
+    '1200': {
+      slidesPerView:1,
+    },
+    '992': {
+      slidesPerView: 1,
+    },
+    '768': {
+      slidesPerView: 1,
+    },
+    '576': {
+      slidesPerView: 1,
+    },
+    '0': {
+      slidesPerView: 1,
+    },
+
+    a11y: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.banner-five-next',
+    prevEl: '.banner-five-prev',
+  },
+  // pagination dots
+  pagination: {
+    el: ".banner-five-dots",
+    clickable:true,
+  },
+});
+// ========================= Banner Five Js End ===================
+
+
+
+
+// ========================= Banner six Js Start ===================
+const bannerSixSlider = new Swiper('.banner-six-active', {
+  // Optional parameters
+  speed:1500,
+  loop: true,
+  slidesPerView: 1,
+  autoplay: true,
+  effect:'fade',
+  breakpoints: {
+    '1600': {
+      slidesPerView:1,
+    },
+    '1400': {
+      slidesPerView:1,
+    },
+    '1200': {
+      slidesPerView:1,
+    },
+    '992': {
+      slidesPerView: 1,
+    },
+    '768': {
+      slidesPerView: 1,
+    },
+    '576': {
+      slidesPerView: 1,
+    },
+    '0': {
+      slidesPerView: 1,
+    },
+
+    a11y: false,
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.banner-six-next',
+    prevEl: '.banner-six-prev',
+  },
+});
+// ========================= Banner six Js End ===================
+
+
+
+
+  // =========================   Brand six Js Start ==============
+	var slider = new Swiper('.brand-six-active', {
+		slidesPerView: 4,
+		spaceBetween: 100,
+		loop: true,
+		speed: 3000,
+		autoplay:true,
+		breakpoints: {
+			'1200': {
+				slidesPerView: 6,
+			},
+			'992': {
+				slidesPerView: 4,
+			},
+			'768': {
+				slidesPerView: 3,
+			},
+			'576': {
+				slidesPerView: 2,
+			},
+			'0': {
+				slidesPerView: 2,
+			},
+		},
+	});
+  // =========================   Brand six Js Start ==============
+
+
+
+
+  // ========================= Feature Four Js Start ===================
+  var projectSixSlider = new Swiper(".project-six-active", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    speed: 1500,
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.project-six-next',
+      prevEl: '.project-six-prev',
+    },
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
+  // ========================= Feature Four Js End ===================
+
+
+
+
+  // ========================= Service Four Js Start ===================
+  var serviceFourSlider = new Swiper(".testimonial-six-active", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    speed: 1500,
+    dots: false,
+    loop: true,
+    centeredSlides: true,
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      575: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1200: {
+        slidesPerView: 1,
+      },
+    },
+    // pagination dots
+    pagination: {
+      el: ".testimonial-six-dots",
+      clickable: true,
+    },
+  });
+  // ========================= Service Four Js End ===================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Ecommerce Cart Js
+    function tw_ecommerce() {
+      $('.tw-cart-minus').on('click', function () {
+        var $input = $(this).parent().find('input');
+        var count = Number($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+      });
+    
+      $('.tw-cart-plus').on('click', function () {
+        var $input = $(this).parent().find('input');
+        $input.val(Number($input.val()) + 1);
+        $input.change();
+        return false;
+      });
+
+
+      $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: 500,
+          values: [75, 300],
+          slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+          }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+          " - $" + $("#slider-range").slider("values", 1));
+      
+      }
+      tw_ecommerce();
+
+
+
+
 
 
 });

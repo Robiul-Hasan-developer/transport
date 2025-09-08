@@ -1,0 +1,14 @@
+.brand-six {
+     &-wrapper {
+          display: flex;
+          align-items: center;
+          height: 100px;
+     }
+     &-thumb {
+          & img {
+               transition: .4s;
+               cursor: pointer;
+          }
+     }
+
+}

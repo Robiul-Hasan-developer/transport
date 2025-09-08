@@ -155,5 +155,75 @@
         background-color: var(--main-two-600);
     }
 }
+
+
+
+
+// Header scss
+.header-six {
+    &-top-bg {
+        background-color: #172965;
+    }
+    &-area {
+        padding-inline-start: 196px;
+        @include xxxxxl-screen {
+            padding-inline-start: 80px;            
+        }
+        @include xxxxl-screen {
+            padding-inline-start: 30px;          
+        }
+        @include xxl-screen {
+            padding-inline-start: 30px;          
+        }
+        @include xl-screen {
+            padding-inline-start: 16px;         
+        }
+        @include md-screen {
+            margin-block-start: -10px;         
+        }
+    }
+    &-call {
+        background: rgba(23, 137, 248, 0.07);
+        margin-inline-end: -36px;
+        @include xxl-screen {
+            display: none !important;        
+        }
+    }
+    &-cart {
+        @include lg-screen {
+            display: none !important;        
+        }
+    }
+    &-search {
+        @include lg-screen {
+            display: none !important;        
+        }
+    }
+    &-offcanvas {
+        @include xxl-screen {
+            padding-inline: 40px !important;       
+        }
+        @include xl-screen {
+            padding-inline: 26px !important;       
+        }
+        @include lg-screen {
+            padding-inline: 40px !important;
+            margin-inline-start: 40px;    
+        }
+        @include md-screen {
+            display: none !important;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 19px;
+            inset-block-end: -19px;
+            inset-inline-start: 0;
+            background-color: var(--main-six-2-600);
+        }
+    }
+}
+
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */

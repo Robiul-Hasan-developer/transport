@@ -1,4 +1,4 @@
-/* Convert to Rem start */
+// Convert to Rem start
 $font-base: 16px;
 @function rem($target, $context: $font-base) {
   @if ($target == 0) {
@@ -6,5 +6,4 @@ $font-base: 16px;
   }
   @return calc($target / $context * 1rem);
 }
-/* Convert to Rem End */
-/* ======================== Functions Css End ======================= */
+// Convert to Rem End

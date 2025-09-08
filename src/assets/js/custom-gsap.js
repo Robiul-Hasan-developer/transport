@@ -711,6 +711,34 @@ if (document.querySelector(".support-small-plane")) {
     scale: .2,
   })
 }
+
+
+
+
+
+if (document.querySelector(".choose-us-six-shape")) { 
+  let counterImgTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".choose-us-six-shape",
+      start: "top 80%",
+      end: "bottom 80%",
+      scrub: 2,  
+      markers: false,
+    }
+  });
+  counterImgTL.fromTo(".choose-us-six-shape", 
+    {
+      x: 600,
+    },  
+    { 
+      x: 0,
+      duration: 1.6
+    } 
+  );
+}
+
+
+
 // **************************** banner Small Plane js End ****************************
 
 /* **************************************************************************** 

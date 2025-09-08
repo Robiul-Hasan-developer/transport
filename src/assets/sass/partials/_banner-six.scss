@@ -1,0 +1,72 @@
+.banner-six {
+    &-area {
+        & .banner-five-title {
+            @include xxxxxl-screen {
+                font-size: 68px;
+            }
+            @include xxxxl-screen {
+                font-size: 63px;
+            }
+            @include xl-screen {
+                font-size: 56px;
+            }
+        }
+    }
+    &-left {
+        padding-inline-start: 200px;
+        padding-block-start: 490px;
+        @include xxl-screen {
+            padding-inline-start: 100px;
+        }
+        @include xl-screen {
+            padding-inline-start: 30px;
+        }
+        @include md-screen {
+           padding-block-start: 330px;
+        }
+        
+    }
+    &-form {
+        max-width: 560px;
+        width: 100%;
+        margin-left: auto;
+    }
+    &-bottom {
+        @include xl-screen {
+            margin-block-end: 30px;
+        }
+        @include sm-screen {
+            margin-inline-end: 30px;
+        }
+        @include msm-screen {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+
+        &-items {
+            backdrop-filter: blur(3px);
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.32);
+            padding: 56px 60px 30px;
+            width: 100%;
+            border-bottom: none;
+            @include xxl-screen {
+                padding: 56px 20px 30px;
+            }
+            @include lg-screen {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+            }
+            &:last-child {
+                border-left: none;
+                @include sm-screen {
+                     border-left: 1px solid rgba(255, 255, 255, 0.32);
+                }
+            }
+        }
+        &-link {
+            border-top: 1px solid rgba(255, 255, 255, 0.32);
+        }
+    }
+
+}
+

@@ -59,6 +59,18 @@
     @content;
   }
 }
+//Xtra Large Screen ii (max-width: 1599)
+@mixin xxxxl-screen {
+  @media screen and (max-width: 1699px) {
+    @content;
+  }
+}
+//Xtra Large Screen ii (max-width: 1599)
+@mixin xxxxxl-screen {
+  @media screen and (max-width: 1799px) {
+    @content;
+  }
+}
 /* Media Breakpoint for Each Device End */
 
 // ============================ Mixins Css End ============================
