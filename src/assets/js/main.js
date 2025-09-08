@@ -1114,6 +1114,49 @@
     });
     // ========================= Password Show Hide Js End ===========================
 
+    // ========================= Account Form Show Hide Js Start ===========================
+    $(document).ready(function () {
+      // Open Login form
+      $(document).on("click", ".login-button", function (e) {
+        e.stopPropagation();
+        $(".account-form-box").removeClass("active"); // hide all
+        $(".account-form-box").eq(0).addClass("active"); // show login (first form)
+      });
+
+      // Open Register form
+      $(document).on("click", ".register-button", function (e) {
+        e.stopPropagation();
+        $(".account-form-box").removeClass("active"); // hide all
+        $(".account-form-box").eq(1).addClass("active"); // show register (second form)
+      });
+
+      // Close form on close button
+      $(document).on("click", ".account-form__button", function (e) {
+        e.stopPropagation();
+        $(this).closest(".account-form-box").removeClass("active");
+      });
+
+      // Close form when clicking outside
+      $(document).on("click", function (e) {
+        if (
+          !$(e.target).closest(
+            ".account-form-box, .login-button, .register-button"
+          ).length
+        ) {
+          $(".account-form-box").removeClass("active");
+        }
+      });
+
+      // Optional: Close with ESC key
+      $(document).on("keydown", function (e) {
+        if (e.key === "Escape") {
+          $(".account-form-box").removeClass("active");
+        }
+      });
+    });
+
+    // ========================= Account Form Show Hide Js End ===========================
+
     // Ecommerce Cart Js
     function tw_ecommerce() {
       $(".tw-cart-minus").on("click", function () {

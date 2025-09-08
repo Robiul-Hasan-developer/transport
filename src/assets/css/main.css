@@ -10763,6 +10763,20 @@ input[type=number] {
     }
 }
 /* ================================ Client Work css start ============================== */
+.account-form-box {
+    width: 320px;
+    transform: scale(0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.account-form-box.active {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
 .triangle-shape-before::before {
     position: absolute;
     content: "";
@@ -10772,6 +10786,17 @@ input[type=number] {
     clip-path: polygon(100% 0, 0 0, 0 100%);
     inset-block-start: calc(100% - 1px);
     inset-inline-start: 25%;
+}
+
+.before-triangle-up::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 8px;
+    background-color: var(--neutral-100);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    inset-block-end: calc(100% - 1px);
+    inset-inline-end: 24px;
 }
 
 /* ================================ Client Work css end ============================== */

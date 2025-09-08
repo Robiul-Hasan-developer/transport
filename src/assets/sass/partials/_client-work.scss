@@ -1,4 +1,18 @@
 /* ================================ Client Work css start ============================== */
+.account-form-box {
+    width: 320px;
+    transform: scale(.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+
+    &.active {
+        transform: scale(1);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 .triangle-shape-before {
     &::before {
         position: absolute;
@@ -9,6 +23,19 @@
         clip-path: polygon(100% 0, 0 0, 0 100%);
         inset-block-start: calc(100% - 1px);
         inset-inline-start: 25%;
+    }
+}
+
+.before-triangle-up {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 8px;
+        background-color: var(--neutral-100);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        inset-block-end: calc(100% - 1px);
+        inset-inline-end: 24px;
     }
 }
 
