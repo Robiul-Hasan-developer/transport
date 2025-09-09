@@ -3,6 +3,7 @@
     @include md-screen {
         padding: 10px 0;
     }
+
     &.fixed-header {
         position: sticky;
         inset-inline-start: 0;
@@ -11,24 +12,30 @@
         width: 100%;
         z-index: 99;
         backdrop-filter: blur(24px);
-        animation: slideDown 0.6s ease-out;    
+        animation: slideDown 0.6s ease-out;
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+
         @include md-screen {
             inset-block-start: -1px;
         }
     }
 }
+
 .absolute-headers {
     &.fixed-header {
         position: fixed !important;
         box-shadow: none;
         backdrop-filter: none;
-        .top-header-two, .top-header-three {
+
+        .top-header-two,
+        .top-header-three {
             display: none !important;
         }
+
         .header-middle {
             display: none;
         }
+
         .header-two__nav {
             background-color: var(--main-two-600) !important;
         }
@@ -37,10 +44,11 @@
 
 @keyframes slideDown {
     from {
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
+
     to {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -57,16 +65,19 @@
 .nav-menu {
     &__item {
         &.activePage {
-            > a {
+            >a {
                 color: var(--main-600) !important;
+
                 &::before {
                     color: var(--main-600);
                 }
             }
         }
+
         &:hover {
-            > a {
+            >a {
                 color: hsl(var(--heading-color));
+
                 @media (min-width: 992px) {
                     color: var(--main-600);
                 }
@@ -77,20 +88,25 @@
 
 .has-submenu {
     &.active {
-        > a, > a::before{
+
+        >a,
+        >a::before {
             color: var(--main-600);
         }
-        > a::before {
-            transform: translateY(-50%) rotate(180deg) !important; 
+
+        >a::before {
+            transform: translateY(-50%) rotate(180deg) !important;
         }
     }
+
     &:hover {
         .nav-submenu {
             visibility: visible;
             opacity: 1;
             margin-block-start: 0;
         }
-        > a {
+
+        >a {
             &::before {
                 @media (min-width: 992px) {
                     color: var(--main-600);
@@ -99,8 +115,10 @@
             }
         }
     }
-    > a {
+
+    >a {
         position: relative;
+
         &::before {
             position: absolute;
             content: "\E03E";
@@ -122,10 +140,12 @@
     min-width: 190px;
     visibility: hidden;
     opacity: 0;
+
     @media (min-width: 992px) {
         max-height: 400px;
         overflow-y: auto;
     }
+
     &__item {
         &.activePage {
             .nav-submenu {
@@ -134,6 +154,7 @@
                 }
             }
         }
+
         &:hover {
             a {
                 color: hsl(var(--heading-color));
@@ -141,10 +162,12 @@
         }
     }
 }
+
 /* Submenu End */
 
 .links-white {
     color: #fff;
+
     .nav-menu__link {
         color: #fff;
     }
@@ -159,60 +182,76 @@
 
 
 
+
 // Header scss
 .header-six {
     &-top-bg {
         background-color: #172965;
     }
+
     &-area {
         padding-inline-start: 196px;
+
         @include xxxxxl-screen {
-            padding-inline-start: 80px;            
+            padding-inline-start: 80px;
         }
+
         @include xxxxl-screen {
-            padding-inline-start: 30px;          
+            padding-inline-start: 30px;
         }
+
         @include xxl-screen {
-            padding-inline-start: 30px;          
+            padding-inline-start: 30px;
         }
+
         @include xl-screen {
-            padding-inline-start: 16px;         
+            padding-inline-start: 16px;
         }
+
         @include md-screen {
-            margin-block-start: -10px;         
+            margin-block-start: -10px;
         }
     }
+
     &-call {
         background: rgba(23, 137, 248, 0.07);
         margin-inline-end: -36px;
+
         @include xxl-screen {
-            display: none !important;        
+            display: none !important;
         }
     }
+
     &-cart {
         @include lg-screen {
-            display: none !important;        
+            display: none !important;
         }
     }
+
     &-search {
         @include lg-screen {
-            display: none !important;        
+            display: none !important;
         }
     }
+
     &-offcanvas {
         @include xxl-screen {
-            padding-inline: 40px !important;       
+            padding-inline: 40px !important;
         }
+
         @include xl-screen {
-            padding-inline: 26px !important;       
+            padding-inline: 26px !important;
         }
+
         @include lg-screen {
             padding-inline: 40px !important;
-            margin-inline-start: 40px;    
+            margin-inline-start: 40px;
         }
+
         @include md-screen {
             display: none !important;
         }
+
         &::before {
             content: "";
             position: absolute;

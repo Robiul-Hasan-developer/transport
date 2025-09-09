@@ -1,8 +1,14 @@
 <!-- ======================== Login register form start ================================ -->
 <div class="account-wrapper position-relative @@wrapperClass">
-    <div class="d-flex align-items-center tw-gap-4">
-        <button type="button" class="hover-underline @@textColor register-button">Register</button>
+    <div class="d-sm-flex d-none align-items-center tw-gap-4">
+        <button type="button" class="hover-underline @@textColor register-button d-lg-block d-none">Register</button>
         <button type="button" class="hover-underline @@textColor login-button">Login</button>
+    </div>
+    <div class="d-sm-none d-block">
+        <button type="button"
+            class="login-button text-neutral-900 tw-text-xl  line-height-1 d-flex hover-text-main-600">
+            <i class="ph-fill ph-user"></i>
+        </button>
     </div>
 
     <!-- Login Form Start -->
