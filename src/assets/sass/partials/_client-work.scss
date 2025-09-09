@@ -32,7 +32,7 @@
         content: "";
         width: 12px;
         height: 10px;
-        background-color: var(--neutral-100);
+        background-color: inherit;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         inset-block-end: calc(100% - 1px);
         inset-inline-end: 24px;
