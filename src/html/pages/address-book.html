@@ -15,11 +15,12 @@
     <div class="container">
         <div class="">
             <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
-                <div class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                <div
+                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 border-bottom border-neutral-500">
                     <form action="#" class="d-flex tw-gap-2">
                         <div class="">
                             <select
-                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                class="cursor-small tw-px-4 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
                                 id="country">
                                 <option value="All">All</option>
                                 <option value="Everything">Everything</option>
@@ -29,7 +30,7 @@
                         </div>
                         <div class="">
                             <input type="text"
-                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                class="cursor-small tw-px-4 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
                                 placeholder="Search...">
                         </div>
                         <div class="d-flex tw-w-13">
@@ -39,6 +40,45 @@
                             </button>
                         </div>
                     </form>
+                    <div class="d-flex align-items-center flex-sm-nowrap flex-wrap tw-gap-6">
+                        <div class="d-flex align-items-center tw-gap-2">
+                            <span class="text-main-two-600 tw-text-sm flex-shrink-0">Display</span>
+                            <select
+                                class="cursor-small tw-px-4 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                id="country">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items-center tw-gap-2">
+                            <button type="button"
+                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
+                                <i class="ph-bold ph-caret-left"></i>
+                            </button>
+                            <button type="button"
+                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
+                                1
+                            </button>
+                            <button type="button"
+                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
+                                2
+                            </button>
+                            <button type="button" class="">
+                                ...
+                            </button>
+                            <button type="button"
+                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
+                                50
+                            </button>
+                            <button type="button"
+                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
+                                <i class="ph-bold ph-caret-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
