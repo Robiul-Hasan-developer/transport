@@ -1,0 +1,147 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Welcome',
+'breadcrumbTitle': 'Welcome To Logistick'
+})
+
+
+<!-- ======================== Welcome page content start ========================= -->
+<div class="py-120">
+    <div class="container">
+        <ul class="common-tab nav nav-pills tw-gap-2" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button
+                    class="nav-link border border-main-600 text-neutral-900 hover-text-main-600 rounded-0 border-bottom-0 rounded-top fw-medium active"
+                    id="pills-create-new-shipment-tab" data-bs-toggle="pill" data-bs-target="#pills-create-new-shipment"
+                    type="button" role="tab" aria-controls="pills-create-new-shipment" aria-selected="true">Create New
+                    Shipment</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                    class="nav-link border border-main-600 text-neutral-900 hover-text-main-600 rounded-0 border-bottom-0 rounded-top fw-medium"
+                    id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                    role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                    class="nav-link border border-main-600 text-neutral-900 hover-text-main-600 rounded-0 border-bottom-0 rounded-top fw-medium"
+                    id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+                    role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                    class="nav-link border border-main-600 text-neutral-900 hover-text-main-600 rounded-0 border-bottom-0 rounded-top fw-medium"
+                    id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button"
+                    role="tab" aria-controls="pills-disabled" aria-selected="false">Disabled</button>
+            </li>
+        </ul>
+
+        <div class="border-top border-3 border-main-600 tw-p-10 bg-main-two-600">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-create-new-shipment" role="tabpanel"
+                    aria-labelledby="pills-create-new-shipment-tab" tabindex="0">
+                    <div class="dot-line">
+                        <div class="position-relative d-flex align-items-center tw-gap-4">
+                            <span
+                                class="tw-w-10 tw-h-10 text-white fw-medium d-flex justify-content-center align-items-center border border-3 border-main-600 rounded-circle tw-mt-5">
+                                A
+                            </span>
+                            <div class="max-w-130-px w-100 flex-grow-1">
+                                <label for="country" class="text-white tw-text-sm">Country/Temitory</label>
+                                <select
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                    id="country">
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="India">India</option>
+                                    <option value="England">England</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <div class="position-relative flex-grow-1">
+                                <label for="from" class="text-white tw-text-sm">From</label>
+                                <div class="position-relative">
+                                    <input type="text"
+                                        class="cursor-small tw-ps-4 tw-pe-14 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        placeholder="Chao Yang (1 Tai Seng Drive, Singapre 535215)" id="from">
+                                    <span
+                                        class="text-white bg-main-600 tw-h-9 tw-w-9 d-flex align-items-center justify-content-center position-absolute tw-end-0 top-50 translate-middle-y tw-me-1 rounded-1">
+                                        <i class="ph-fill ph-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end tw-mt-12 tw-mb-7">
+                            <button type="submit"
+                                class="cursor-small btn btn-main hover-style-two button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-3 tw-px-4"
+                                data-block="button">
+                                <span class="button__flair"></span>
+                                <span
+                                    class="text-white tw-text-lg tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                                    <i class="ph-fill ph-arrows-down-up"></i>
+                                </span>
+                                <span class="button__label">Switch</span>
+                            </button>
+                        </div>
+                        <div class="position-relative d-flex align-items-center tw-gap-4">
+                            <span
+                                class="tw-w-10 tw-h-10 text-white fw-medium d-flex justify-content-center align-items-center border border-3 border-main-600 rounded-circle tw-mt-5">
+                                B
+                            </span>
+                            <div class="max-w-130-px w-100 flex-grow-1">
+                                <label for="country" class="text-white tw-text-sm">Country/Temitory</label>
+                                <select
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                    id="country">
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="India">India</option>
+                                    <option value="England">England</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <div class="position-relative flex-grow-1">
+                                <label for="from" class="text-white tw-text-sm">From</label>
+                                <div class="position-relative">
+                                    <input type="text"
+                                        class="cursor-small tw-ps-4 tw-pe-14 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        placeholder="Chao Yang (1 Tai Seng Drive, Singapre 535215)" id="from">
+                                    <span
+                                        class="text-white bg-main-600 tw-h-9 tw-w-9 d-flex align-items-center justify-content-center position-absolute tw-end-0 top-50 translate-middle-y tw-me-1 rounded-1">
+                                        <i class="ph-fill ph-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    profile
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    contact
+                </div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    tabindex="0">
+                    disabled
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================== Welcome page content End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
