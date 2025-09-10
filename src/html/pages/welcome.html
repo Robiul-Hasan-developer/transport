@@ -45,8 +45,8 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-create-new-shipment" role="tabpanel"
                     aria-labelledby="pills-create-new-shipment-tab" tabindex="0">
-                    <div class="dot-line">
-                        <div class="position-relative d-flex align-items-center tw-gap-4">
+                    <div class="welcome-content-wrapper">
+                        <div class="welcome-content__item position-relative d-flex align-items-center tw-gap-4">
                             <span
                                 class="tw-w-10 tw-h-10 text-white fw-medium d-flex justify-content-center align-items-center border border-3 border-main-600 rounded-circle tw-mt-5">
                                 A
@@ -76,9 +76,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-end tw-mt-12 tw-mb-7">
+                        <div class="text-end tw-py-12 dot-line">
                             <button type="submit"
-                                class="cursor-small btn btn-main hover-style-two button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-3 tw-px-4"
+                                class="switch-welcome-btn cursor-small btn btn-main hover-style-two button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-3 tw-px-4 tw-translate-y-20-px"
                                 data-block="button">
                                 <span class="button__flair"></span>
                                 <span
@@ -88,29 +88,29 @@
                                 <span class="button__label">Switch</span>
                             </button>
                         </div>
-                        <div class="position-relative d-flex align-items-center tw-gap-4">
+                        <div class="welcome-content__item position-relative d-flex align-items-center tw-gap-4">
                             <span
                                 class="tw-w-10 tw-h-10 text-white fw-medium d-flex justify-content-center align-items-center border border-3 border-main-600 rounded-circle tw-mt-5">
                                 B
                             </span>
                             <div class="max-w-130-px w-100 flex-grow-1">
-                                <label for="country" class="text-white tw-text-sm">Country/Temitory</label>
+                                <label for="countryTwo" class="text-white tw-text-sm">Country/Temitory</label>
                                 <select
                                     class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
-                                    id="country">
-                                    <option value="Singapore">Singapore</option>
+                                    id="countryTwo">
                                     <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Singapore">Singapore</option>
                                     <option value="India">India</option>
                                     <option value="England">England</option>
                                     <option value="Australia">Australia</option>
                                 </select>
                             </div>
                             <div class="position-relative flex-grow-1">
-                                <label for="from" class="text-white tw-text-sm">From</label>
+                                <label for="fromTwo" class="text-white tw-text-sm">From</label>
                                 <div class="position-relative">
                                     <input type="text"
                                         class="cursor-small tw-ps-4 tw-pe-14 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
-                                        placeholder="Chao Yang (1 Tai Seng Drive, Singapre 535215)" id="from">
+                                        placeholder="Street address, city, postal code, country..." id="fromTwo">
                                     <span
                                         class="text-white bg-main-600 tw-h-9 tw-w-9 d-flex align-items-center justify-content-center position-absolute tw-end-0 top-50 translate-middle-y tw-me-1 rounded-1">
                                         <i class="ph-fill ph-user"></i>

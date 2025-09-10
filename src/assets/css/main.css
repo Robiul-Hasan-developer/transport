@@ -6122,6 +6122,10 @@ input:focus, input:focus-visible {
     transform: translateY(-150px);
 }
 
+.tw-translate-y-20-px {
+    transform: translateY(20px);
+}
+
 .tw-translate-y-35-px {
     transform: translateY(35px);
 }
@@ -10820,7 +10824,9 @@ input[type=number] {
         transform: translateX(-1000%);
     }
 }
-/* ================================ Client Work css start ============================== */
+/* ===================================================== 
+                Client Work css start 
+======================================================= */
 .account-form-box {
     width: 320px;
     transform: scale(0.8);
@@ -10876,5 +10882,52 @@ input[type=number] {
     inset-inline-end: 80px;
 }
 
+/* ===================================================== 
+            Client Work css end 
+======================================================= */
+/* ===================================================== 
+            Welcome Page css start
+======================================================= */
+.dot-line {
+    position: relative;
+}
+
+.dot-line::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    background-color: var(--neutral-900);
+    height: calc(100% - 34px);
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    inset-inline-start: 20px;
+}
+
+.dot-line::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-600);
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    inset-inline-start: 10px;
+    border-radius: 50%;
+}
+
+/* hint to browser + keep transitions clean when JS sets them */
+.welcome-content__item {
+    will-change: transform, opacity;
+}
+
+/* optional: style for disabled button */
+.switch-welcome-btn[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* ===================================================== 
+            Welcome Page css end 
+======================================================= */
 /* ================================ Client Work css end ============================== */
 /*# sourceMappingURL=main.css.map */

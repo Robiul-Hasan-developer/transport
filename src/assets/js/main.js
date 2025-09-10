@@ -1099,6 +1099,84 @@
     });
     // ========================= Service Four Js End ===================
 
+    // ========================= Welcome Page content item switch Js Start ===================
+    /* hint to browser + keep transitions clean when JS sets them */
+    document.addEventListener("DOMContentLoaded", () => {
+      const wrapper = document.querySelector(".welcome-content-wrapper");
+      const button = document.querySelector(".switch-welcome-btn");
+
+      if (!wrapper || !button) return;
+
+      button.addEventListener("click", () => {
+        const items = Array.from(
+          wrapper.querySelectorAll(".welcome-content__item")
+        );
+        if (items.length < 2) return;
+
+        // prevent double-click while animating
+        if (button.disabled) return;
+        button.disabled = true;
+
+        const elements = items.slice(0, 2); // first two elements (A and B)
+
+        // 1) record initial positions
+        const firstRects = new Map();
+        elements.forEach((el) =>
+          firstRects.set(el, el.getBoundingClientRect())
+        );
+
+        // 2) change DOM order (swap)
+        // If element order is: [first, second] -> do insertBefore(second, first) to swap
+        wrapper.insertBefore(elements[1], elements[0]);
+
+        // 3) measure final positions and apply the inverse transform (FLIP)
+        elements.forEach((el) => {
+          const firstRect = firstRects.get(el);
+          const lastRect = el.getBoundingClientRect();
+          const deltaY = firstRect.top - lastRect.top;
+
+          // apply invert transform so visually nothing changes yet
+          el.style.transition = "none";
+          el.style.transform = `translateY(${deltaY}px)`;
+          // force reflow
+          el.getBoundingClientRect();
+        });
+
+        // 4) animate to natural position
+        // prepare counter to re-enable button after all transitions end
+        let finished = 0;
+        const total = elements.length;
+        const onEnd = (e) => {
+          // only listen for transform transition
+          if (e.propertyName !== "transform") return;
+          e.target.style.transition = "";
+          e.target.style.transform = "";
+          e.target.classList.remove("is-animating");
+          e.target.removeEventListener("transitionend", onEnd);
+          finished += 1;
+          if (finished === total) {
+            button.disabled = false;
+          }
+        };
+
+        // add listeners and start animation in next frame
+        elements.forEach((el) => {
+          el.addEventListener("transitionend", onEnd);
+          el.classList.add("is-animating");
+        });
+
+        requestAnimationFrame(() => {
+          elements.forEach((el) => {
+            // set the transition and clear transform -> it will animate from the inverted position to 0
+            el.style.transition =
+              "transform 360ms cubic-bezier(0.22, 1, 0.36, 1)";
+            el.style.transform = "";
+          });
+        });
+      });
+    });
+    // ========================= Welcome Page content item switch Js End ===================
+
     // ================== Password Show Hide Js Start ==========
     $(".toggle-password").on("click", function () {
       $(this).toggleClass("active");
@@ -1154,7 +1232,6 @@
         }
       });
     });
-
     // ========================= Account Form Show Hide Js End ===========================
 
     // Ecommerce Cart Js
