@@ -1100,79 +1100,94 @@
     // ========================= Service Four Js End ===================
 
     // ========================= Welcome Page content item switch Js Start ===================
-    /* hint to browser + keep transitions clean when JS sets them */
     document.addEventListener("DOMContentLoaded", () => {
       const wrapper = document.querySelector(".welcome-content-wrapper");
       const button = document.querySelector(".switch-welcome-btn");
-
       if (!wrapper || !button) return;
 
       button.addEventListener("click", () => {
+        if (button.disabled) return;
         const items = Array.from(
           wrapper.querySelectorAll(".welcome-content__item")
         );
         if (items.length < 2) return;
 
-        // prevent double-click while animating
-        if (button.disabled) return;
+        const a = items[0];
+        const b = items[items.length - 1];
+
+        // disable while animating
         button.disabled = true;
 
-        const elements = items.slice(0, 2); // first two elements (A and B)
+        // measure
+        const rectA = a.getBoundingClientRect();
+        const rectB = b.getBoundingClientRect();
 
-        // 1) record initial positions
-        const firstRects = new Map();
-        elements.forEach((el) =>
-          firstRects.set(el, el.getBoundingClientRect())
-        );
+        // helper: create a visual clone positioned over the element (fixed so viewport-relative)
+        function createClone(el, rect) {
+          const clone = el.cloneNode(true);
+          clone.style.position = "fixed";
+          clone.style.top = rect.top + "px";
+          clone.style.left = rect.left + "px";
+          clone.style.width = rect.width + "px";
+          clone.style.height = rect.height + "px";
+          clone.style.margin = "0";
+          clone.style.boxSizing = "border-box";
+          clone.style.pointerEvents = "none";
+          clone.style.zIndex = 9999;
+          clone.style.transition =
+            "transform 420ms cubic-bezier(0.22,1,0.36,1)";
+          clone.style.transform = "translateY(0)";
+          document.body.appendChild(clone);
+          return clone;
+        }
 
-        // 2) change DOM order (swap)
-        // If element order is: [first, second] -> do insertBefore(second, first) to swap
-        wrapper.insertBefore(elements[1], elements[0]);
+        const cloneA = createClone(a, rectA);
+        const cloneB = createClone(b, rectB);
 
-        // 3) measure final positions and apply the inverse transform (FLIP)
-        elements.forEach((el) => {
-          const firstRect = firstRects.get(el);
-          const lastRect = el.getBoundingClientRect();
-          const deltaY = firstRect.top - lastRect.top;
+        // hide originals while animating
+        a.style.visibility = "hidden";
+        b.style.visibility = "hidden";
 
-          // apply invert transform so visually nothing changes yet
-          el.style.transition = "none";
-          el.style.transform = `translateY(${deltaY}px)`;
-          // force reflow
-          el.getBoundingClientRect();
-        });
+        // how far to move (viewport Y)
+        const deltaY = rectB.top - rectA.top;
 
-        // 4) animate to natural position
-        // prepare counter to re-enable button after all transitions end
-        let finished = 0;
-        const total = elements.length;
-        const onEnd = (e) => {
-          // only listen for transform transition
-          if (e.propertyName !== "transform") return;
-          e.target.style.transition = "";
-          e.target.style.transform = "";
-          e.target.classList.remove("is-animating");
-          e.target.removeEventListener("transitionend", onEnd);
-          finished += 1;
-          if (finished === total) {
-            button.disabled = false;
-          }
-        };
+        let ended = 0;
+        function onCloneEnd() {
+          ended += 1;
+          if (ended >= 2) finishSwap();
+        }
+        cloneA.addEventListener("transitionend", onCloneEnd);
+        cloneB.addEventListener("transitionend", onCloneEnd);
 
-        // add listeners and start animation in next frame
-        elements.forEach((el) => {
-          el.addEventListener("transitionend", onEnd);
-          el.classList.add("is-animating");
-        });
-
+        // start animation next frame
         requestAnimationFrame(() => {
-          elements.forEach((el) => {
-            // set the transition and clear transform -> it will animate from the inverted position to 0
-            el.style.transition =
-              "transform 360ms cubic-bezier(0.22, 1, 0.36, 1)";
-            el.style.transform = "";
-          });
+          cloneA.style.transform = `translateY(${deltaY}px)`;
+          cloneB.style.transform = `translateY(${-deltaY}px)`;
         });
+
+        // safety fallback in case transitionend doesn't fire
+        const fallbackTimer = setTimeout(() => {
+          if (ended < 2) finishSwap();
+        }, 700);
+
+        function finishSwap() {
+          clearTimeout(fallbackTimer);
+
+          // we want final DOM order: [b, (any middle nodes), a]
+          // Save original nextSibling of b (so we can put `a` after middle nodes)
+          const bNext = b.nextSibling;
+
+          // Move b before a, then move a before bNext (if bNext is null, insertBefore(..., null) appends)
+          wrapper.insertBefore(b, a);
+          wrapper.insertBefore(a, bNext);
+
+          // remove clones, unhide originals, re-enable button
+          cloneA.remove();
+          cloneB.remove();
+          a.style.visibility = "";
+          b.style.visibility = "";
+          button.disabled = false;
+        }
       });
     });
     // ========================= Welcome Page content item switch Js End ===================

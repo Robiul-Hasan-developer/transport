@@ -98,14 +98,13 @@
 
 
 /* hint to browser + keep transitions clean when JS sets them */
-.welcome-content__item {
-    will-change: transform, opacity;
-}
-
-/* optional: style for disabled button */
 .switch-welcome-btn[disabled] {
     opacity: 0.6;
     pointer-events: none;
+}
+
+.welcome-content__item {
+    will-change: transform, opacity;
 }
 
 /* ===================================================== 
