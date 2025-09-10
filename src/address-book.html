@@ -875,7 +875,7 @@
         <div class="">
             <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
                 <div
-                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 border-bottom border-neutral-500">
+                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 tw-mb-5 border-bottom border-neutral-500">
                     <form action="#" class="d-flex tw-gap-2">
                         <div class="">
                             <select
@@ -937,6 +937,29 @@
                                 <i class="ph-bold ph-caret-right"></i>
                             </button>
                         </div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 tw-mb-5 border-bottom border-neutral-500">
+                    <div class="">
+                        <select
+                            class="cursor-small tw-px-4 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                            id="country">
+                            <option value="Actions">Actions</option>
+                            <option value="Names">Names</option>
+                            <option value="Countries">Countries</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center tw-gap-4">
+                        <div class="">
+                            <label for="uploadContacts"
+                                class="tw-px-3 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">Upload
+                                Contacts</label>
+                            <input type="file" id="uploadContacts" hidden>
+                        </div>
+                        <button type="button"
+                            class="tw-px-3 tw-h-8 text-white bg-success d-flex justify-content-center align-items-center tw-rounded tw-text-base tw-duration-300">Add
+                            Contact</button>
                     </div>
                 </div>
             </div>
