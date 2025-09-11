@@ -91,7 +91,7 @@
                             <option value="Countries">Countries</option>
                         </select>
                     </div>
-                    <div class="d-flex align-items-center tw-gap-4">
+                    <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap">
                         <div class="">
                             <label for="uploadContacts"
                                 class="tw-px-3 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">Upload
@@ -103,6 +103,40 @@
                             Contact</button>
                     </div>
                 </div>
+
+
+                <div class="table-responsive">
+                    <table class="table min-w-max">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Country</th>
+                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Name</th>
+                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Address</th>
+                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">City</th>
+                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center bg-neutral-50">Chao Yang</td>
+                                <td class="text-center bg-neutral-50">1 Tai Seng Drive</td>
+                                <td class="text-center bg-neutral-50">Singapore</td>
+                                <td class="text-center bg-neutral-50">Kualampur</td>
+                                <td class="text-center bg-neutral-50">
+                                    <div
+                                        class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
+                                        <button type="button" class="text-primary hover-underline">Edit</button>
+                                        <button type="button" class="text-primary hover-underline">Copy</button>
+                                        <button type="button" class="text-primary hover-underline">Create
+                                            Shipment</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
             </div>
         </div>
     </div>
