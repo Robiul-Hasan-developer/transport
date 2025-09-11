@@ -1,0 +1,125 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Add Contact',
+'breadcrumbTitle': 'Add New Contact'
+})
+
+<!-- ======================== Add New Contact start ========================= -->
+<section class="add-new-contact py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <h6 class="tw-mb-6">Contact Details</h6>
+            <div class="">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column tw-gap-5">
+                            <div class="">
+                                <label for="name" class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Name</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="name" placeholder="John Doe">
+                            </div>
+                            <div class="">
+                                <label for="company" class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Company
+                                    <span class="text-primary" title="Company">
+                                        <i class="ph-fill ph-info"></i>
+                                    </span>
+                                </label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="company" placeholder="My Company">
+                            </div>
+                            <div class="">
+                                <label for="nickname"
+                                    class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Nickname</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="nickname" placeholder="John to Doe">
+                            </div>
+                            <div class="">
+                                <label for="country"
+                                    class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Country</label>
+                                <select
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                    id="country">
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="India">India</option>
+                                    <option value="England">England</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <label for="addressOne" class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Address
+                                    One</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressOne" placeholder="Initial Address">
+                            </div>
+                            <div class="">
+                                <label for="addressTwo" class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Address
+                                    2</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressTwo" placeholder="Address">
+                            </div>
+                            <div class="">
+                                <label for="addressThree" class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Address
+                                    3</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressThree" placeholder="Last Address">
+                            </div>
+                            <div class="">
+                                <div class="row gy-3">
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="postalCode"
+                                                class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">Postal
+                                                Code</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="postalCode" placeholder="Postal Code">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="cityhere"
+                                                class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">City</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="cityhere" placeholder="City">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="state"
+                                                class="text-main-two-600 fw-medium tw-text-sm tw-mb-1">State</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="State" placeholder="State">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================== Add New Contact End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
