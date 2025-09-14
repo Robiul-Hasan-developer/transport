@@ -10935,6 +10935,11 @@ input[type=number] {
     flex-direction: row-reverse;
 }
 
+@media (max-width: 991px) {
+    .switch-welcome-form.active {
+        flex-direction: column-reverse;
+    }
+}
 /* ===================================================== 
             Welcome Page css end 
 ======================================================= */

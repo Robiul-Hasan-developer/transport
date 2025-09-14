@@ -5,8 +5,8 @@
 @@include('../partials/_header.html')
 
 @@include('../partials/_breadcrumb.html', {
-'breadcrumbText': 'Upload',
-'breadcrumbTitle': 'Upload Contacts'
+'breadcrumbText': 'Shipment',
+'breadcrumbTitle': 'Create Shipment'
 })
 
 <!-- ======================== Upload Contacts start ========================= -->
@@ -33,12 +33,28 @@
                     </p>
                 </div>
             </div>
-            <h5 class="text-black fw-bold tw-mb-6">
-                From
-            </h5>
+
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h5 class="text-black fw-bold tw-mb-6 d-lg-block d-none">
+                        From
+                    </h5>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="text-black fw-bold tw-mb-6 d-lg-block d-none">
+                        To
+                    </h5>
+                </div>
+            </div>
+
             <form action="#" class="">
                 <div class="row gy-4 switch-welcome-form">
                     <div class="col-lg-5">
+                        <h5 class="text-black fw-bold tw-mb-6 d-lg-none d-block">
+                            From
+                        </h5>
                         <div class="d-flex flex-column tw-gap-5">
                             <div class="">
                                 <label for="name" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Name</label>
@@ -228,6 +244,9 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
+                        <h5 class="text-black fw-bold tw-mb-6 d-lg-none d-block">
+                            To
+                        </h5>
                         <div class="d-flex flex-column tw-gap-5">
                             <div class="">
                                 <label for="Toname"

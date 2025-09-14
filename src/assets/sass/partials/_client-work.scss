@@ -98,6 +98,10 @@
 
 .switch-welcome-form.active {
     flex-direction: row-reverse;
+
+    @media (max-width: 991px) {
+        flex-direction: column-reverse;
+    }
 }
 
 /* ===================================================== 
