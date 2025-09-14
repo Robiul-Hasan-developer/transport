@@ -1,0 +1,66 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Declaration',
+'breadcrumbTitle': 'Customs Declaration'
+})
+
+<!-- ======================== Custom Declaration start ========================= -->
+<section class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <h5 class="tw-mb-8 fw-bold">Customs Declaration</h5>
+            <div class="">
+                <h6 class="tw-mb-1">Additional Parties</h6>
+                <p class="text-neutral-900">Are there other parties involved in the shipment?</p>
+                <div class="d-flex align-items-center tw-gap-4">
+                    <div class="form-check common-check common-radio mb-0">
+                        <input class="form-check-input border-main-two-600" type="radio" name="parties" id="yes1">
+                        <label class="form-check-label tw-ms-2 text-main-two-600 fw-medium" for="yes1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check common-check common-radio mb-0">
+                        <input class="form-check-input border-main-two-600" type="radio" name="parties" id="no1">
+                        <label class="form-check-label tw-ms-2 text-main-two-600 fw-medium" for="no1">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <button type="button"
+                    class="tw-mt-4 cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-4 tw-px-6 tw-text-sm"
+                    data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label">Add Parties</span>
+                </button>
+                <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5 tw-mt-10">
+                    <span
+                        class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                        <i class="ph-fill ph-info"></i>
+                    </span>
+                    <div class="tw-px-6 tw-py-4 flex-grow-1">
+                        <p class="text-black tw-mb-4">
+                            As of April 1, 2020. the Norwgain government requires businesses supplyging 50,000 NOK then
+                            low-value goods per year to charge and collect norwegoian value added Tax (VAT) and pass it
+                            on directly to the Norwegian Tax Admission.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================== Custom Declaration End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
