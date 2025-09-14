@@ -1099,98 +1099,11 @@
     });
     // ========================= Service Four Js End ===================
 
-    // ========================= Welcome Page content item switch Js Start ===================
-    document.addEventListener("DOMContentLoaded", () => {
-      const wrapper = document.querySelector(".welcome-content-wrapper");
-      const button = document.querySelector(".switch-welcome-btn");
-      if (!wrapper || !button) return;
-
-      button.addEventListener("click", () => {
-        if (button.disabled) return;
-        const items = Array.from(
-          wrapper.querySelectorAll(".welcome-content__item")
-        );
-        if (items.length < 2) return;
-
-        const a = items[0];
-        const b = items[items.length - 1];
-
-        // disable while animating
-        button.disabled = true;
-
-        // measure
-        const rectA = a.getBoundingClientRect();
-        const rectB = b.getBoundingClientRect();
-
-        // helper: create a visual clone positioned over the element (fixed so viewport-relative)
-        function createClone(el, rect) {
-          const clone = el.cloneNode(true);
-          clone.style.position = "fixed";
-          clone.style.top = rect.top + "px";
-          clone.style.left = rect.left + "px";
-          clone.style.width = rect.width + "px";
-          clone.style.height = rect.height + "px";
-          clone.style.margin = "0";
-          clone.style.boxSizing = "border-box";
-          clone.style.pointerEvents = "none";
-          clone.style.zIndex = 9999;
-          clone.style.transition =
-            "transform 420ms cubic-bezier(0.22,1,0.36,1)";
-          clone.style.transform = "translateY(0)";
-          document.body.appendChild(clone);
-          return clone;
-        }
-
-        const cloneA = createClone(a, rectA);
-        const cloneB = createClone(b, rectB);
-
-        // hide originals while animating
-        a.style.visibility = "hidden";
-        b.style.visibility = "hidden";
-
-        // how far to move (viewport Y)
-        const deltaY = rectB.top - rectA.top;
-
-        let ended = 0;
-        function onCloneEnd() {
-          ended += 1;
-          if (ended >= 2) finishSwap();
-        }
-        cloneA.addEventListener("transitionend", onCloneEnd);
-        cloneB.addEventListener("transitionend", onCloneEnd);
-
-        // start animation next frame
-        requestAnimationFrame(() => {
-          cloneA.style.transform = `translateY(${deltaY}px)`;
-          cloneB.style.transform = `translateY(${-deltaY}px)`;
-        });
-
-        // safety fallback in case transitionend doesn't fire
-        const fallbackTimer = setTimeout(() => {
-          if (ended < 2) finishSwap();
-        }, 700);
-
-        function finishSwap() {
-          clearTimeout(fallbackTimer);
-
-          // we want final DOM order: [b, (any middle nodes), a]
-          // Save original nextSibling of b (so we can put `a` after middle nodes)
-          const bNext = b.nextSibling;
-
-          // Move b before a, then move a before bNext (if bNext is null, insertBefore(..., null) appends)
-          wrapper.insertBefore(b, a);
-          wrapper.insertBefore(a, bNext);
-
-          // remove clones, unhide originals, re-enable button
-          cloneA.remove();
-          cloneB.remove();
-          a.style.visibility = "";
-          b.style.visibility = "";
-          button.disabled = false;
-        }
-      });
+    // ========================= switch form btn Js Start ===================
+    $(".switch-welcome-btn").on("click", function () {
+      $(".switch-welcome-form").toggleClass("active");
     });
-    // ========================= Welcome Page content item switch Js End ===================
+    // ========================= switch form btn Js Start ===================
 
     // ================== Password Show Hide Js Start ==========
     $(".toggle-password").on("click", function () {

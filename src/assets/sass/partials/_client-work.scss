@@ -96,15 +96,8 @@
     }
 }
 
-
-/* hint to browser + keep transitions clean when JS sets them */
-.switch-welcome-btn[disabled] {
-    opacity: 0.6;
-    pointer-events: none;
-}
-
-.welcome-content__item {
-    will-change: transform, opacity;
+.switch-welcome-form.active {
+    flex-direction: row-reverse;
 }
 
 /* ===================================================== 

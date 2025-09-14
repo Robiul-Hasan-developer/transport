@@ -926,8 +926,8 @@
                 From
             </h5>
             <form action="#" class="">
-                <div class="row gy-4">
-                    <div class="col-lg-6">
+                <div class="row gy-4 switch-welcome-form">
+                    <div class="col-lg-5">
                         <div class="d-flex flex-column tw-gap-5">
                             <div class="">
                                 <label for="name" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Name</label>
@@ -1014,15 +1014,6 @@
                                                 id="cityhere">
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <div class="">
-                                            <label for="state"
-                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">State</label>
-                                            <input type="text"
-                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
-                                                id="State">
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="common-check d-flex align-items-center tw-gap-2 mb-0 tw-mt-4">
@@ -1090,7 +1081,7 @@
                             </div>
                             <div class="">
                                 <button type="button"
-                                    class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-2 tw-px-3 tw-text-sm"
+                                    class="switch-form-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-2 tw-px-3 tw-text-sm"
                                     data-block="button">
                                     <span class="button__flair"></span>
                                     <span
@@ -1109,7 +1100,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-2">
+                        <div class="h-100 position-relative text-center">
+                            <span
+                                class="position-absolute start-50 translate-middle-x bg-neutral-100 h-100 tw-w-px"></span>
+                            <button type="button"
+                                class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-3 tw-px-4 tw-translate-y-20-px"
+                                data-block="button">
+                                <span class="button__flair"></span>
+                                <span
+                                    class="text-white tw-text-lg tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                                    <i class="ph-fill ph-arrows-down-up"></i>
+                                </span>
+                                <span class="button__label">Switch</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
                         <div class="d-flex flex-column tw-gap-5">
                             <div class="">
                                 <label for="Toname"
@@ -1343,7 +1350,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="d-flex align-items-center justify-content-end tw-gap-4 tw-mt-8">
                     <button type="reset"
