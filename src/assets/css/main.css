@@ -935,6 +935,14 @@ input:focus, input:focus-visible {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.bg-cyan-50 {
+    background-color: #007acc21;
+}
+
+.bg-cyan-600 {
+    background-color: #007acc;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -1718,6 +1726,10 @@ input:focus, input:focus-visible {
 
 .tw-border-bottom {
     border-bottom: 1px solid #D6D6D6;
+}
+
+.border-cyan-600 {
+    border-color: #007acc !important;
 }
 
 /* Colors class start */

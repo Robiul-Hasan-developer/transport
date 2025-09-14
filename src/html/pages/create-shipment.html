@@ -1,0 +1,483 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Upload',
+'breadcrumbTitle': 'Upload Contacts'
+})
+
+<!-- ======================== Upload Contacts start ========================= -->
+<section class="py-120">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-end tw-gap-4 tw-mb-6">
+            <a href="welcome.html"
+                class="bg-neutral-400 text-main-two-600 fw-medium tw-text-sm d-flex align-items-center tw-gap-2 hover-bg-neutral-500 tw-duration-300 tw-px-4 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                <i class="ph-fill ph-caret-left"></i>
+                Cancel
+            </a>
+        </div>
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5">
+                <span
+                    class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-center flex-shrink-0">
+                    <i class="ph-fill ph-info"></i>
+                </span>
+                <div class="tw-px-6 tw-py-4 flex-grow-1">
+                    <p class="text-black">If you are already registered in MyDHL +,
+                        <a href="javascript:void(0)"
+                            class="hover-underline-none tw-duration-300 text-decoration-underline text-black hover-text-main-600">Login
+                            Now.</a>
+                    </p>
+                </div>
+            </div>
+            <h5 class="text-black fw-bold tw-mb-6">
+                From
+            </h5>
+            <form action="#" class="">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column tw-gap-5">
+                            <div class="">
+                                <label for="name" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Name</label>
+                                <div class="d-flex align-items-start tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white text-black focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="name" placeholder="First Name and Last Name (Legal ID name recommended)">
+                                    <span class="text-black tw-text-4">*</span>
+                                </div>
+                            </div>
+                            <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                                <input class="form-check-input" type="checkbox" id="businessContact">
+                                <div class="form-check-label fw-medium">
+                                    <label class=" text-black" for="businessContact">Business Contact</label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="company" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Company
+                                    <span class="text-primary" title="Company">
+                                        <i class="ph-fill ph-info"></i>
+                                    </span>
+                                </label>
+                                <div class="d-flex align-items-center tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="company" placeholder="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="country"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Country/Territory</label>
+                                <div>
+                                    <select
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                        id="country">
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="India">India</option>
+                                        <option value="England">England</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="addressOne" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    One</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressOne">
+                            </div>
+                            <div class="">
+                                <label for="addressTwo" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    2</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressTwo">
+                            </div>
+                            <div class="">
+                                <label for="addressThree"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    3</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="addressThree">
+                            </div>
+                            <div class="">
+                                <div class="row g-3">
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="postalCode"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Postal
+                                                Code</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="postalCode">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="cityhere"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">City</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="cityhere">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="state"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">State</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="State">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common-check d-flex align-items-center tw-gap-2 mb-0 tw-mt-4">
+                                <input class="form-check-input" type="checkbox" id="residentialAddress">
+                                <div class="form-check-label fw-medium">
+                                    <label class=" text-black" for="residentialAddress">Residential Address</label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="emailllAddresss"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Email
+                                    Address</label>
+                                <div class="d-flex align-items-start tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white text-black focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="emailllAddresss"
+                                        placeholder="DHL will send shipment notifications to this email address">
+                                    <span class="text-black tw-text-4">*</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="row g-3">
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="phoneTypesss"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Phone
+                                                Type</label>
+                                            <select
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                                id="phoneTypesss">
+                                                <option value="Office">Office</option>
+                                                <option value="Business">Business</option>
+                                                <option value="Home">Home</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="code"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Code</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="code">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="phonetwo"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Phone</label>
+                                            <input type="tel"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="phonetwo">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="extension"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Extension</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="extension">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="button"
+                                    class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-2 tw-px-3 tw-text-sm"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span
+                                        class="text-white tw-text-lg tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                                        <i class="ph-fill ph-arrows-down-up"></i>
+                                    </span>
+                                    <span class="button__label">Add Another</span>
+                                </button>
+                            </div>
+                            <div class="">
+                                <label for="vatTax" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Vat/Tax
+                                    ID</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="vatTax" placeholder="Enter IOSS in Customs Declaration section">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column tw-gap-5">
+                            <div class="">
+                                <label for="Toname"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Name</label>
+                                <div class="d-flex align-items-start tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white text-black focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="Toname" placeholder="First Name and Last Name (Legal ID name recommended)">
+                                    <span class="text-black tw-text-4">*</span>
+                                </div>
+                            </div>
+                            <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                                <input class="form-check-input" type="checkbox" id="TobusinessContact">
+                                <div class="form-check-label fw-medium">
+                                    <label class=" text-black" for="TobusinessContact">Business Contact</label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="Tocompany" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Company
+                                    <span class="text-primary" title="Company">
+                                        <i class="ph-fill ph-info"></i>
+                                    </span>
+                                </label>
+                                <div class="d-flex align-items-center tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="Tocompany" placeholder="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="Tocountry"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Country/Territory</label>
+                                <div>
+                                    <select
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                        id="Tocountry">
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="India">India</option>
+                                        <option value="England">England</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="ToaddressOne"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    One</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="ToaddressOne">
+                            </div>
+                            <div class="">
+                                <label for="ToaddressTwo"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    2</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="ToaddressTwo">
+                            </div>
+                            <div class="">
+                                <label for="ToaddressThree"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Address
+                                    3</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="ToaddressThree">
+                            </div>
+                            <div class="">
+                                <div class="row g-3">
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="TopostalCode"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Postal
+                                                Code</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="TopostalCode">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="Tocityhere"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">City</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="Tocityhere">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="">
+                                            <label for="Tostate"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">State</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="ToState">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common-check d-flex align-items-center tw-gap-2 mb-0 tw-mt-4">
+                                <input class="form-check-input" type="checkbox" id="ToresidentialAddress">
+                                <div class="form-check-label fw-medium">
+                                    <label class=" text-black" for="ToresidentialAddress">Residential Address</label>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="ToemailllAddresss"
+                                    class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Email
+                                    Address</label>
+                                <div class="d-flex align-items-start tw-gap-1">
+                                    <input type="text"
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white text-black focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="ToemailllAddresss"
+                                        placeholder="DHL will send shipment notifications to this email address">
+                                    <span class="text-black tw-text-4">*</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="row g-3">
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="TophoneTypesss"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Phone
+                                                Type</label>
+                                            <select
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                                id="TophoneTypesss">
+                                                <option value="Office">Office</option>
+                                                <option value="Business">Business</option>
+                                                <option value="Home">Home</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="Tocode"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Code</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="Tocode">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="Tophonetwo"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Phone</label>
+                                            <input type="tel"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="Tophonetwo">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-6">
+                                        <div class="">
+                                            <label for="Toextension"
+                                                class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Extension</label>
+                                            <input type="text"
+                                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                id="Toextension">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button type="button"
+                                    class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-2 tw-px-3 tw-text-sm"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span
+                                        class="text-white tw-text-lg tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                                        <i class="ph-fill ph-arrows-down-up"></i>
+                                    </span>
+                                    <span class="button__label">Add Another</span>
+                                </button>
+                            </div>
+                            <div class="">
+                                <label for="TovatTax" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Vat/Tax
+                                    ID</label>
+                                <input type="text"
+                                    class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    id="TovatTax" placeholder="Enter IOSS in Customs Declaration section">
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <label for="ToTypeOf" class="text-main-two-600 fw-semibold tw-text-sm tw-mb-1">Type
+                                        of ID (for Proof of identity) <span class="text-primary" title="Company">
+                                            <i class="ph-fill ph-info"></i>
+                                        </span> </label>
+                                    <select
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                        id="ToTypeOf">
+                                        <option value="Office">Office</option>
+                                        <option value="Business">Business</option>
+                                        <option value="Home">Home</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5">
+                                <span
+                                    class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                    <i class="ph-fill ph-info"></i>
+                                </span>
+                                <div class="tw-px-6 tw-py-4 flex-grow-1">
+                                    <p class="text-black tw-mb-4">
+                                        For shipments to the United States of America with a value of 2,500 USD or more,
+                                        if the Recipient is a company.
+                                    </p>
+                                    <ul class="d-flex flex-column tw-gap-3 tw-ps-6">
+                                        <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
+                                            <span
+                                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                            <span class="flex-grow-1">
+                                                Customs authorities require an Employer
+                                                Identification
+                                                Number (EIN)
+                                            </span>
+                                        </li>
+                                        <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
+                                            <span
+                                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                            <span class="flex-grow-1">
+                                                To help avoid customs clearance delays, we
+                                                encourage
+                                                shippers to
+                                                provide the EIN on behalf of the Recipient when creating the shipment
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex align-items-center justify-content-end tw-gap-4 tw-mt-8">
+                    <button type="reset"
+                        class="bg-neutral-400 text-main-two-600 fw-medium tw-text-sm d-flex align-items-center tw-gap-2 hover-bg-neutral-500 tw-duration-300 tw-px-4 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                        <i class="ph ph-x-circle"></i>
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-4 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                        <i class="ph ph-plus-circle"></i>
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ======================== Upload Contacts End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
