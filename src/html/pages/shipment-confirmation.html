@@ -1,0 +1,159 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Shipment',
+'breadcrumbTitle': 'Shipment Confirmation'
+})
+
+<!-- =================== Custom Declaration start ==================== -->
+<section class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6 tw-mt-6">
+            <div class="d-flex align-items-center tw-gap-2 tw-mb-6 flex-wrap">
+                <span class="text-success tw-text-2xl d-inline-flex">
+                    <i class="ph-fill ph-check-circle"></i>
+                </span>
+                <h5 class="fw-bold">
+                    Shipment Confirmation
+                </h5>
+            </div>
+
+            <div class="">
+                <div class="row-g-4">
+                    <div class="col-lg-8">
+                        <div class="bg-neutral-50 tw-p-4 tw-rounded-md border border-neutral-300">
+                            <h5 class="fw-bold">
+                                Important
+                            </h5>
+                            <ul class="d-flex flex-column tw-gap-3 tw-ps-6 tw-mt-6">
+                                <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
+                                    <span
+                                        class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                    <span class="flex-grow-1">
+                                        Customs authorities require an Employer
+                                        Identification
+                                        Number (EIN)
+                                    </span>
+                                </li>
+                                <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
+                                    <span
+                                        class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                    <span class="flex-grow-1">
+                                        To help avoid customs clearance delays, we
+                                        encourage
+                                        shippers to
+                                        provide the EIN on behalf of the Recipient when creating the shipment
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white tw-p-4 tw-rounded-md border border-neutral-300 tw-mt-4">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="">
+                                        <div class="d-flex align-items-center tw-gap-2 tw-mb-6 flex-wrap">
+                                            <span class="text-neutral-900 tw-text-2xl d-inline-flex">
+                                                <i class="ph-bold ph-device-mobile"></i>
+                                            </span>
+                                            <h6 class="fw-bold">
+                                                Shipment Confirmation
+                                            </h6>
+                                        </div>
+                                        <p class="text-black opacity-75 tw-mt-4">Set up email or text notifications for
+                                            this shipments progress - for you or others!</p>
+                                        <button type="button"
+                                            class="border border-neutral-300 bg-neutral-50 tw-rounded-md tw-py-1 tw-px-4 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 tw-mt-6">
+                                            Get and Send Notifications
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="">
+                                        <div class="d-flex align-items-center tw-gap-2 tw-mb-6 flex-wrap">
+                                            <span class="text-neutral-900 tw-text-2xl d-inline-flex">
+                                                <i class="ph-bold ph-share-network"></i>
+                                            </span>
+                                            <h6 class="fw-bold">
+                                                Want to Share?
+                                            </h6>
+                                        </div>
+                                        <p class="text-black opacity-75 tw-mt-4">Shipment details have been emailed to
+                                            <a href="#" class="text-primary hover-underline">2 contact.</a> per your
+                                            share settings.
+                                        </p>
+                                        <p class="text-black opacity-75 tw-mt-8">Select shipment details you want to
+                                            email to
+                                            others.
+                                        </p>
+                                        <ul class="d-grid grid-cols-2 justify-content-between tw-gap-4 tw-mt-2">
+                                            <li
+                                                class="text-black opacity-75 d-flex align-items-start tw-gap-2 tw-text-sm">
+                                                <span class="d-flex tw-text-xl flex-shrink-0">
+                                                    <i class="ph-bold ph-check-square"></i>
+                                                </span>
+                                                <span class="flex-grow-1">
+                                                    Tracking Number
+                                                </span>
+                                            </li>
+                                            <li
+                                                class="text-black opacity-75 d-flex align-items-start tw-gap-2 tw-text-sm">
+                                                <span class="d-flex tw-text-xl flex-shrink-0">
+                                                    <i class="ph-bold ph-check-square"></i>
+                                                </span>
+                                                <span class="flex-grow-1">
+                                                    Label (Waybill)
+                                                </span>
+                                            </li>
+                                            <li
+                                                class="text-black opacity-75 d-flex align-items-start tw-gap-2 tw-text-sm">
+                                                <span class="d-flex tw-text-xl flex-shrink-0">
+                                                    <i class="ph-bold ph-check-square"></i>
+                                                </span>
+                                                <span class="flex-grow-1">
+                                                    Shipment Details
+                                                </span>
+                                            </li>
+                                            <li
+                                                class="text-black opacity-75 d-flex align-items-start tw-gap-2 tw-text-sm">
+                                                <span class="d-flex tw-text-xl flex-shrink-0">
+                                                    <i class="ph-bold ph-check-square"></i>
+                                                </span>
+                                                <span class="flex-grow-1">
+                                                    Shipment Receipt
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <button type="button"
+                                            class="border border-neutral-300 bg-neutral-50 tw-rounded-md tw-py-1 tw-px-4 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 tw-mt-6">
+                                            Share
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- =================== Custom Declaration End ==================== -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
