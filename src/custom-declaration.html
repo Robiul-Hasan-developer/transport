@@ -931,12 +931,12 @@
                     </div>
                 </div>
                 <button type="button"
-                    class="tw-mt-4 cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-4 tw-px-6 tw-text-sm"
+                    class="tw-mt-4  btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-4 tw-px-6 tw-text-sm"
                     data-block="button">
                     <span class="button__flair"></span>
                     <span class="button__label">Add Parties</span>
                 </button>
-                <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5 tw-mt-10">
+                <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5 tw-mt-10 max-w-856-px">
                     <span
                         class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
                         <i class="ph-fill ph-info"></i>
@@ -948,6 +948,132 @@
                             on directly to the Norwegian Tax Admission.
                         </p>
 
+                    </div>
+                </div>
+                <h6 class="tw-mb-1 tw-mt-6">Tax Payment for this Shipment</h6>
+                <p class="text-main-two-600 tw-mb-10">Tax numbers you used to pay taxes for this shipment (for local
+                    customs authorities)</p>
+
+                <div class="common-check d-flex align-items-center tw-gap-2 tw-mt-1">
+                    <input class="form-check-input" type="checkbox" id="wouldLikeShipment">
+                    <div class="form-check-label fw-medium">
+                        <label class=" text-black" for="wouldLikeShipment">
+                            I would like to see estimated outers and taxes for my shipment
+                        </label>
+                    </div>
+                </div>
+                <div class="bg-neutral-100 overflow-x-auto">
+                    <div class="min-w-max d-flex">
+                        <div class="bg-neutral-200 text-center">
+                            <span class="text-main-two-600 tw-text-lg tw-pt-6 tw-px-4 fw-semibold">1</span>
+                        </div>
+                        <div class="flex-grow-1 tw-p-4">
+                            <div class="row g-3">
+                                <div class="col-md-8">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between tw-gap-2">
+                                            <label for="itemDesc" class="text-main-two-600 fw-medium">Item
+                                                Description</label>
+                                            <a href="#" class="text-primary hover-underline">View Prohibted Items</a>
+                                        </div>
+                                        <div class="position-relative tw-rounded-md overflow-hidden">
+                                            <input type="text"
+                                                class=" tw-ps-4 tw-pe-16 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                placeholder="Search here..." id="itemDesc">
+                                            <button type="submit"
+                                                class="position-absolute top-50 tw--translate-y-50 tw-end-0 text-main-two-600 tw-text-lg d-flex justify-content-center align-items-center bg-main-600 hover-bg-main-800 text-white h-100 tw-w-14">
+                                                <i class="ph-bold ph-cube"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="">
+                                        <div class="d-flex align-items-center justify-content-between tw-gap-2">
+                                            <label for="communityCode"
+                                                class="text-main-two-600 tw-text-sm fw-semibold">Community
+                                                Code</label>
+                                        </div>
+                                        <div class="position-relative tw-rounded-md overflow-hidden">
+                                            <input type="text"
+                                                class=" tw-ps-4 tw-pe-16 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                                placeholder="Search here..." id="communityCode">
+                                            <button type="submit"
+                                                class="position-absolute top-50 tw--translate-y-50 tw-end-0 text-main-two-600 tw-text-lg d-flex justify-content-center align-items-center bg-main-600 hover-bg-main-800 text-white h-100 tw-w-14">
+                                                <i class="ph-bold ph-magnifying-glass"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center tw-gap-4 tw-mt-4">
+                                <div class="position-relative max-w-110-px">
+                                    <label for="quantity"
+                                        class="text-main-two-600 tw-text-sm fw-semibold d-block">Quantity</label>
+                                    <input type="text"
+                                        class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                        id="quantity">
+                                </div>
+                                <div class="position-relative max-w-110-px">
+                                    <label for="units"
+                                        class="text-main-two-600 tw-text-sm fw-semibold d-block">Units</label>
+                                    <select
+                                        class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select tw-pe-12"
+                                        id="units">
+                                        <option value="Piece">Piece</option>
+                                        <option value="War">War</option>
+                                    </select>
+                                </div>
+                                <div class="position-relative max-w-110-px">
+                                    <label for="itemValue" class="text-main-two-600 tw-text-sm fw-semibold d-block">Item
+                                        Value</label>
+                                    <div class="d-flex align-items-center tw-gap-1">
+                                        <input type="text"
+                                            class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            id="itemValue">
+                                        <span class="text-decoration-underline flex-shrink-0">EUR</span>
+                                    </div>
+                                </div>
+                                <div class="position-relative max-w-110-px">
+                                    <label for="newWeight" class="text-main-two-600 tw-text-sm fw-semibold d-block">New
+                                        Weight</label>
+                                    <div class="d-flex align-items-center tw-gap-1">
+                                        <input type="text"
+                                            class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            id="newWeight">
+                                        <span class="flex-shrink-0 tw-text-sm">kg</span>
+                                    </div>
+                                </div>
+                                <div class="position-relative max-w-110-px">
+                                    <label for="grossWeight"
+                                        class="text-main-two-600 tw-text-sm fw-semibold d-block">Gross
+                                        Weight</label>
+                                    <div class="d-flex align-items-center tw-gap-1">
+                                        <input type="text"
+                                            class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            id="grossWeight">
+                                        <span class="flex-shrink-0 tw-text-sm">kg</span>
+                                    </div>
+                                </div>
+                                <div class="position-relative max-w-110-px">
+                                    <label for="vatPaid" class="text-main-two-600 tw-text-sm fw-semibold d-block">VAT
+                                        Paid</label>
+                                    <div class="d-flex align-items-center tw-gap-1 justify-content-center">
+                                        <input class="form-check-input" type="checkbox" id="vatPaid">
+                                    </div>
+                                </div>
+                                <div class="position-relative">
+                                    <label for="whereMade"
+                                        class="text-main-two-600 tw-text-sm fw-semibold d-block">Where was the item
+                                        made?</label>
+                                    <div class="d-flex align-items-center tw-gap-1">
+                                        <input type="text"
+                                            class="tw-px-4 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            id="whereMade">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
