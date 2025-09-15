@@ -1,0 +1,111 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Packaging',
+'breadcrumbTitle': 'Select Packaging'
+})
+
+<!-- =================== Custom Declaration start ==================== -->
+<section class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6 tw-mt-6">
+            <div class="d-flex align-items-center justify-content-between tw-gap-6 tw-mb-6 flex-wrap">
+                <h5 class="fw-bold">Select Packaging</h5>
+                <a href="#" class="text-primary hover-underline">Tips for Weighing and Measuring</a>
+            </div>
+
+            <div class="">
+                <div class="table-responsive scroll-sm scroll-sm-horizontal">
+                    <table class="table min-w-max">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-transparent tw-px-6 text-center">Packaging</th>
+                                <th scope="col" class="bg-transparent tw-px-6 text-center">Quantity</th>
+                                <th scope="col" class="bg-transparent tw-px-6 text-center">Weight <span
+                                        class="text-decoration-underline">kg</span> </th>
+                                <th scope="col" class="bg-transparent tw-px-6 text-center">Dimensions <span
+                                        class="text-decoration-underline">cm</span> </th>
+                                <th scope="col" class="bg-transparent tw-px-6 text-center">
+                                    <span class="invisible">Action</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center bg-neutral-50">
+                                    <select
+                                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select">
+                                        <option value="Express Envelope">Express Envelope</option>
+                                        <option value="Box 8 (Jumbo Large)">Box 8 (Jumbo Large)</option>
+                                        <option value="Box 5 (Jumbo Small)">Box 5 (Jumbo Small)</option>
+                                    </select>
+                                </td>
+                                <td class="text-center bg-neutral-50">
+                                    <div class="max-w-100-px">
+                                        <input type="text"
+                                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            placeholder="1">
+                                    </div>
+                                </td>
+                                <td class="text-center bg-neutral-50">
+                                    <div class="max-w-100-px">
+                                        <input type="text"
+                                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            placeholder="0.3">
+                                    </div>
+                                </td>
+                                <td class="text-center bg-neutral-50">
+                                    <span class="fw-semibold">30.700 * 23.8000 * 1.000</span>
+                                </td>
+                                <td class="text-center bg-neutral-50">
+                                    <div class="d-flex tw-gap-2">
+                                        <button type="button"
+                                            class="border border-neutral-300 bg-neutral-50 tw-rounded-md tw-py-1 tw-px-2 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094">
+                                            <i class="ph-bold ph-file"></i>
+                                            Save Package
+                                        </button>
+                                        <button type="button"
+                                            class="border border-neutral-300 bg-white tw-rounded-md tw-py-1 tw-px-2 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094">
+                                            <i class="ph-bold ph-copy"></i>
+                                            Copy
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between tw-gap-4 tw-mt-6">
+                    <div class="">
+                        <h5 class="mb-0">Track your own packaging</h5>
+                    </div>
+                    <div class="d-flex flex-column align-items-center tw-gap-2">
+                        <button type="button"
+                            class="text-white tw-w-10 tw-h-10 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                        </button>
+                        <button type="button"
+                            class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-6 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- =================== Custom Declaration End ==================== -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
