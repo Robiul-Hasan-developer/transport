@@ -1036,9 +1036,100 @@
             </div>
 
             <div class="border border-neutral-200 tw-p-4 tw-rounded-md">
-
+                <div class="d-flex align-items-center tw-gap-4 tw-mt-4">
+                    <div class="position-relative max-w-110-px">
+                        <label for="packaging"
+                            class="text-main-two-600 tw-text-sm fw-semibold d-block">Packaging</label>
+                        <input type="text"
+                            class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                            id="packaging">
+                    </div>
+                    <div class="position-relative max-w-110-px w-100">
+                        <label for="quantity" class="text-main-two-600 tw-text-sm fw-semibold d-block">Quantity</label>
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <input type="text"
+                                class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                id="quantity">
+                        </div>
+                    </div>
+                    <div class="position-relative max-w-110-px">
+                        <label for="weight" class="text-main-two-600 tw-text-sm fw-semibold d-block">Weight</label>
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <input type="text"
+                                class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                id="weight">
+                            <span class="text-decoration-underline flex-shrink-0 tw-text-sm">Ib</span>
+                        </div>
+                    </div>
+                    <div class="position-relative max-w-110-px">
+                        <label for="length" class="text-main-two-600 tw-text-sm fw-semibold d-block">Length</label>
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <input type="text"
+                                class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                id="length">
+                            <span class="flex-shrink-0 tw-text-sm">in</span>
+                        </div>
+                    </div>
+                    <div class="position-relative max-w-110-px">
+                        <label for="width" class="text-main-two-600 tw-text-sm fw-semibold d-block">Width</label>
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <input type="text"
+                                class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                id="width">
+                            <span class="flex-shrink-0 tw-text-sm">in</span>
+                        </div>
+                    </div>
+                    <div class="position-relative max-w-110-px">
+                        <label for="height" class="text-main-two-600 tw-text-sm fw-semibold d-block">Height</label>
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <input type="text"
+                                class="tw-px-2 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                id="height">
+                            <span class="flex-shrink-0 tw-text-sm">in</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <div class="text-end">
+                <button type="button" class="text-primary hover-underline tw-mt-2">
+                    <i class="ph-bold ph-copy"></i>
+                    Copy
+                </button>
+            </div>
+            <div class="d-flex align-items-center justify-content-end tw-gap-10">
+                <div class="">
+                    <span class="text-neutral-900">Total Units</span>
+                    <span class="fw-semibold text-main-two-600">1</span>
+                </div>
+                <div class="">
+                    <span class="text-neutral-900">Total Net Weight</span>
+                    <span class="fw-semibold text-main-two-600">__,__LB</span>
+                </div>
+                <div class="">
+                    <button type="button"
+                        class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-2 tw-px-3 tw-text-sm"
+                        data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Add Another item</span>
+                        <span
+                            class="text-white tw-text-lg tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-text-main-600 tw-duration-500">
+                            <i class="ph-fill ph-plus"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-cyan-50 d-flex border border-2 border-cyan-600 tw-mb-5 tw-mt-10">
+                <span
+                    class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-center flex-shrink-0">
+                    <i class="ph-fill ph-info"></i>
+                </span>
+                <div class="tw-px-6 tw-py-4 flex-grow-1">
+                    <p class="text-black tw-mb-4">
+                        DHL uses the origin country's (ship from) unit of measurement - so we've converted it converted
+                        it automatically for this shipment.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
