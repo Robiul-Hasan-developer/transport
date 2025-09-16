@@ -8742,7 +8742,7 @@ input[type=number] {
     max-height: 540px;
     overflow-y: auto;
     overflow-x: hidden;
-    max-width: 600px;
+    max-width: 860px;
     transition: 0.2s ease-in-out;
     margin-block-start: 16px;
 }
@@ -8777,6 +8777,17 @@ input[type=number] {
     transition-delay: 0.1s;
     margin-top: 0px;
     transform: scale(1);
+}
+
+.mega-menu-triangle::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 10px;
+    background-color: inherit;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    inset-block-end: calc(100% - 1px);
+    inset-inline-end: 24px;
 }
 
 /* Mega menu css end */
