@@ -248,18 +248,16 @@
 
 <!-- =================== Get and send notification End =============== -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true"
-    role="dialog" style="display: block; padding-left: 0px;"> -->
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content tw-p-6">
             <div class="modal-header border-0 p-0">
-                <h4 class="modal-title" id="exampleModalLabel">Get and Send Notifications</h4>
+                <h5 class="modal-title" id="exampleModalLabel">Get and Send Notifications</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0 tw-mt-4">
                 <p class="text-neutral-900">Select the way you want to notify each person and the statuses you want them
                     to get for this shipment. You can even send notifications to yourself.</p>
-                <div class="tw-mt-8">
+                <form action="#" class="tw-mt-8">
                     <div class="border tw-p-5 tw-rounded-md">
                         <div class="row g-4 align-items-center">
                             <div class="col-xl-5">
@@ -364,20 +362,23 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="tw-mt-6">
                         <button type="button"
                             class="text-white tw-w-10 tw-h-10 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
                             <i class="ph-fill ph-plus-square"></i>
                         </button>
                     </div>
-
-                </div>
+                    <div class="d-flex justify-content-end tw-mt-4">
+                        <button type="submit"
+                            class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-6 tw-py-3 tw-rounded-lg hover--translate-y-1">
+                            Notify
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
-<!-- <div class="modal-backdrop fade show"></div> -->
 <!-- =================== Get and send notification End =============== -->
 
 @@include('../partials/_footer.html')
