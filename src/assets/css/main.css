@@ -943,6 +943,10 @@ input:focus, input:focus-visible {
     background-color: #007acc;
 }
 
+.bg-success {
+    background: #2ab72a !important;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;

@@ -1074,143 +1074,7 @@
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-
-<!-- =================== Get and send notification End =============== -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content tw-p-6">
-            <div class="modal-header border-0 p-0">
-                <h5 class="modal-title" id="exampleModalLabel">Get and Send Notifications</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-0 tw-mt-4">
-                <p class="text-neutral-900">Select the way you want to notify each person and the statuses you want them
-                    to get for this shipment. You can even send notifications to yourself.</p>
-                <form action="#" class="tw-mt-8">
-                    <div class="border tw-p-5 tw-rounded-md">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-xl-5">
-                                <div class="">
-                                    <div class="row g-3">
-                                        <div class="col-lg-3">
-                                            <div class="position-relative">
-                                                <label for="type"
-                                                    class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-1">Type</label>
-                                                <select
-                                                    class="tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select tw-pe-12"
-                                                    id="type">
-                                                    <option value="Email">Email</option>
-                                                    <option value="Docs">Docs</option>
-                                                    <option value="Message">Message</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="position-relative">
-                                                <label for="emailAdd"
-                                                    class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-1">Email
-                                                    Address</label>
-                                                <input type="email"
-                                                    class="tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
-                                                    placeholder="abc@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="position-relative">
-                                                <label for="sendNotification"
-                                                    class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-1">Send
-                                                    Notification</label>
-                                                <select
-                                                    class="tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select tw-pe-12"
-                                                    id="sendNotification">
-                                                    <option value="English">English</option>
-                                                    <option value="Bangla">Bangla</option>
-                                                    <option value="Hindi">Hindi</option>
-                                                    <option value="Spanish">Spanish</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-7">
-                                <div class="d-flex flex-wrap tw-gap-4">
-                                    <div class="position-relative">
-                                        <label for="pickedUp"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Picked
-                                            Up</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="pickedUp">
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <label for="clearanceEvent"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Clearance
-                                            Event</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="clearanceEvent">
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <label for="customsClearance"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Customs
-                                            Clearance</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="customsClearance">
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <label for="exceptions"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Exceptions</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="exceptions">
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <label for="OutForDelivery"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Out For
-                                            Delivery</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="OutForDelivery">
-                                        </div>
-                                    </div>
-                                    <div class="position-relative">
-                                        <label for="delivered"
-                                            class="text-main-two-600 tw-text-xs fw-semibold d-block tw-mb-2">Delivered</label>
-                                        <div
-                                            class="common-check d-flex align-items-center tw-gap-1 justify-content-center">
-                                            <input class="form-check-input" type="checkbox" id="delivered">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tw-mt-6">
-                        <button type="button"
-                            class="text-white tw-w-10 tw-h-10 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
-                            <i class="ph-fill ph-plus-square"></i>
-                        </button>
-                    </div>
-                    <div class="d-flex justify-content-end tw-mt-4">
-                        <button type="submit"
-                            class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-6 tw-py-3 tw-rounded-lg hover--translate-y-1">
-                            Notify
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- =================== Get and send notification End =============== -->
-
-<!-- ======================== Custom Declaration start ========================= -->
+<!-- ================ Custom Declaration start =================== -->
 <section class="py-120">
     <div class="container">
         <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
@@ -1237,7 +1101,7 @@
                         Search
                     </label>
                     <input type="text" id="search"
-                        class="cursor-small tw-ps-4 tw-pe-8 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                        class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
                         placeholder="Search...">
                 </div>
                 <div class="d-flex tw-w-13">
@@ -1369,7 +1233,43 @@
         </div>
     </div>
 </section>
-<!-- ======================== Custom Declaration End ========================= -->
+<!-- ================ Custom Declaration End =================== -->
+
+<!-- =================== Get and send notification End =============== -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content tw-p-6">
+            <div class="modal-header border-0 border-bottom border-neutral-100 pt-0 ps-0 pe-0 tw-pb-4">
+                <h5 class="modal-title" id="exampleModalLabel">Upload a List</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 tw-mt-4">
+                <p class="text-neutral-900">Transfer your list into our template before uploading</p>
+                <a href="#" class="text-primary hover-underline">
+                    <span class="text-white bg-success tw-py-1 tw-px-105 d-inline-flex tw-rounded-md tw-text-xs">
+                        <i class="ph-bold ph-download-simple"></i>
+                    </span>
+                    Download Template
+                </a>
+
+                <form action="#" class="tw-mt-10">
+                    <div class="">
+                        <input type="text"
+                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                            id="cityhere" value="Product_catalog_template.csv" placeholder="Upload a List">
+                    </div>
+                    <div class="d-flex align-items-center tw-gap-2 flex-sm-nowrap flex-wrap tw-mt-6">
+                        <button type="button"
+                            class="tw-px-5 tw-h-10 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">Cancel</button>
+                        <button type="submit"
+                            class="tw-px-5 tw-h-10 text-white bg-success d-flex justify-content-center align-items-center tw-rounded tw-text-base tw-duration-300">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =================== Get and send notification End =============== -->
 
 
 <!-- ==================== Footer Start Here ==================== -->
