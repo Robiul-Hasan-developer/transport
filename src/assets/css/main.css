@@ -3021,8 +3021,8 @@ input:focus, input:focus-visible {
 
 /* Gap Css end */
 @media (min-width: 1200px) {
-    .xl-tw-gap-12 {
-        gap: 2.5rem;
+    .xl-tw-gap-8 {
+        gap: 32px;
     }
 
     .xl-tw-gap-9 {
@@ -9501,13 +9501,13 @@ input[type=number] {
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1299px) {
     .header-four-social {
         display: none !important;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1299px) {
     .header-four-right {
         margin-right: 30px;
     }
