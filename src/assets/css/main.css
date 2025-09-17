@@ -4305,6 +4305,10 @@ input:focus, input:focus-visible {
     margin-inline-end: -45px;
 }
 
+.tw--me-px {
+    margin-inline-end: -1px;
+}
+
 .tw-me-23-percent {
     margin-inline-end: 23%;
 }
