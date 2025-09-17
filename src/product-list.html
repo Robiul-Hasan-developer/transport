@@ -1214,10 +1214,10 @@
 <section class="py-120">
     <div class="container">
         <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
-            <div class="border-bottom border-neutral-600 tw-mb-8 ">
+            <div class="border-bottom border-neutral-100 tw-pb-4 tw-mb-4">
                 <h5 class="fw-bold">My Product / Item List</h5>
             </div>
-            <p class="fw-medium text-neutral-1000 tw-text-lg line-height-1 tw-mb-10">Create and maintain a list fo your
+            <p class="fw-medium text-neutral-1000 tw-text-base tw-mb-10">Create and maintain a list fo your
                 company's products or any items you ship frequently so that you can quickly select them when creating a
                 customs invoice.</p>
             <form action="#" class="d-flex tw-gap-3 align-items-end tw-mb-5">
@@ -1248,7 +1248,7 @@
                 </div>
             </form>
             <div
-                class="border-top border-bottom border-neutral-600 tw-pb-5 tw-pt-5 d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                class="border-top border-bottom border-neutral-100 tw-pb-5 tw-pt-5 d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
                 <button type="button"
                     class="tw-px-3 tw-h-10 bg-neutral-50 border-neutral-600 border text-neutral-400 tw-rounded-md fw-semibold d-flex align-items-center tw-gap-1">
                     <span class="tw-text-5 text-neutral-400">
@@ -1256,11 +1256,15 @@
                     </span>
                     Delete Selected
                 </button>
-                <div>
+                <div class="d-flex align-items-center tw-gap-4 flex-wrap">
                     <button type="button"
-                        class="border border-neutral-300 bg-neutral-50 tw-rounded-md tw-py-1 tw-px-4 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 tw-mt-6"
+                        class="border border-neutral-300 tw-rounded-md tw-py-1 tw-px-3 tw-h-10 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Upload a List
+                    </button>
+                    <button type="button"
+                        class="border border-neutral-300 tw-rounded-md tw-py-1 tw-px-3 tw-h-10 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094">
+                        Download My Product List
                     </button>
                     <button type="button"
                         class="tw-px-3 tw-h-10 text-white bg-success d-flex justify-content-center align-items-center tw-gap-1 tw-rounded tw-text-base tw-duration-300">
@@ -1271,6 +1275,96 @@
                     </button>
                 </div>
             </div>
+
+            <div class="table-responsive">
+                <table class="table min-w-max">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="bg-neutral-200 tw-px-6 text-center tw-py-3">
+                                <div class="common-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </th>
+                            <th scope="col" class="bg-neutral-200 tw-px-6 text-center tw-py-3">Item Name</th>
+                            <th scope="col" class="bg-neutral-200 tw-px-6 text-center tw-py-3">Description</th>
+                            <th scope="col" class="bg-neutral-200 tw-px-6 text-center tw-py-3">Country of Manufacture
+                            </th>
+                            <th scope="col" class="bg-neutral-200 tw-px-6 text-center tw-py-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div class="common-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Inventory1</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Custom line item description</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Singapore</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div
+                                    class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
+                                    <button type="button" class="text-primary hover-underline">Edit</button>
+                                    <button type="button" class="text-primary hover-underline">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div class="common-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-center bg-neutral-50 tw-py-305">SKU123</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Screws</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Singapore</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div
+                                    class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
+                                    <button type="button" class="text-primary hover-underline">Edit</button>
+                                    <button type="button" class="text-primary hover-underline">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div class="common-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-center bg-neutral-50 tw-py-305">SKU124</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Nails</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Singapore</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div
+                                    class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
+                                    <button type="button" class="text-primary hover-underline">Edit</button>
+                                    <button type="button" class="text-primary hover-underline">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div class="common-check d-flex justify-content-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </div>
+                            </td>
+                            <td class="text-center bg-neutral-50 tw-py-305">SKU125</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Levers</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">Singapore</td>
+                            <td class="text-center bg-neutral-50 tw-py-305">
+                                <div
+                                    class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
+                                    <button type="button" class="text-primary hover-underline">Edit</button>
+                                    <button type="button" class="text-primary hover-underline">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 </section>
