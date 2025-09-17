@@ -2375,6 +2375,10 @@ input:focus, input:focus-visible {
     line-height: var(--bs-body-line-height);
 }
 
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
