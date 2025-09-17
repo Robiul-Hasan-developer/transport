@@ -1126,11 +1126,12 @@
                 <div class="d-flex align-items-center tw-gap-4 flex-wrap">
                     <button type="button"
                         class="border border-neutral-300 tw-rounded-md tw-py-1 tw-px-3 tw-h-10 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 text-neutral-1000 fw-medium"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        data-bs-toggle="modal" data-bs-target="#uploadList">
                         Upload a List
                     </button>
                     <button type="button"
-                        class="border border-neutral-300 tw-rounded-md tw-py-1 tw-px-3 tw-h-10 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 text-neutral-1000 fw-medium">
+                        class="border border-neutral-300 tw-rounded-md tw-py-1 tw-px-3 tw-h-10 d-flex align-items-center tw-gap-2 hover-bg-main-600 hover-text-white hover-border-main-600 tw-duration-300 active-scale-094 text-neutral-1000 fw-medium"
+                        data-bs-toggle="modal" data-bs-target="#downloadProductList">
                         Download My Product List
                     </button>
                     <button type="button"
@@ -1237,12 +1238,12 @@
 </section>
 <!-- ================ Custom Declaration End =================== -->
 
-<!-- =================== Get and send notification End =============== -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- =================== Upload a List End =============== -->
+<div class="modal fade" id="uploadList" tabindex="-1" aria-labelledby="uploadListLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content tw-p-6">
             <div class="modal-header border-0 border-bottom border-neutral-100 pt-0 ps-0 pe-0 tw-pb-4">
-                <h5 class="modal-title" id="exampleModalLabel">Upload a List</h5>
+                <h5 class="modal-title" id="uploadListLabel">Upload a List</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0 tw-mt-4">
@@ -1271,7 +1272,94 @@
         </div>
     </div>
 </div>
-<!-- =================== Get and send notification End =============== -->
+<!-- =================== Upload a List End =============== -->
+
+<!-- =================== Download My Product List End =============== -->
+<div class="modal fade" id="downloadProductList" tabindex="-1" aria-labelledby="downloadProductListLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content tw-p-6">
+            <div class="modal-header border-0 p-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 tw-mt-4">
+                <form action="#" class="d-flex tw-gap-3 align-items-end tw-mb-5">
+                    <div class="">
+                        <input type="text" id="search"
+                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                            placeholder="Search...">
+                    </div>
+                    <div class="d-flex tw-w-13">
+                        <button type="submit"
+                            class="text-white tw-w-11 tw-h-11 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
+                            <i class="ph-bold ph-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="border tw-p-6 tw-rounded-md">
+                    <div class="table-responsive">
+                        <table class="table min-w-max">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="bg-neutral-100 tw-py-4 tw-px-6 text-center">Name
+                                    </th>
+                                    <th scope="col" class="bg-neutral-100 tw-py-4 tw-px-6 text-center">
+                                        Designation</th>
+                                    <th scope="col" class="bg-neutral-100 tw-py-4 tw-px-6 text-center">
+                                        Export Commodity
+                                        Code
+                                    </th>
+                                    <th scope="col" class="bg-neutral-100 tw-py-4 tw-px-6 text-center">
+                                        Country of
+                                        Manufacture
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">
+                                        <span class="text-primary">Inventory 1</span>
+                                    </td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Custom one item description
+                                    </td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">-</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Singapore</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">
+                                        <span class="text-primary">SGS556SG45S</span>
+                                    </td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Screws</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">HD12543</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Singapore</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">
+                                        <span class="text-primary">SSDKG5612</span>
+                                    </td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Nail</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">HD12543</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Singapore</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">
+                                        <span class="text-primary">KSGKL523152</span>
+                                    </td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Levers</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">HD12543</td>
+                                    <td class="text-center bg-neutral-25 tw-px-6 tw-py-4">Singapore</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- =================== Download My Product List End =============== -->
 
 
 <!-- ==================== Footer Start Here ==================== -->
