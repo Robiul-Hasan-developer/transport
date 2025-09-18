@@ -1,0 +1,62 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Upload',
+'breadcrumbTitle': 'Upload a Shipment File'
+})
+
+<!-- ======================== Upload Contacts start ========================= -->
+<section class="py-120">
+    <div class="container max-w-1720-px">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="">
+                    <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+                        <h6 class="">Filter By</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="">
+                    <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+                        <div class="bg-cyan-50 d-flex border border-2 border-cyan-600">
+                            <span
+                                class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                <i class="ph-fill ph-info"></i>
+                            </span>
+                            <div class="tw-px-6 tw-py-4 flex-grow-1">
+
+                                <ul class="d-flex flex-column tw-gap-3 tw-ps-6">
+
+                                    <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
+                                        <span
+                                            class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                        <span class="flex-grow-1">
+                                            To help avoid customs clearance delays, we
+                                            encourage
+                                            shippers to
+                                            provide the EIN on behalf of the Recipient when creating the shipment
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================== Upload Contacts End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
