@@ -1,0 +1,58 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Shipment Details',
+'breadcrumbTitle': 'Shipment Details'
+})
+
+<!-- ================== Welcome page content start ============ -->
+<div class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <div class="max-w-444-px">
+                <div class="d-flex align-items-center tw-gap-4">
+                    <div class="position-relative tw-rounded-md overflow-hidden max-w-158-px">
+                        <input type="text"
+                            class="tw-ps-3 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                            id="addField" placeholder="01">
+                        <button type="button"
+                            class="position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-105 text-white tw-w-8 tw-h-8 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
+                            <i class="ph-bold ph-plus-square"></i>
+                        </button>
+                    </div>
+                    <label for="addField" class="fw-medium text-main-two-600">Add Field</label>
+                </div>
+                <div class="tw-mt-6">
+                    <label for="schemeOne" class="text-main-two-600 fw-medium tw-mb-1">Name scheme to save for future
+                        use</label>
+                    <input type="text"
+                        class="tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                        placeholder="Scheme 1" id="schemeOne">
+                </div>
+            </div>
+            <div class="d-flex justify-content-end tw-mt-6">
+                <div class="">
+                    <button type="button"
+                        class="tw-mt-4 btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-4 tw-px-6 tw-text-sm"
+                        data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Process Shipments</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================== Welcome page content End ============ -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
