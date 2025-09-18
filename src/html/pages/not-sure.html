@@ -1,0 +1,96 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Not Sure',
+'breadcrumbTitle': 'Not Sure To Shipment'
+})
+
+
+<!-- ======================== Welcome page content start ========================= -->
+<div class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <p class="text-main-two-600 tw-mb-3">
+                <span class="fw-bold">Note:</span>
+                The template you are using is a universal template that can be used for both Document and Package
+                shipments.
+            </p>
+            <div class="bg-neutral-50 border border-neutral-300 tw-rounded-md tw-p-6">
+                <p class="text-main-two-600 tw-mb-3">
+                    File contains <span class="fw-bold"> Package </span> (non-document) shipments
+                </p>
+                <div class="d-flex align-items-center tw-gap-6">
+                    <div class="form-check common-check common-radio mb-0">
+                        <input class="form-check-input border-main-two-600 bg-white" type="radio" name="confirmation"
+                            id="yes1">
+                        <label class="form-check-label tw-ms-2 text-main-two-600 fw-medium" for="yes1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check common-check common-radio mb-0">
+                        <input class="form-check-input border-main-two-600 bg-white" type="radio" name="confirmation"
+                            id="no1">
+                        <label class="form-check-label tw-ms-2 text-main-two-600 fw-medium" for="no1">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check common-check common-radio mb-0">
+                        <input class="form-check-input border-main-two-600 bg-white" type="radio" name="confirmation"
+                            id="notSure">
+                        <label class="form-check-label tw-ms-2 text-main-two-600 fw-medium" for="notSure">
+                            Not Sure
+                        </label>
+                    </div>
+                </div>
+                <div class="tw-mt-10">
+                    <p class="text-main-two-600 tw-mb-2">
+                        To successfully upload and create shipments with this scheme.
+                    </p>
+                    <ul class="d-flex flex-column tw-gap-3 tw-ps-6 tw-mt-2">
+                        <li class="text-black fw-medium d-flex align-items-start tw-gap-2">
+                            <span
+                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                            <span class="flex-grow-1">
+                                Map your file fields to MyDHL+ shipment fields.
+                            </span>
+                        </li>
+                        <li class="text-black fw-medium d-flex align-items-start tw-gap-2">
+                            <span
+                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                            <span class="flex-grow-1">
+                                Map all mandatory (Required) fields
+                            </span>
+                        </li>
+                        <li class="text-black fw-medium d-flex align-items-start tw-gap-2">
+                            <span
+                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                            <span class="flex-grow-1">
+                                Map other fields to other available MyDHL+ shipment fields
+                            </span>
+                        </li>
+                        <li class="text-black fw-medium d-flex align-items-start tw-gap-2">
+                            <span
+                                class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
+                            <span class="flex-grow-1">
+                                Add and reorder fields as needed.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ======================== Welcome page content End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>
