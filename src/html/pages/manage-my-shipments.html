@@ -15,23 +15,121 @@
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="">
-                    <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
-                        <h6 class="">Filter By</h6>
+                    <div class="bg-white tw-rounded-2xl shadow-lg">
+                        <h6 class="tw-p-6">Filter By</h6>
+                        <div class="">
+                            <p class="tw-px-4 tw-py-1 bg-main-two-600 text-white fw-medium">Shipment Type</p>
+                            <div class="tw-p-6">
+                                <select
+                                    class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select">
+                                    <option value="my-shipments">My Shipments</option>
+                                    <option value="air-freight">Air Freight</option>
+                                    <option value="sea-freight">Sea Freight</option>
+                                    <option value="road-freight">Road Freight</option>
+                                    <option value="rail-freight">Rail Freight</option>
+                                    <option value="project-cargo">Project Cargo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="tw-px-4 tw-py-1 bg-main-two-600 text-white fw-medium">Shipment Date (Showing All)
+                            </p>
+                            <div class="tw-p-6">
+                                <select
+                                    class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select">
+                                    <option value="all">All Dates</option>
+                                    <option value="today">Today</option>
+                                    <option value="yesterday">Yesterday</option>
+                                    <option value="this-week">This Week</option>
+                                    <option value="last-week">Last Week</option>
+                                    <option value="this-year">This Year</option>
+                                    <option value="last-year">Last Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="tw-px-4 tw-py-1 bg-main-two-600 text-white fw-medium">Status (Showing All)
+                            </p>
+                            <div class="tw-p-6">
+                                <div class="d-flex align-items-center justify-content-between tw-gap-4">
+                                    <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                                        <input class="form-check-input" type="checkbox" id="unsubmitted">
+                                        <div class="form-check-label fw-medium">
+                                            <label class=" text-black" for="unsubmitted"> Unsubmitted</label>
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="tw-w-7 tw-h-7 bg-danger text-white tw-text-sm fw-medium tw-rounded d-flex justify-content-center align-items-center">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="tw-px-4 tw-py-1 bg-main-two-600 text-white fw-medium">Status (Showing All)
+                            </p>
+                            <div class="tw-p-6">
+                                <div class="d-flex align-items-center justify-content-between tw-gap-4">
+                                    <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                                        <input class="form-check-input" type="checkbox" id="export">
+                                    </div>
+                                    <span class="fw-medium text-main-two-600"> - Export</span>
+                                    <span
+                                        class="tw-w-7 tw-h-7 bg-neutral-100 text-main-two-600 tw-text-sm fw-medium tw-rounded d-flex justify-content-center align-items-center">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="tw-px-4 tw-py-1 bg-main-two-600 text-white fw-medium">Favorites
+                            </p>
+                            <div class="tw-p-6">
+                                <div class="common-check d-flex align-items-center tw-gap-2 mb-0">
+                                    <input class="form-check-input" type="checkbox" id="showOnlyFavorites">
+                                    <div class="form-check-label fw-medium">
+                                        <label class=" text-black" for="showOnlyFavorites"> Show Only
+                                            Favorites</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="tw-p-6 border-top border-neutral-600">
+                                <select
+                                    class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select">
+                                    <option value="dont-show-hidden">Don't show hidden shipments</option>
+                                    <option value="show-hidden">Show hidden shipments</option>
+                                    <option value="only-hidden">Only hidden shipments</option>
+                                    <option value="archived">Show archived shipments</option>
+                                    <option value="active">Show active shipments</option>
+                                    <option value="all">Show all shipments</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-8">
                 <div class="">
                     <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+                        <form action="#" class="d-flex tw-gap-2 tw-mb-6">
+                            <div class="">
+                                <input type="text"
+                                    class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                    placeholder="Search...">
+                            </div>
+                            <div class="d-flex tw-w-13">
+                                <button type="submit"
+                                    class="text-white w-100 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
+                                    <i class="ph-bold ph-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
                         <div class="bg-cyan-50 d-flex border border-2 border-cyan-600">
                             <span
                                 class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
                                 <i class="ph-fill ph-info"></i>
                             </span>
                             <div class="tw-px-6 tw-py-4 flex-grow-1">
-
                                 <ul class="d-flex flex-column tw-gap-3 tw-ps-6">
-
                                     <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
                                         <span
                                             class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
