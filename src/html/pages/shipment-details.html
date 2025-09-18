@@ -1,0 +1,248 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Shipment Details',
+'breadcrumbTitle': 'Shipment Details'
+})
+
+<!-- ================== Welcome page content start ============ -->
+<div class="py-120">
+    <div class="container">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <div class="bg-neutral-50 border border-neutral-300 tw-rounded-md overflow-x-auto">
+                <div class="min-w-max">
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                Name (Ship FROM) (Require)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="Name (Ship FROM) (Require)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                Company (Ship FROM) (Required)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="Company (Ship FROM) (Required)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                Address 3 (Ship FROM)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="Address 3 (Ship FROM)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                Address 3 (Ship FROM)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="Address 3 (Ship FROM)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                ZIP/Postal Code (Ship FROM)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="ZIP/Postal Code (Ship FROM)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                City (Ship FROM) (Required)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="City (Ship FROM) (Required)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                    <div
+                        class="tw-py-2 border-bottom border-neutral-300 tw-py-3 tw-px-4 d-flex align-items-center tw-gap-10 justify-content-between">
+                        <div class="d-flex align-items-center tw-gap-1">
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-2">
+                                <i class="ph-fill ph-caret-down"></i>
+                            </button>
+                            <button type="button" class="text-primary tw-text-lg d-flex line-height-1 tw-pe-4">
+                                <i class="ph-fill ph-caret-up"></i>
+                            </button>
+                            <a href="javascript:void(0)"
+                                class="fw-semibold text-main-two-600 d-flex align-items-center tw-gap-4 justify-content-between">
+                                Name (Ship FROM) (Require)
+                                <span class="d-flex line-height-1">
+                                    <i class="ph-bold ph-caret-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <input type="text"
+                                class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 w-auto"
+                                placeholder="Name (Ship FROM) (Require)">
+                        </div>
+                        <div class="">
+                            <a href="javascript:void(0)" class="text-primary hover-underline hover--translate-y-05">Add
+                                Field</a>
+                        </div>
+                        <div class="">
+                            <button type="button"
+                                class="text-primary hover-underline hover--translate-y-05">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================== Welcome page content End ============ -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>

@@ -10967,6 +10967,11 @@ input[type=number] {
         flex-direction: column-reverse;
     }
 }
+
+.tw-py-2.border-bottom div:nth-child(1) {
+    width: 400px;
+}
+
 /* ===================================================== 
             Welcome Page css end 
 ======================================================= */
