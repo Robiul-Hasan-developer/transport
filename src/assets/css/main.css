@@ -2033,6 +2033,10 @@ input:focus, input:focus-visible {
     color: var(--star-color);
 }
 
+.text-cyan-600 {
+    color: #007acc;
+}
+
 /* Colors class End */
 /* Hover color class start */
 .hover-text-main-50:hover {
