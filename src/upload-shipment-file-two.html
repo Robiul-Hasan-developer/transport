@@ -1286,10 +1286,54 @@
 
 <!-- ======================== Upload Contacts start ========================= -->
 <section class="py-120">
-    <div class="container">
+    <div class="container max-w-1720-px">
         <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
             <h5 class="tw-mb-6">Upload a Shipment File</h5>
 
+            <div class="tw-mb-10">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="bg-success-50 d-flex border border-2 border-success-600">
+                            <span
+                                class="bg-success-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                <i class="ph-bold ph-check"></i>
+                            </span>
+                            <div class="tw-px-6 tw-py-6 flex-grow-1">
+                                <p class="text-success tw-mb-4">
+                                    <span class="fw-semibold">Successful:</span> <span class="fw-semibold">1</span> of
+                                    <span class="fw-semibold">2</span> shipment(s) created
+                                </p>
+                                <button type="button"
+                                    class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-4 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                                    View and Manage Shipments
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-danger-50 d-flex border border-2 border-danger-600">
+                            <span
+                                class="bg-danger-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                <i class="ph-fill ph-info"></i>
+                            </span>
+                            <div class="tw-px-6 tw-py-6 flex-grow-1">
+                                <p class="text-danger tw-mb-4 fw-semibold">
+                                    Failed: 1 shipments(s) not created 1 not uploaded
+                                </p>
+                                <ul class="d-flex flex-column tw-gap-3 tw-ps-6 tw-py-6">
+                                    <li class="text-danger fw-medium d-flex align-items-start tw-gap-2">
+                                        <span
+                                            class="tw-w-105 tw-h-105 tw-gap-4 bg-danger-600 rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                        <span class="flex-grow-1">
+                                            Row 3 Invalid Country Code (Ship TO) Field 18
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <p class="tw-text-lg tw-mb-4 fw-medium text-black opacity-75">Create shipments in MyDHL+ by using your own
                 file. After uploading, you'll find your new shipments in Mange Shipments - where you can complete and
@@ -1343,120 +1387,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="tw-mt-10">
-                <div class="bg-cyan-50 d-flex border border-2 border-cyan-600">
-                    <span
-                        class="bg-cyan-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
-                        <i class="ph-fill ph-info"></i>
-                    </span>
-                    <div class="tw-px-6 tw-py-4 flex-grow-1">
-                        <p class="text-black tw-mb-4">
-                            You can:
-                        </p>
-                        <ul class="d-flex flex-column tw-gap-3 tw-ps-6">
-                            <li class="text-black opacity-75 d-flex align-items-start tw-gap-2">
-                                <span
-                                    class="tw-w-105 tw-h-105 tw-gap-4 bg-black rounded-circle flex-shrink-0 tw-mt-105"></span>
-                                <span class="flex-grow-1">
-                                    Use the account number from your file or select another one
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="common-check d-flex align-items-center tw-gap-2 tw-my-5">
-                    <input class="form-check-input" type="checkbox" id="fileContains">
-                    <div class="form-check-label fw-medium">
-                        <label class=" text-black" for="fileContains">
-                            User from file
-                        </label>
-                    </div>
-                </div>
-                <p class="text-main-two-600">Or, use this Shippper Address (Ship FROM) - for all shipments in the file
-                </p>
-                <div class="position-relative tw-rounded-md overflow-hidden">
-                    <input type="text"
-                        class="tw-ps-4 tw-pe-16 tw-py-3 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300">
-                    <button type="button"
-                        class="position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-105 text-white tw-w-10 tw-h-10 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
-                        <i class="ph-bold ph-magnifying-glass"></i>
-                    </button>
-                </div>
-                <div class="common-check d-flex align-items-center tw-gap-2 tw-my-5">
-                    <input class="form-check-input" type="checkbox" id="shippper">
-                    <div class="form-check-label fw-medium">
-                        <label class=" text-black" for="shippper">
-                            User Shipper Account Number (s) from my file
-                        </label>
-                    </div>
-                </div>
-                <p class="text-main-two-600">Or, use this Account Number -- for all shipments in the file
-                </p>
-                <select id="uploadOptions"
-                    class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select w-auto">
-                    <option value="MyDHL+ Upload">MyDHL+ Upload</option>
-                    <option value="MyDHL+ Upload 2">MyDHL+ Upload 2</option>
-                    <option value="MyDHL+ Upload 3">MyDHL+ Upload 3</option>
-                    <option value="MyDHL+ Upload 4">MyDHL+ Upload 4</option>
-                    <option value="MyDHL+ Upload 4">MyDHL+ Upload 4</option>
-                </select>
-                <div class="tw-mt-8 d-flex align-items-center tw-gap-6 flex-sm-nowrap flex-wrap">
-                    <div class="d-inline-flex align-items-center tw-gap-3">
-                        <input type="text"
-                            class="tw-px-2 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0  tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 tw-w-12"
-                            id="fileDelimiter">
-                        <label for="fileDelimiter" class="text-main-two-600 fw-medium">Field Delimiter
-                            <span class="text-primary" title="Field Delimiter">
-                                <i class="ph-fill ph-info"></i>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="d-inline-flex align-items-center tw-gap-3">
-                        <input type="text"
-                            class="tw-px-2 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0  tw-placeholder-transition-2 focus-tw-placeholder-text-hidden tw-rounded-md shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 tw-w-12"
-                            id="textDelimiter">
-                        <label for="textDelimiter" class="text-main-two-600 fw-medium">Text Delimiter
-                            <span class="text-primary" title="Text Delimiter">
-                                <i class="ph-fill ph-info"></i>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="common-check d-flex align-items-center tw-gap-2 tw-my-5">
-                    <input class="form-check-input" type="checkbox" id="fileContainssgds">
-                    <div class="form-check-label fw-medium">
-                        <label class=" text-black" for="fileContainssgds">
-                            File contains column headers
-                        </label>
-                    </div>
-                </div>
-                <div class="tw-mt-8">
-                    <label for="selectCharacterSet" class="text-main-two-600 fw-medium">Select Character Set (select
-                        UTF-8 if unsure)
-                        <span class="text-primary" title="Select Character Set (select UTF-8 if unsure)">
-                            <i class="ph-fill ph-info"></i>
-                        </span>
-                    </label>
-                    <select id="selectCharacterSet"
-                        class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select w-auto">
-                        <option value="UTF-8">UTF-8</option>
-                        <option value="UTF-9">UTF-9</option>
-                        <option value="UTF-10">UTF-10</option>
-                        <option value="UTF-11">UTF-11</option>
-                        <option value="UTF-12">UTF-12</option>
-                    </select>
-                </div>
-                <div class="tw-mt-6">
-                    <button type="button"
-                        class="switch-welcome-btn cursor-small btn btn-main hover-style-one button--stroke d-inline-flex align-items-center justify-content-center tw-gap-2 group active--translate-y-2 fw-semibold flex-grow-1 flex-shrink-0 tw-py-3 tw-px-6 tw-text-sm"
-                        data-block="button">
-                        <span class="button__flair"></span>
-                        <span class="button__label">Select File</span>
-                    </button>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>

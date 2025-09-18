@@ -49,6 +49,16 @@
   }
 }
 
-.border-cyan-600 {
-  border-color: #007acc !important;
+.border {
+  &-cyan-600 {
+    border-color: #007acc !important;
+  }
+
+  &-danger-600 {
+    border-color: #f5190b !important;
+  }
+
+  &-success-600 {
+    border-color: #2ab72a !important;
+  }
 }

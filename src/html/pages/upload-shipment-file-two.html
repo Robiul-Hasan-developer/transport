@@ -1,0 +1,126 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Upload',
+'breadcrumbTitle': 'Upload a Shipment File'
+})
+
+<!-- ======================== Upload Contacts start ========================= -->
+<section class="py-120">
+    <div class="container max-w-1720-px">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
+            <h5 class="tw-mb-6">Upload a Shipment File</h5>
+
+            <div class="tw-mb-10">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="bg-success-50 d-flex border border-2 border-success-600">
+                            <span
+                                class="bg-success-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                <i class="ph-bold ph-check"></i>
+                            </span>
+                            <div class="tw-px-6 tw-py-6 flex-grow-1">
+                                <p class="text-success tw-mb-4">
+                                    <span class="fw-semibold">Successful:</span> <span class="fw-semibold">1</span> of
+                                    <span class="fw-semibold">2</span> shipment(s) created
+                                </p>
+                                <button type="button"
+                                    class="bg-success text-white fw-medium tw-text-sm d-flex align-items-center tw-gap-2  tw-duration-300 tw-px-4 tw-py-205 tw-rounded-lg hover--translate-y-1">
+                                    View and Manage Shipments
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-danger-50 d-flex border border-2 border-danger-600">
+                            <span
+                                class="bg-danger-600 tw-w-15 text-white tw-text-6 d-flex justify-content-center align-items-start flex-shrink-0 tw-pt-6">
+                                <i class="ph-fill ph-info"></i>
+                            </span>
+                            <div class="tw-px-6 tw-py-6 flex-grow-1">
+                                <p class="text-danger tw-mb-4 fw-semibold">
+                                    Failed: 1 shipments(s) not created 1 not uploaded
+                                </p>
+                                <ul class="d-flex flex-column tw-gap-3 tw-ps-6 tw-py-6">
+                                    <li class="text-danger fw-medium d-flex align-items-start tw-gap-2">
+                                        <span
+                                            class="tw-w-105 tw-h-105 tw-gap-4 bg-danger-600 rounded-circle flex-shrink-0 tw-mt-105"></span>
+                                        <span class="flex-grow-1">
+                                            Row 3 Invalid Country Code (Ship TO) Field 18
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tw-text-lg tw-mb-4 fw-medium text-black opacity-75">Create shipments in MyDHL+ by using your own
+                file. After uploading, you'll find your new shipments in Mange Shipments - where you can complete and
+                print lables, or edit and event save for later.</p>
+
+            <a href="javascript:void(0)" class="text-primary hover-underline">
+                <i class="ph-bold ph-file"></i>
+                First time uploading a file?
+            </a>
+
+            <div class="tw-mt-10">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="">
+                            <label for="uploadFile"
+                                class="bg-neutral-50 hover-bg-neutral-100 cursor-pointer border border-neutral-600 tw-px-4 tw-py-2 tw-rounded w-100 fw-semibold tw-text-base text-black">
+                                Select an Available Mapping Options
+                                <input type="file" id="uploadFile" hidden>
+                            </label>
+                            <p class="tw-text-sm text-neutral-900 tw-mt-1">Upload your own file using a predefined
+                                process. <a href="javascript:void(0)"
+                                    class="text-primary hover-underline fw-medium">Quick Tips</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="">
+                            <label for="uploadMyFileMapDHL"
+                                class="bg-neutral-50 hover-bg-neutral-100 cursor-pointer border border-neutral-600 tw-px-4 tw-py-2 tw-rounded w-100 fw-semibold tw-text-base text-black">
+                                Upload My File and Map to DHL Fields
+                                <input type="file" id="uploadMyFileMapDHL" hidden>
+                            </label>
+                            <p class="tw-text-sm text-neutral-900 tw-mt-1">Map the fields in your file to our Address
+                                Book <a href="javascript:void(0)" class="text-primary hover-underline fw-medium">Quick
+                                    Tips</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="">
+                            <label for="createEditUpload"
+                                class="bg-neutral-50 hover-bg-neutral-100 cursor-pointer border border-neutral-600 tw-px-4 tw-py-2 tw-rounded w-100 fw-semibold tw-text-base text-black">
+                                Create or Edit Upload Options for Future
+                                <input type="file" id="createEditUpload" hidden>
+                            </label>
+                            <p class="tw-text-sm text-neutral-900 tw-mt-1">Map DHL fields and save for future uploads.
+                                <a href="javascript:void(0)" class="text-primary hover-underline fw-medium">Quick
+                                    Tips</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================== Upload Contacts End ========================= -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>

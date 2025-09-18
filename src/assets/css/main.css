@@ -943,6 +943,22 @@ input:focus, input:focus-visible {
     background-color: #007acc;
 }
 
+.bg-danger-50 {
+    background-color: #f5190b21;
+}
+
+.bg-danger-600 {
+    background-color: #f5190b;
+}
+
+.bg-success-50 {
+    background-color: #59a7412e;
+}
+
+.bg-success-600 {
+    background-color: #2ab72a;
+}
+
 .bg-success {
     background: #2ab72a !important;
 }
@@ -1734,6 +1750,14 @@ input:focus, input:focus-visible {
 
 .border-cyan-600 {
     border-color: #007acc !important;
+}
+
+.border-danger-600 {
+    border-color: #f5190b !important;
+}
+
+.border-success-600 {
+    border-color: #2ab72a !important;
 }
 
 /* Colors class start */
