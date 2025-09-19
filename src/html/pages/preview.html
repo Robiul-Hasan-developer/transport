@@ -1,0 +1,238 @@
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_top-header.html')
+
+@@include('../partials/_header.html')
+
+@@include('../partials/_breadcrumb.html', {
+'breadcrumbText': 'Shipment Details',
+'breadcrumbTitle': 'Shipment Details'
+})
+
+<!-- ================== Preview Card start ============ -->
+<div class="py-120">
+    <div class="container max-w-1720-px">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-10">
+            <div class="container">
+                <div class="">
+                    <h3 class="tw-mb-3">DHL ProView<sup class="tw-text-lg">TM</sup> : Outbound </h3>
+                    <p class="tw-mb-8">Theoutboundnotification list is a summary of shipments for the past 90 days. You
+                        may
+                        view details of an individual shipment as well as override the notifications by selecting
+                        multiple
+                        checkboxes and pressing the 'Override selected items' button.</p>
+                    <div class="bg-neutral-50 shadow-sm">
+                        <div
+                            class="tw-px-4 tw-py-3 d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                            <h6 class="">Outbound shipment</h6>
+                            <a href="javascript:void(0)" class="d-flex text-danger align-items-center tw-gap-1">
+                                <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                <span class="hover-underline">Help</span>
+                            </a>
+                        </div>
+                        <div class="tw-px-4 tw-py-3 bg-neutral-100 d-flex align-items-center tw-gap-6 flex-wrap">
+                            <div class="d-flex align-items-center tw-gap-4">
+                                <label for="findShipment" class="flex-shrink-0 text-main-two-600 fw-medium">Find <br>
+                                    Shipment By</label>
+                                <div class="">
+                                    <select
+                                        class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-auto tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                        id="findShipment">
+                                        <option value="Select One">Select One</option>
+                                        <option value="Air Freight">Air Freight</option>
+                                        <option value="Sea Freight">Sea Freight</option>
+                                        <option value="Rail Freight">Rail Freight</option>
+                                        <option value="Road Transport">Road Transport</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <label for="keyword" class="flex-shrink-0 text-main-two-600 fw-medium">With
+                                        Keyword</label>
+                                    <div class="">
+                                        <select
+                                            class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-auto tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                            id="keyword">
+                                            <option value="Select One">Select One</option>
+                                            <option value="Air Freight">Air Freight</option>
+                                            <option value="Sea Freight">Sea Freight</option>
+                                            <option value="Rail Freight">Rail Freight</option>
+                                            <option value="Road Transport">Road Transport</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)"
+                                    class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                    <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                    <span class="hover-underline">Find</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tw-px-4 tw-py-3 d-flex align-items-center justify-content-between tw-gap-4">
+                            <span class="fw-medium text-main-two-600">All</span>
+                            <span class="fw-medium text-main-two-600">Sort List by:</span>
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <label for="pageListHere"
+                                        class="flex-shrink-0 text-main-two-600 fw-medium">Page</label>
+                                    <div class="max-w-100-px">
+                                        <input type="text"
+                                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            value="1" placeholder="Page">
+                                    </div>
+                                    <span class="text-main-two-600 fw-medium">Of 1</span>
+                                    <a href="javascript:void(0)"
+                                        class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                        <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                        <span class="hover-underline">Go</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <span class="text-main-two-600 fw-medium">1 - 4 Of 4</span>
+                                    <a href="javascript:void(0)"
+                                        class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                        <span class="hover-underline">Next</span>
+                                        <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table min-w-max vertical-align-top table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">
+                                            <div
+                                                class="common-check d-flex align-items-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Waybill</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Pc</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Shipper
+                                            Reference
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Shipped</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Service</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Receiver</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Status Date
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div
+                                                class="common-check d-flex align-items-center justify-content-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="text-main-600">1050747364</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">1</td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">RS270071
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Express
+                                                    Worldwide
+                                                    (nondoc)</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">MDI MUSIC
+                                                    CENTER D B A
+                                                    LOWERY OROAN COMPANY 825
+                                                    EAST 26TH STREET LA GRANGE PARK LA GRANGE PARK 60526 US</p>
+                                                <a href="javascript:void(0)"
+                                                    class="text-main-600 hover-underline hover-text-main-700">More...</a>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Shipment Data
+                                                    Received</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div
+                                                class="common-check d-flex align-items-center justify-content-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="text-main-600">1050747364</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">1</td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">RS270071
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Express
+                                                    Worldwide
+                                                    (nondoc)</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">MDI MUSIC
+                                                    CENTER D B A
+                                                    LOWERY OROAN COMPANY 825
+                                                    EAST 26TH STREET LA GRANGE PARK LA GRANGE PARK 60526 US</p>
+                                                <a href="javascript:void(0)"
+                                                    class="text-main-600 hover-underline hover-text-main-700">More...</a>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Shipment Data
+                                                    Received</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================== Preview Card End ============ -->
+
+@@include('../partials/_footer.html')
+
+@@include('../partials/_template-bottom.html')
+
+</body>
+
+</html>

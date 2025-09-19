@@ -1302,146 +1302,232 @@
 <section class="breadcrumb py-140 tw-pt-206-px mb-0 bg-img" data-background-image="assets/images/thumbs/breadcrumb-bg.png">
     <div class="container">
         <div class="text-center">
-            <span class="splitTextStyleTwo text-main-600 border-bottom border-main-600 fst-italic fw-bold tw-text-lg cursor-small">Address</span>
-            <h1 class="splitTextStyleOne text-white tw-mt-1 cursor-big"> Address Book</h1>
+            <span class="splitTextStyleTwo text-main-600 border-bottom border-main-600 fst-italic fw-bold tw-text-lg cursor-small">Shipment Details</span>
+            <h1 class="splitTextStyleOne text-white tw-mt-1 cursor-big"> Shipment Details</h1>
         </div>
     </div>
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-
-<!-- ======================== Address Book start ========================= -->
-<section class="address-book py-120">
-    <div class="container">
-        <div class="">
-            <div class="bg-white tw-rounded-2xl shadow-lg tw-p-6">
-                <div
-                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 tw-mb-5 border-bottom border-neutral-500">
-                    <form action="#" class="d-flex tw-gap-2">
-                        <div class="">
-                            <select
-                                class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
-                                id="country">
-                                <option value="All">All</option>
-                                <option value="Everything">Everything</option>
-                                <option value="Short">Short</option>
-                                <option value="Long">Long</option>
-                            </select>
+<!-- ================== Preview Card start ============ -->
+<div class="py-120">
+    <div class="container max-w-1720-px">
+        <div class="bg-white tw-rounded-2xl shadow-lg tw-p-10">
+            <div class="container">
+                <div class="">
+                    <h3 class="tw-mb-3">DHL ProView<sup class="tw-text-lg">TM</sup> : Outbound </h3>
+                    <p class="tw-mb-8">Theoutboundnotification list is a summary of shipments for the past 90 days. You
+                        may
+                        view details of an individual shipment as well as override the notifications by selecting
+                        multiple
+                        checkboxes and pressing the 'Override selected items' button.</p>
+                    <div class="bg-neutral-50 shadow-sm">
+                        <div
+                            class="tw-px-4 tw-py-3 d-flex align-items-center justify-content-between tw-gap-4 flex-wrap">
+                            <h6 class="">Outbound shipment</h6>
+                            <a href="javascript:void(0)" class="d-flex text-danger align-items-center tw-gap-1">
+                                <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                <span class="hover-underline">Help</span>
+                            </a>
                         </div>
-                        <div class="">
-                            <input type="text"
-                                class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
-                                placeholder="Search...">
-                        </div>
-                        <div class="d-flex tw-w-13">
-                            <button type="submit"
-                                class="text-white w-100 bg-main-600 hover-bg-main-800 d-flex align-items-center justify-content-center rounded-1">
-                                <i class="ph-bold ph-magnifying-glass"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <div class="d-flex align-items-center flex-sm-nowrap flex-wrap tw-gap-6">
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span class="text-main-two-600 tw-text-sm flex-shrink-0">Display</span>
-                            <select
-                                class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
-                                id="country">
-                                <option value="10">10</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="40">40</option>
-                                <option value="100">100</option>
-                            </select>
-                        </div>
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <button type="button"
-                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
-                                <i class="ph-bold ph-caret-left"></i>
-                            </button>
-                            <button type="button"
-                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
-                                1
-                            </button>
-                            <button type="button"
-                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
-                                2
-                            </button>
-                            <button type="button" class="">
-                                ...
-                            </button>
-                            <button type="button"
-                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
-                                50
-                            </button>
-                            <button type="button"
-                                class="tw-w-8 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">
-                                <i class="ph-bold ph-caret-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap tw-pb-5 tw-mb-5 border-bottom border-neutral-500">
-                    <div class="">
-                        <select
-                            class="cursor-small tw-ps-4 tw-pe-8 tw-py-1 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
-                            id="country">
-                            <option value="Actions">Actions</option>
-                            <option value="Names">Names</option>
-                            <option value="Countries">Countries</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap">
-                        <div class="">
-                            <label for="uploadContacts"
-                                class="tw-px-3 tw-h-8 border border-neutral-500 text-neutral-900 d-flex justify-content-center align-items-center tw-rounded tw-text-base hover-bg-main-600 hover-border-main-600 hover-text-white tw-duration-300">Upload
-                                Contacts</label>
-                            <input type="file" id="uploadContacts" hidden>
-                        </div>
-                        <button type="button"
-                            class="tw-px-3 tw-h-8 text-white bg-success d-flex justify-content-center align-items-center tw-rounded tw-text-base tw-duration-300">Add
-                            Contact</button>
-                    </div>
-                </div>
-
-
-                <div class="table-responsive">
-                    <table class="table min-w-max">
-                        <thead>
-                            <tr>
-                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Country</th>
-                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Name</th>
-                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Address</th>
-                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">City</th>
-                                <th scope="col" class="bg-neutral-200 tw-px-6 text-center">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center bg-neutral-50">Chao Yang</td>
-                                <td class="text-center bg-neutral-50">1 Tai Seng Drive</td>
-                                <td class="text-center bg-neutral-50">Singapore</td>
-                                <td class="text-center bg-neutral-50">Kualampur</td>
-                                <td class="text-center bg-neutral-50">
-                                    <div
-                                        class="text-center d-inline-flex align-items-center justify-content-center tw-gap-3">
-                                        <button type="button" class="text-primary hover-underline">Edit</button>
-                                        <button type="button" class="text-primary hover-underline">Copy</button>
-                                        <button type="button" class="text-primary hover-underline">Create
-                                            Shipment</button>
+                        <div class="tw-px-4 tw-py-3 bg-neutral-100 d-flex align-items-center tw-gap-6 flex-wrap">
+                            <div class="d-flex align-items-center tw-gap-4">
+                                <label for="findShipment" class="flex-shrink-0 text-main-two-600 fw-medium">Find <br>
+                                    Shipment By</label>
+                                <div class="">
+                                    <select
+                                        class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-auto tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                        id="findShipment">
+                                        <option value="Select One">Select One</option>
+                                        <option value="Air Freight">Air Freight</option>
+                                        <option value="Sea Freight">Sea Freight</option>
+                                        <option value="Rail Freight">Rail Freight</option>
+                                        <option value="Road Transport">Road Transport</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center tw-gap-4 flex-sm-nowrap flex-wrap">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <label for="keyword" class="flex-shrink-0 text-main-two-600 fw-medium">With
+                                        Keyword</label>
+                                    <div class="">
+                                        <select
+                                            class="cursor-small tw-ps-4 tw-pe-12 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-auto tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300 form-select"
+                                            id="keyword">
+                                            <option value="Select One">Select One</option>
+                                            <option value="Air Freight">Air Freight</option>
+                                            <option value="Sea Freight">Sea Freight</option>
+                                            <option value="Rail Freight">Rail Freight</option>
+                                            <option value="Road Transport">Road Transport</option>
+                                        </select>
                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                                <a href="javascript:void(0)"
+                                    class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                    <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                    <span class="hover-underline">Find</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tw-px-4 tw-py-3 d-flex align-items-center justify-content-between tw-gap-4">
+                            <span class="fw-medium text-main-two-600">All</span>
+                            <span class="fw-medium text-main-two-600">Sort List by:</span>
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <label for="pageListHere"
+                                        class="flex-shrink-0 text-main-two-600 fw-medium">Page</label>
+                                    <div class="max-w-100-px">
+                                        <input type="text"
+                                            class="cursor-small tw-px-4 tw-py-2 bg-white tw-placeholder-text-main-two-600 focus-outline-0 w-100 tw-placeholder-transition-2 focus-tw-placeholder-text-hidden rounded-2 shadow-none flex-grow-1 border border-neutral-300 focus-border-main-600 tw-duration-300"
+                                            value="1" placeholder="Page">
+                                    </div>
+                                    <span class="text-main-two-600 fw-medium">Of 1</span>
+                                    <a href="javascript:void(0)"
+                                        class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                        <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                        <span class="hover-underline">Go</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-center tw-gap-4">
+                                    <span class="text-main-two-600 fw-medium">1 - 4 Of 4</span>
+                                    <a href="javascript:void(0)"
+                                        class="d-flex text-danger align-items-center tw-gap-1 flex-shrink-0">
+                                        <span class="hover-underline">Next</span>
+                                        <i class="ph-fill ph-caret-right d-flex line-height-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table min-w-max vertical-align-top table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">
+                                            <div
+                                                class="common-check d-flex align-items-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Waybill</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Pc</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Shipper
+                                            Reference
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Shipped</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Service</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Receiver</th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Status Date
+                                        </th>
+                                        <th scope="col" class="bg-neutral-200 tw-px-6 tw-py-4 text-start">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div
+                                                class="common-check d-flex align-items-center justify-content-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="text-main-600">1050747364</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">1</td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">RS270071
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Express
+                                                    Worldwide
+                                                    (nondoc)</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">MDI MUSIC
+                                                    CENTER D B A
+                                                    LOWERY OROAN COMPANY 825
+                                                    EAST 26TH STREET LA GRANGE PARK LA GRANGE PARK 60526 US</p>
+                                                <a href="javascript:void(0)"
+                                                    class="text-main-600 hover-underline hover-text-main-700">More...</a>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Shipment Data
+                                                    Received</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div
+                                                class="common-check d-flex align-items-center justify-content-center tw-gap-2 mb-0 flex-shrink-0">
+                                                <input class="form-check-input" type="checkbox">
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="text-main-600">1050747364</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">1</td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">RS270071
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Express
+                                                    Worldwide
+                                                    (nondoc)</p>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">MDI MUSIC
+                                                    CENTER D B A
+                                                    LOWERY OROAN COMPANY 825
+                                                    EAST 26TH STREET LA GRANGE PARK LA GRANGE PARK 60526 US</p>
+                                                <a href="javascript:void(0)"
+                                                    class="text-main-600 hover-underline hover-text-main-700">More...</a>
+                                            </div>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <span class="">15/10/20000</span>
+                                            <br>
+                                            <span class="">12:53</span>
+                                        </td>
+                                        <td class="text-start tw-px-6 tw-py-5 bg-white">
+                                            <div class="max-w-130-px">
+                                                <p class="text-main-two-600 fw-medium">Shipment Data
+                                                    Received</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>
-</section>
-<!-- ======================== Address Book End ========================= -->
+</div>
+<!-- ================== Preview Card End ============ -->
 
 
 <!-- ==================== Footer Start Here ==================== -->

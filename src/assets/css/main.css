@@ -11008,6 +11008,10 @@ input[type=number] {
     line-height: 1.6;
 }
 
+.vertical-align-top tr td {
+    vertical-align: top !important;
+}
+
 /* ===================================================== 
             Welcome Page css end 
 ======================================================= */
